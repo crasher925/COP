@@ -1,0 +1,154 @@
+form_mexican_empire_category = {
+	
+	form_mexican_empire = {
+
+		icon = generic_form_nation
+
+		allowed = {
+		    original_tag = MEX
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			controls_state = 311
+			# Some USA states
+			    controls_state = 922
+			    controls_state = 924
+			    controls_state = 923
+			    controls_state = 921
+			    controls_state = 920
+			    controls_state = 376
+			    controls_state = 377
+			    controls_state = 378
+			    controls_state = 925
+			    controls_state = 379
+			    controls_state = 380
+			    controls_state = 918
+			    controls_state = 382
+			    controls_state = 375
+			# Mexico
+			custom_trigger_tooltip = {
+				tooltip = form_country_mexico_required_states_tt
+				controls_state = 484
+				controls_state = 926
+				controls_state = 483
+				controls_state = 482
+				controls_state = 480
+				controls_state = 481
+				controls_state = 479
+				controls_state = 478
+				controls_state = 277
+				controls_state = 485
+				controls_state = 477
+				controls_state = 476
+				controls_state = 475
+				controls_state = 474
+			}
+			# Guatemala
+			custom_trigger_tooltip = {
+			    tooltip = form_country_guatemala_required_states_tt
+			    controls_state = 313
+			}
+			# El Salvador
+			custom_trigger_tooltip = {
+			    tooltip = form_country_salvador_required_states_tt
+			    controls_state = 314
+			}
+			# Honduras
+			custom_trigger_tooltip = {
+                tooltip = form_country_honduras_required_states_tt
+			    controls_state = 312
+			}
+			# Nicaguara
+			custom_trigger_tooltip = {
+			    tooltip = form_country_nicaguara_required_states_tt
+			    controls_state = 317
+			}
+			# Costa Rica
+			custom_trigger_tooltip = {
+			    tooltip = form_country_costarica_required_states_tt
+			    controls_state = 316
+			}
+		}
+
+		visible = {
+			original_tag = MEX
+			NOT = { has_global_flag = form_mexican_empire_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = MEX_EMPIRE
+			# Some USA states
+				922 = { add_core_of = ROOT }
+				924 = { add_core_of = ROOT }
+				923 = { add_core_of = ROOT }
+				921 = { add_core_of = ROOT }
+				920 = { add_core_of = ROOT }
+				376 = { add_core_of = ROOT }
+				377 = { add_core_of = ROOT }
+				378 = { add_core_of = ROOT }
+				925 = { add_core_of = ROOT }
+				379 = { add_core_of = ROOT }
+			    380 = { add_core_of = ROOT }
+				918 = { add_core_of = ROOT }
+			    382 = { add_core_of = ROOT }
+				375 = { add_core_of = ROOT }
+			# Mexico
+			custom_effect_tooltip = form_country_mexico_coring_states_tt
+			hidden_effect = {
+				484 = { add_core_of = ROOT }
+				926 = { add_core_of = ROOT }
+				483 = { add_core_of = ROOT }
+				482 = { add_core_of = ROOT }
+				481 = { add_core_of = ROOT }
+				480 = { add_core_of = ROOT }
+				479 = { add_core_of = ROOT }
+				478 = { add_core_of = ROOT }
+				277 = { add_core_of = ROOT }
+				485 = { add_core_of = ROOT }
+			    476 = { add_core_of = ROOT }
+				477 = { add_core_of = ROOT }
+			    475 = { add_core_of = ROOT }
+				474 = { add_core_of = ROOT }
+			}
+			# Guatemala
+			custom_effect_tooltip = form_country_guatemala_coring_states_tt
+			hidden_effect = {
+				313 = { add_core_of = ROOT }
+			}
+			# El Salvador
+			custom_effect_tooltip = form_country_salvador_coring_states_tt
+			hidden_effect = {
+				314 = { add_core_of = ROOT }
+			}
+			# Honduras
+			custom_effect_tooltip = form_country_honduras_coring_states_tt
+			hidden_effect = {
+				312 = { add_core_of = ROOT }
+			}
+			# Nicaguara
+			custom_effect_tooltip = form_country_nicaguara_coring_states_tt
+			hidden_effect = {
+				317 = { add_core_of = ROOT }
+			}
+			# Costa Rica
+			custom_effect_tooltip = form_country_costarica_coring_states_tt
+			hidden_effect = {
+				316 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				news_event = { id = bs.500 hours = 6 }
+				set_global_flag = form_mexican_empire_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

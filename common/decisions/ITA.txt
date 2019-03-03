@@ -1,0 +1,27 @@
+political_actions = {
+	occupy_monaco = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			ITA = {	controls_state = 838 }
+			MCO = { owns_state = 764 }
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			TAG = ITA
+			ITA = {	controls_state = 838 }
+			MCO = { owns_state = 764 }
+		}
+
+		complete_effect = {
+		annex_country = { target = MCO transfer_troops = no }
+		}
+	}
+}	

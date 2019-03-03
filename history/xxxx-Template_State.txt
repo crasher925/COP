@@ -1,0 +1,16 @@
+state={
+	id=2436
+	name="STATE_2436"
+	history={
+		#owner = 
+		buildings = {
+			infrastructure = 4
+			
+		}
+	}
+	provinces={
+		13918
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+}

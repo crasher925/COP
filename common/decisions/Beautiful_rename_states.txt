@@ -1,0 +1,1180 @@
+BS_rename_states_category = {
+	
+	polish_ostprussia = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = ostrussia_renamed_polish }
+			# Ostprussia
+			controls_state = 778
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = ostrussia_renamed_polish }
+			controls_state = 778
+		}
+		
+		cost = 10
+
+		complete_effect = {
+			778 = { add_core_of = ROOT }
+			778 = { set_state_name = warminsko }
+			set_province_name = { id = 6375 name = Olsztyn }
+			
+			hidden_effect = {
+			    set_global_flag = ostrussia_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_danzig = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = danzig_renamed_polish }
+			NOT = { country_exists = GER }
+			# Danzig
+			controls_state = 85
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = danzig_renamed_polish }
+			NOT = { country_exists = GER }
+			controls_state = 85
+		}
+
+		complete_effect = {
+			85 = { set_state_name = Gdansk }
+			set_province_name = { id = 362 name = Gdansk }
+			
+			hidden_effect = {
+			    set_global_flag = danzig_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_hinterpommern = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = hinterpommern_renamed_polish }
+			# Hintterpommern
+			controls_state = 63
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = hinterpommern_renamed_polish }
+			controls_state = 63
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    63 = { add_core_of = ROOT }
+			63 = { set_state_name = zachodniopomorskie }
+			set_province_name = { id = 6282 name = Szczecin }
+			
+			hidden_effect = {
+			    set_global_flag = hinterpommern_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_ostmark = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = ostmark_renamed_polish }
+			# Ostmark
+			controls_state = 68
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = ostmark_renamed_polish }
+			controls_state = 68
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    68 = { add_core_of = ROOT }
+			68 = { set_state_name = lubuskie }
+			
+			hidden_effect = {
+			    set_global_flag = ostmark_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_niderschlesien = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = niderschlesien_renamed_polish }
+			# Niderschlesien
+			controls_state = 66
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = niderschlesien_renamed_polish }
+			controls_state = 66
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    66 = { add_core_of = ROOT }
+			66 = { set_state_name = dolnoslaskie }
+			set_province_name = { id = 9570 name = Wroclaw }
+			
+			hidden_effect = {
+			    set_global_flag = niderschlesien_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_ostschlesien = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = ostschlesien_renamed_polish }
+			# Ostschlesien
+			controls_state = 1019
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = ostschlesien_renamed_polish }
+			controls_state = 1019
+		}
+
+		complete_effect = {
+		    1019 = { add_core_of = ROOT }
+			1019 = { set_state_name = westdolnoslaskie }
+			
+			hidden_effect = {
+			    set_global_flag = ostschlesien_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_glatz = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = glatz_renamed_polish }
+			# Glatz
+			controls_state = 1017
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = glatz_renamed_polish }
+			controls_state = 1017
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    1017 = { add_core_of = ROOT }
+			1017 = { set_state_name = Klodzko }
+			set_province_name = { id = 3485 name = Klodzko }
+			
+			hidden_effect = {
+			    set_global_flag = glatz_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_oberschlesien = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = oberschlesien_renamed_polish }
+			# Oberschlesien
+			controls_state = 67
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = oberschlesien_renamed_polish }
+			controls_state = 67
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    67 = { add_core_of = ROOT }
+			67 = { set_state_name = Opolskie }
+			
+			hidden_effect = {
+			    set_global_flag = oberschlesien_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	polish_neisse = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = neisse_renamed_polish }
+			# Neisse
+			controls_state = 1018
+		}
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = neisse_renamed_polish }
+			controls_state = 1018
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    1018 = { add_core_of = ROOT }
+			1018 = { set_state_name = Nysa }
+			
+			hidden_effect = {
+			    set_global_flag = neisse_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	polish_kiev = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = kiev_renamed_polish }
+			# Like epische grts on Facebook.com
+			controls_state = 202
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = kiev_renamed_polish }
+			controls_state = 202
+		}
+
+		complete_effect = {
+			202 = { set_state_name = Kijów }
+			set_province_name = { id = 525 name = Kijów }
+			
+			hidden_effect = {
+			    set_global_flag = kiev_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	polish_minsk = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = minsk_renamed_polish }
+			# Like epische grts on Facebook.com
+			controls_state = 206
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = minsk_renamed_polish }
+			controls_state = 206
+		}
+
+		complete_effect = {
+			206 = { set_state_name = Mińsk }
+			set_province_name = { id = 11370 name = Mińsk }
+			
+			hidden_effect = {
+			    set_global_flag = minsk_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	polish_smolensk = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = POL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = smolensk_renamed_polish }
+			# Like epische grts on Facebook.com
+			controls_state = 242
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = POL
+			NOT = { has_global_flag = smolensk_renamed_polish }
+			controls_state = 242
+		}
+
+		complete_effect = {
+			242 = { set_state_name = Smoleńsk }
+			set_province_name = { id = 306 name = Smoleńsk }
+			
+			hidden_effect = {
+			    set_global_flag = smolensk_renamed_polish
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	bulgarian_dobrogea = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = BUL
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = dobrogea_renamed_bulgarian }
+			NOT = { has_global_flag = dobrogea_ceded_bulgaria }
+			# Dobrogea
+			controls_state = 77
+		}
+
+		visible = {
+			original_tag = BUL
+			NOT = { has_global_flag = dobrogea_renamed_bulgarian }
+			NOT = { has_global_flag = dobrogea_ceded_bulgaria }
+			controls_state = 77
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    77 = { add_core_of = ROOT }
+			77 = { set_state_name = Dobrudzha }
+			
+			hidden_effect = {
+			    set_global_flag = dobrogea_renamed_bulgarian
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	german_sydjylland = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = sydjylland_renamed_german }
+			# Sydjylland
+			controls_state = 777
+		}
+
+		visible = {
+			original_tag = GER
+			NOT = { has_global_flag = sydjylland_renamed_german }
+			controls_state = 777
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    777 = { add_core_of = ROOT }
+			777 = { set_state_name = Nordschleswig }
+			
+			hidden_effect = {
+			    set_global_flag = sydjylland_renamed_german
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	german_poznan = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = poznan_renamed_german }
+			# Poznan
+			controls_state = 86
+		}
+
+		visible = {
+			original_tag = GER
+			NOT = { has_global_flag = poznan_renamed_german }
+			controls_state = 86
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    86 = { add_core_of = ROOT }
+			86 = { set_state_name = Posen }
+			set_province_name = { id = 6558 name = Posen }
+			
+			hidden_effect = {
+			    set_global_flag = poznan_renamed_german
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	german_gdynia = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = gdynia_renamed_german }
+			# Gdynia
+			controls_state = 1009
+		}
+
+		visible = {
+			original_tag = GER
+			NOT = { has_global_flag = gdynia_renamed_german }
+			controls_state = 1009
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    1009 = { add_core_of = ROOT }
+			1009 = { set_state_name = Westpreussen }
+			set_province_name = { id = 9263 name = Gdingen }
+			
+			hidden_effect = {
+			    set_global_flag = gdynia_renamed_german
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	german_katowice = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = katowice_renamed_german }
+			# katowice
+			controls_state = 762
+		}
+
+		visible = {
+			original_tag = GER
+			NOT = { has_global_flag = katowice_renamed_german }
+			controls_state = 762
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    762 = { add_core_of = ROOT }
+			762 = { set_state_name = Ostoberschlesien }
+			set_province_name = { id = 6464 name = Kattowitz }
+			
+			hidden_effect = {
+			    set_global_flag = katowice_renamed_german
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	german_hlucin = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = hlucin_renamed_german }
+			# hlucin
+			controls_state = 900
+		}
+
+		visible = {
+			original_tag = GER
+			NOT = { has_global_flag = hlucin_renamed_german }
+			controls_state = 900
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    900 = { add_core_of = ROOT }
+			900 = { set_state_name = Hultschiner }
+			
+			hidden_effect = {
+			    set_global_flag = hlucin_renamed_german
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	german_eupen = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = eupen_renamed_german }
+			# Eupen Malmedy
+			controls_state = 779
+		}
+
+		visible = {
+			original_tag = GER
+			NOT = { has_global_flag = eupen_renamed_german }
+			controls_state = 779
+		}
+		
+		cost = 10
+
+		complete_effect = {
+		    779 = { add_core_of = ROOT }
+			
+			hidden_effect = {
+			    set_global_flag = eupen_renamed_german
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_gladz = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = gladz_renamed_czech }
+			# Like epische grts on Facebook.com
+			controls_state = 1017
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = gladz_renamed_czech }
+			controls_state = 1017
+		}
+
+		complete_effect = {
+			1017 = { set_state_name = Kladsko }
+			set_province_name = { id = 3485 name = Kladsko }
+			1017 = {add_core_of = CZE}
+			hidden_effect = {
+			    set_global_flag = gladz_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_oppeln = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = oppeln_renamed_czech }
+			# Like epische grts on Facebook.com
+			controls_state = 1455
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = oppeln_renamed_czech }
+			controls_state = 1455
+		}
+
+		complete_effect = {
+			1455 = { set_state_name = Opolí }
+			set_province_name = { id = 9570 name = Vratislav }
+			1455 = {add_core_of = CZE}
+			hidden_effect = {
+			    set_global_flag = oppeln_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_neisse = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = neisse_renamed_czech }
+			# Like epische grts on Facebook.com
+			controls_state = 1018
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = neisse_renamed_czech }
+			controls_state = 1018
+		}
+
+		complete_effect = {
+			1018 = { set_state_name = Nisa }
+			1018 = {add_core_of = CZE}
+			hidden_effect = {
+			    set_global_flag = neisse_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_obserschlesien = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = obserschlesien_renamed_czech }
+			# Like epische grts on Facebook.com
+			controls_state = 67
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = obserschlesien_renamed_czech }
+			controls_state = 67
+		}
+
+		complete_effect = {
+			67 = { set_state_name = "Horní Slezsko" }
+			67 = {add_core_of = CZE}
+			#( ͡° ͜ʖ ͡°)
+
+			hidden_effect = {
+			    set_global_flag = obserschlesien_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_ostschlensien = { #[sic]
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = ostschlensien_renamed_czech }
+			# Like epische grts on Facebook.com
+			controls_state = 1019
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = ostschlensien_renamed_czech }
+			controls_state = 1019
+		}
+
+		complete_effect = {
+			1019 = { set_state_name = "Východ Slezko" } #idk if this is right
+			1019 = {add_core_of = CZE}
+			hidden_effect = {
+			    set_global_flag = ostschlensien_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_oels = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = oels_renamed_czech }
+			# Like epische grts on Facebook.com
+			controls_state = 1456
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = oels_renamed_czech }
+			controls_state = 1456
+		}
+
+		complete_effect = {
+			1456 = { set_state_name = Olešnice }
+			1456 = {add_core_of = CZE}
+			hidden_effect = {
+			    set_global_flag = oels_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	czech_niederschlesien = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    original_tag = CZE
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = niederschlesien_renamed_czec }
+			# Like epische grts on Facebook.com
+			controls_state = 66
+		}
+		
+		cost = 10
+
+		visible = {
+			original_tag = CZE
+			NOT = { has_global_flag = niederschlesien_renamed_czec }
+			controls_state = 66
+		}
+
+		complete_effect = {
+			66 = { set_state_name = "Dolní Slezsko" } #again, dont know if this is right
+			66 = {add_core_of = CZE}
+			hidden_effect = {
+			    set_global_flag = niederschlesien_renamed_czech
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	stalingrad_rename = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    always = yes
+		}
+
+		available = {
+			is_subject = no
+			NOT = { tag = GER }
+			NOT = { has_government = communism }
+			NOT = { has_global_flag = stalingrad_renamed }
+			owns_state = 217
+			controls_state = 217
+		}
+
+		visible = {
+			NOT = { has_government = communism }
+			NOT = { has_global_flag = stalingrad_renamed }
+			owns_state = 217
+			controls_state = 217
+		}
+		
+		cost = 10
+
+		complete_effect = {
+			217 = { set_state_name = Volgograd }
+			set_province_name = { id = 3529 name = Volgograd }
+			
+			hidden_effect = {
+			    set_global_flag = stalingrad_renamed
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	leningrad_rename = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+		    always = yes
+		}
+
+		available = {
+			is_subject = no
+			NOT = { tag = GER }
+			NOT = { has_government = communism }
+			NOT = { has_global_flag = leningrad_renamed }
+			controls_state = 195
+			owns_state = 195
+		}
+
+		visible = {
+			NOT = { has_government = communism }
+			NOT = { has_global_flag = leningrad_renamed }
+			controls_state = 195
+			owns_state = 195
+		}
+		
+		cost = 10
+
+		complete_effect = {
+			195 = { set_state_name = "St. Petersburg" }
+			set_province_name = { id = 3151 name = "St. Petersburg" }
+			hidden_effect = {
+			    set_global_flag = leningrad_renamed
+			
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+restore_brazilian_monarchy = {
+	brazil_monarchy = {
+	
+		visible = {
+			original_tag = BRA
+			has_government = fascism
+			NOT = { has_global_flag = form_brazil_empire_flag }
+		}
+			
+		cost = 100
+	
+		available = {
+			has_global_flag = bra_mon
+		}
+	
+		complete_effect = {
+			set_cosmetic_tag = IBRA
+			retire_country_leader = yes
+			create_country_leader = {
+			name = "Dom Pedro III"
+			picture = "Pedro_III.dds"
+			ideology = fascism_ideology
+			traits = IMPERIAL_CONNECTIONS
+			}
+		}
+		hidden_effect = {
+			set_global_flag = form_brazil_empire_flag
+		}
+	}
+}

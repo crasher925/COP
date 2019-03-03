@@ -1,0 +1,69 @@
+USA_The_British_Empire = {
+
+		allowed = {
+			tag = USA
+		}
+		
+		visible = {
+			threat > 49
+			date > 1938.1.1
+		}
+		}
+USA_The_Japanese_Threat = {
+
+		allowed = {
+			tag = USA
+		}
+		
+		visible = {
+			threat > 64
+			date > 1938.1.1
+		}	
+		}
+USA_European_Fascists = {
+
+		allowed = {
+			tag = USA
+		}
+		
+		visible = {
+			threat > 70
+			date > 1938.1.1
+		}	
+		}
+USA_The_Threat_Below = {
+
+		allowed = {
+			tag = USA
+		}
+		
+		visible = {
+			threat > 70
+			date > 1938.1.1
+		}		
+		
+		}
+USA_The_French_Empire = {
+
+		allowed = {
+			tag = USA
+		}
+		
+		visible = {
+			threat > 70
+			date > 1938.1.1
+		}
+	
+		}
+USA_General_War_Plans = {
+
+		allowed = {
+			tag = USA
+		}
+		
+		visible = {
+			threat > 20
+			date > 1938.1.1
+		}
+		
+		}

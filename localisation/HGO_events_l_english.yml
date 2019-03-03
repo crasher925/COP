@@ -1,0 +1,126 @@
+﻿l_english:
+
+ #Burma Event
+ bs.2.t:0 "Separate Burma"
+ bs.2.d:0 "For efficiently rule of Burmese, Burma region need to Separate from British Raj. Would you like to Separate Burma?"
+ bs.2.a:0 "Separating Burma is better way."
+ bs.2.b:0 "Burma must be remain at India."
+ 
+ bs_burma_seperate:0 "Burma separate with India"
+ 
+ #Lituania Move capital to Vilnius
+ bs.3.t:0 "Transfer capital to Vilnius"
+ bs.3.d:0 "After Polish-Soviet war, Poland taken Vilnius which was our former capital. so we have been moved capital to Kaunas temporary. we have been waiting for time to take it back. Finally We got Vilnius. Should we transfer capital to Vilnius which was former capital?"
+ bs.3.a:0 "Must be."
+ bs.3.b:0 "Kaunas is much better."
+ 
+ #Pope Died
+ bs.100.t:0 "Pope Pius XI died" #Copied from Wikipedia https://en.wikipedia.org/wiki/Pope_Pius_XI#Death_and_burial
+ bs.100.d:0 "Pope Pius XI had been ill for some time when, on 25 November 1938, he suffered two heart attacks within several hours. He had serious breathing problems and could not leave his apartment. \nMedical specialists reported that heart insufficiency combined with bronchial attacks had hopelessly complicated his already poor prospects. \nPope Pius XI died at 5:31 A.M. (Rome Time) of a third heart attack on 10 February 1939, at the age of 81. His last words to those near him at the time of his death were spoken with clarity and firmness: "My soul parts from you all in peace." "
+ bs.100.a:0 "Oh, dear..."
+ bs.100.b:0 "Pius XII is next Pope"
+ 
+ #Slovenia event
+ germany.94.b:0 "Friendship is important."
+
+ germany.521.t:0 "Germany ceded part of slovenia"
+ germany.521.d:0 "Germany gave part of slovenia to us and Hungary."
+ germany.521.a:0 "Great!"
+
+ germany.522.t:0 "Germany ceded part of slovenia"
+ germany.522.d:0 "Germany gave part of slovenia to us and Italy."
+ germany.522.a:0 "Great!"
+ 
+ #Burgenland Question
+ hungary.7.t:0 "The Burgenland Question"
+ hungary.7.d:0 "With our recent annexation of Austria, a question has arisen about the territory known as the Burgenland. Before the Great War, it was a part of the Hungarian realm. However, the Treaty of Trianon transferred it over to Austria. The land has both a sizeable amount of Germans and Hungarians. Should we give it to them, exchange it for an alliance, or keep it?"
+ hungary.7.a:0 "Hungary could potentially be a worthy ally. Send them the offer."
+ hungary.7.b:0 "The Hungarians have been under enough pain. Give it to them as a gift."
+ hungary.7.c:0 "The Burgenland Germans are a rightful part of the Deutsch Vaterland! The territory stays German!"
+ 
+ hungary.8.t:0 "Germany offers us the Burgenland"
+ hungary.8.d:0 "The Burgenland was a territory that was formerly under our control before the Treaty of Trianon. With the German annexation of the Burgenland, they have offered us the region... but with a catch. If we accept, we must join the Axis. It may not be the worst idea."
+ hungary.8.a:0 "What a wonderful proposition! We accept."
+ hungary.8.b:0 "Don't you remember the last time Germans meddled with us?"
+ 
+ hungary.9.t:0 "Germany gifts us with the Burgenland"
+ hungary.9.d:0 "With the German annexation of the Burgenland, they have decided to gift us with the territory of the Burgenland, a territory that was taken from us by the Treaty of Trianon. The Hungarians within the region have been reported to be celebrating their new overlords."
+ hungary.9.a:0 "Köszönöm, Németország!"
+ 
+ hungary.10.t:0 "Hungary accepts our proposal!"
+ hungary.10.d:0 "The Hungarians have accepted our generous proposal, and are now the newest member within the Axis."
+ hungary.10.a:0 "Here's to the continued friendship between Germans and Hungarians!"
+ 
+ hungary.11.t:0 "Hungary declines our proposal!"
+ hungary.10.d:0 "Unfortunately, the Hungarians have declined our fair proposal of joining the Axis in exchange for the Burgenland. The Führer is reportedly dissapointed, but the German population of the Burgenland seems to be content."
+ hungary.10.a:0 "Damned Magyars..."
+ 
+ #Alpes to Italy
+ bs_ger.1.t:0 "Alpes region Question"
+ bs_ger.1.d:0 "Recently, We captured Alpes region which placed between Italy and France, And Italy have claimed this region. What should we do?"
+ bs_ger.1.a:0 "Give it to Italy."
+ bs_ger.1.b:0 "Ignore them."
+ 
+ bs_ger.2.t:0 "Germany gave Alpes region to us"
+ bs_ger.2.d:0 "Germany have occupied Alpes region, And they decided to cede Alpes region to us."
+ bs_ger.2.a:0 "What a great gift!"
+ 
+ #West Karelia to Finland
+ bs_ger.3.t:0 "West Karelia Question"
+ bs_ger.3.d:0 "Recently, We captured West Karelia, And Finland have claimed this region. What should we do?"
+ bs_ger.3.a:0 "Give it to Finland."
+ bs_ger.3.b:0 "Ignore them."
+ 
+ bs_ger.4.t:0 "Germany gave West Karelia to us"
+ bs_ger.4.d:0 "Germany have occupied West Karelia. After we lose it from Soviet, Many Finnish people wanted reclaim that. so Germany decided to cede West Karelia to us."
+ bs_ger.4.a:0 "Now We can trust Germany 100%!"
+ 
+ #East Karelia to Finland
+ bs_ger.5.t:0 "East Karelia Question"
+ bs_ger.5.d:0 "Recently, We captured East Karelia. It seems better Finland would controlling this region. What should we do?"
+ bs_ger.5.a:0 "Give it to Finland."
+ bs_ger.5.b:0 "That is Ours."
+ 
+ bs_ger.6.t:0 "Germany gave East Karelia to us"
+ bs_ger.6.d:0 "Germany have occupied East Karelia, and Germany decided to cede East Karelia to us."
+ bs_ger.6.a:0 "What a great news!"
+ 
+ #Transnistria to Romania
+ bs_ger.7.t:0 "Transnitria Question"
+ bs_ger.7.d:0 "Recently, We captured Transnitria. It seems better Romania would controlling this region. What should we do?"
+ bs_ger.7.a:0 "Give it to Romania."
+ bs_ger.7.b:0 "That is Ours."
+ 
+ bs_ger.8.t:0 "Germany gave Transnitria to us"
+ bs_ger.8.d:0 "Germany have occupied East Karelia, and Germany decided to cede Transnitria to us."
+ bs_ger.8.a:0 "What a great news!"
+ 
+#Romania stuff
+ romania.7.t:0 "Supression of the Legion"
+ romania.7.d:0 "The founder and charismatic leader of the Iron Guard grew into an important figure within the Romanian political stage during the early 30's, coming into conflict with the political establishment and democratic forces, and often the guard resorted to terrorism. The Legionnaires traditionally referred to Codreanu as the Captain, and he held absolute authority over the organization until his death in the Jilava prison in 1938. \n\nHe registered his main electoral success during the 1937 suffrage, but was stopped by King Carol II and the Romanian Government. The rivalry between Codreanu and moderate politicians like Nicolae Iorga ended with Codreanu's imprisonment at Jilava and assassination at the hands of the military police force. This will upset the Legionarries, but for the safety of all Romanian peoples it was a needed sacrifice."
+ romania.7.a:0 "This won't be the end of the Iron Guard."
+ 
+ romania.8.t:0 "A Transilvanian Oppurtunity"
+ romania.8.d:0 "The MMS, an underground resistance movement funded by us, has finally built up enough strength to demand a referendum in the Transilvanian state. The government has rejected the ultimatum though and demanded that we keep out of Transilvanian affairs. What shall we do?"
+ romania.8.a:0 "Treceti batalioane române Carpatii!"
+ romania.8.b:0 "We shall listen to their requests..."
+
+ romania.9.t:0 "Transilvanian Independence"
+ romania.9.d:0 "With Transilvania declaring itself independent, many skilled generals and political figureheads have left to join Transilvania as an independent nation. This has severely affected the countries trust in the government and also made some question just how loyal they should be to the regime of the Romanian government."
+ romania.9.a:0 "Damn those Transilvanians..."
+
+#Transilvanian Stuff
+transylvania.1.t:0 "Transilvania is Independent!"
+transylvania.1.d:0 "We have finally gained our independence after much time, however both of our former rulers aren't too happy with our independence and the Hungarians to the North-West still claim the region to this day. We must defend our borders, to the last man."
+transylvania.1.a:0 "To Transilvania!"
+
+transylvania.2.t:0 "Romanian Sympathisers Demand Unification"
+transylvania.2.d:0 "The MMS has demanded that we be reintegrated into Romania, and they have the backing of the Romanian government, who has sent an ultimatum to us demanding annexation due to the Romanian majority within out borders."
+transylvania.2.a:0 "We have no choice..."
+transylvania.2.b:0 "Over my dead corpse!"
+
+#Greece stuff
+ greece.5.t:0 "Instanbul is ours!"
+ greece.5.d:0 "Now that we have taken the city of the world's desire back, should we rename it back to its original name to completely remove the Turkish influence?"
+ greece.5.a:0 "A brilliant idea!"
+ greece.5.b:0 "No, we should keep it's name as it is."

@@ -1,0 +1,7 @@
+restore_brazilian_monarchy = {
+	
+	icon = generic_formable_nations
+	
+	picture = GFX_decision_cat_generic_brazilian_empire
+	
+}
