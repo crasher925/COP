@@ -1,0 +1,22 @@
+state={
+	id=789
+	name="STATE_789"
+	
+	state_category = pastoral
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = YUG
+		add_core_of = SER
+	}
+	
+	provinces={
+		11832 11857 11868 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
