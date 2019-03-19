@@ -1,5 +1,5 @@
-﻿name="Crashers States Mod Develoment Version"
-path="mod/CSM/"
+﻿name="Collective Overhaul Project Develoment Version"
+path="mod/COP/"
 tags={
 	"Fixes"
 	"Graphics"
