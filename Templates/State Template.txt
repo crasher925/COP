@@ -1,0 +1,23 @@
+state=
+{
+	id=
+	name=
+	manpower = 1
+	
+	state_category = 
+	
+	history =
+	{
+		owner = 
+		buildings = {
+			
+		}
+		victory_points = {
+			
+		}
+		add_core_of = 
+	}
+	provinces={
+		
+	}
+}
