@@ -10,9 +10,6 @@ state={
 	history={
 		owner = GER
 		victory_points = {
-			6282 5 
-		}
-		victory_points = {
 			11372 3 
 		}
 		buildings = {
@@ -20,10 +17,6 @@ state={
 			industrial_complex = 1
 			11372 = {
 				naval_base = 1
-
-			}
-			6282 = {
-				naval_base = 4
 
 			}
 			air_base = 3
@@ -34,7 +27,7 @@ state={
 	}
 
 	provinces={
-		6282 6309 6334 6390 9252 9277 9306 9334 9361 9387 11260 11288 11316 11343 11372 
+		6309 6334 6390 9252 9277 9306 9334 9361 9387 11260 11288 11316 11343 11372 
 	}
 	manpower=1124417
 	buildings_max_level_factor=1.000

@@ -30,7 +30,6 @@ country_event = {
 				reset_state_name = yes
 				clr_state_flag = renamed_state_polish
 			}
-			reset_province_name = 6282
 			reset_province_name = 11372
 		}
 	}
@@ -60,8 +59,66 @@ country_event = {
 				set_state_name = "Zachodniopomorskie"
 				set_state_flag = renamed_state_polish
 			}
-			set_province_name = { id = 6282 name = "Szczecin"}
 			set_province_name = { id = 11372 name = "Koszalin"}
+		}
+	}
+}
+
+# German - rename Stettin
+country_event = {
+	id = rename.81800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.81800"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+		}
+		818 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_polish
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			818 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_polish
+			}
+			reset_province_name = 6282
+		}
+	}
+}
+
+# Polish - rename Stettin
+country_event = {
+	id = rename.81801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.81801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		818 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_polish }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			818 = {
+				set_state_name = "Szczecin"
+				set_state_flag = renamed_state_polish
+			}
+			set_province_name = { id = 6282 name = "Szczecin"}
 		}
 	}
 }

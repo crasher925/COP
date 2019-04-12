@@ -104,5 +104,11 @@ on_actions = {
                   country_event = { id = rename.76600 }
                   country_event = { id = rename.76601 }
             }
+            # Stettin
+            if = {
+              limit = { FROM.FROM = { state = 818 } }
+                  country_event = { id = rename.81800 }
+                  country_event = { id = rename.81801 }
+            }
       }
 }
