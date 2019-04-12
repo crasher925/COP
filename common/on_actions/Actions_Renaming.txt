@@ -1,0 +1,42 @@
+on_actions = {
+
+    on_state_control_changed = {
+		effect = {
+            # Hinterpommern
+            if = {
+	        limit = { FROM.FROM = { state = 63 } }
+			country_event = { id = rename.6300 }
+			country_event = { id = rename.6301 }
+            }
+            # Ostmark
+            if = {
+              limit = { FROM.FROM = { state = 68 } }
+                  country_event = { id = rename.6800 }
+                  country_event = { id = rename.6801 }
+            }
+            # Niederschlesien
+            if = {
+              limit = { FROM.FROM = { state = 66 } }
+                  country_event = { id = rename.6600 }
+                  country_event = { id = rename.6601 }
+            }
+            # Oberschlesien
+            if = {
+              limit = { FROM.FROM = { state = 67 } }
+                  country_event = { id = rename.6700 }
+                  country_event = { id = rename.6701 }
+            }
+            # EastPrussia
+            if = {
+              limit = { FROM.FROM = { state = 5 } }
+                  country_event = { id = rename.5000 }
+                  country_event = { id = rename.5001 }
+            }
+            # Konigsberg
+            if = {
+              limit = { FROM.FROM = { state = 763 } }
+                  country_event = { id = rename.76300 }
+                  country_event = { id = rename.76301 }
+            }
+      }
+}
