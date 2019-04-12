@@ -362,3 +362,651 @@ country_event = {
 		}
 	}
 }
+
+# Romanian - rename NordTransilvania
+country_event = {
+	id = rename.76000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.76000"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		76 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			76 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 6711
+		}
+	}
+}
+
+# Hungarian - rename NordTransilvania
+country_event = {
+	id = rename.76001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.76001"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		76 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			76 = {
+				set_state_name = "Észak-Erdély"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 6711 name = "Kolozsvár"}
+		}
+	}
+}
+
+# Romanian - rename Secuimea
+country_event = {
+	id = rename.80100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.80100"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		801 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			801 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Hungarian - rename Secuimea
+country_event = {
+	id = rename.80101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.80101"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		801 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			801 = {
+				set_state_name = "Székelyföld"
+				set_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Romanian - rename Crisana
+country_event = {
+	id = rename.8300
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8300"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		83 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			83 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 6682
+		}
+	}
+}
+
+# Hungarian - rename Crisana
+country_event = {
+	id = rename.8301
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8301"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		83 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			83 = {
+				set_state_name = "Körösvidék"
+				set_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Romanian - rename Banat
+country_event = {
+	id = rename.8200
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8200"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		82 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			82 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 9606
+		}
+	}
+}
+
+# Hungarian - rename Banat
+country_event = {
+	id = rename.8201
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8201"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		82 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			82 = {
+				set_state_name = "Bánság"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 9606 name = "Temesvár"}
+		}
+	}
+}
+
+# Romanian - rename Transilvania
+country_event = {
+	id = rename.8400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		84 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			84 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 690
+		}
+	}
+}
+
+# Hungarian - rename Transilvania
+country_event = {
+	id = rename.8401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		84 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			84 = {
+				set_state_name = "Erdély"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 690 name = "Brassó"}
+		}
+	}
+}
+
+# Romanian - rename Cadrilater
+country_event = {
+	id = rename.7700
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7700"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		77 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_bulgarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			77 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_bulgarian
+			}
+			reset_province_name = 11597
+		}
+	}
+}
+
+# Bulgarian - rename Cadrilater
+country_event = {
+	id = rename.7701
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7701"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = BUL
+		}
+		77 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_bulgarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			77 = {
+				set_state_name = "Silistra"
+				set_state_flag = renamed_state_bulgarian
+			}
+			set_province_name = { id = 11597 name = "Dobrich"}
+		}
+	}
+}
+
+# Romanian - rename Dobrogea
+country_event = {
+	id = rename.80200
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.80200"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		802 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_bulgarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			802 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_bulgarian
+			}
+			reset_province_name = 657
+		}
+	}
+}
+
+# Bulgarian - rename Dobrogea
+country_event = {
+	id = rename.80201
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.80201"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = BUL
+		}
+		802 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_bulgarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			802 = {
+				set_state_name = "Dobrudzha"
+				set_state_flag = renamed_state_bulgarian
+			}
+			set_province_name = { id = 657 name = "Kyustendzha"}
+		}
+	}
+}
+
+# Romanian - rename Bucovina
+country_event = {
+	id = rename.8000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8000"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		80 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_soviet
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			80 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_soviet
+			}
+			reset_province_name = 577
+		}
+	}
+}
+
+# Soviet - rename Bucovina
+country_event = {
+	id = rename.8001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.8001"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SOV
+			tag = UKR
+		}
+		80 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_soviet }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			80 = {
+				set_state_name = "Bukovyna"
+				set_state_flag = renamed_state_soviet
+			}
+			set_province_name = { id = 577 name = "Černivci"}
+		}
+	}
+}
+
+# Romanian - rename Hotin
+country_event = {
+	id = rename.80000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.80000"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		800 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_soviet
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			800 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_soviet
+			}
+		}
+	}
+}
+
+# Soviet - rename Hotin
+country_event = {
+	id = rename.80001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.80001"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SOV
+			tag = UKR
+		}
+		800 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_soviet }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			800 = {
+				set_state_name = "Khotyn"
+				set_state_flag = renamed_state_soviet
+			}
+		}
+	}
+}
+
+# Romanian - rename Basarabia
+country_event = {
+	id = rename.7800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7800"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		78 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_soviet
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			78 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_soviet
+			}
+			reset_province_name = 3707
+		}
+	}
+}
+
+# Soviet - rename Basarabia
+country_event = {
+	id = rename.7801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SOV
+			tag = UKR
+		}
+		78 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_soviet }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			78 = {
+				set_state_name = "Bessarabiya"
+				set_state_flag = renamed_state_soviet
+			}
+			set_province_name = { id = 3707 name = "Kishinyov"}
+		}
+	}
+}
+
+# Romanian - rename Bugeac
+country_event = {
+	id = rename.76600
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.76600"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		766 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_soviet
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			766 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_soviet
+			}
+			reset_province_name = 6727
+		}
+	}
+}
+
+# Soviet - rename Bugeac
+country_event = {
+	id = rename.76601
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.76601"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SOV
+			tag = UKR
+		}
+		766 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_soviet }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			766 = {
+				set_state_name = "Budzhak"
+				set_state_flag = renamed_state_soviet
+			}
+			set_province_name = { id = 6727 name = "Belgorod-Dnestrovskiy"}
+		}
+	}
+}
