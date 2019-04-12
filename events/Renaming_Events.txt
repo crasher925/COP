@@ -176,7 +176,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			66 = {
-				set_state_name = "Dolnośląskie"
+				set_state_name = "Dolnoslaskie"
 				set_state_flag = renamed_state_polish
 			}
 			set_province_name = { id = 9570 name = "Wrocław"}
