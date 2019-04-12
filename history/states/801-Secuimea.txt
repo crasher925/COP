@@ -1,0 +1,21 @@
+state={
+	id=801
+	name="STATE_801"
+
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = ROM
+
+	}
+	provinces={
+		711 3689 9668 9670 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+}
