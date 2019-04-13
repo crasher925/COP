@@ -805,3 +805,8 @@
  STATE_816:0 "West-Berlin"
  STATE_817:0 "Westmark"
  STATE_818:0 "Stettin"
+ STATE_819:0 "Salzburg"
+ STATE_820:0 "Kärnten"
+ STATE_821:0 "Burgenland"
+ STATE_822:0 "Steiermark"
+ STATE_823:0 "Wien"
