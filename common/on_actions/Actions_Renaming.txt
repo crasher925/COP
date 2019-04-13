@@ -110,5 +110,41 @@ on_actions = {
                   country_event = { id = rename.81800 }
                   country_event = { id = rename.81801 }
             }
+            # Sudetenland
+            if = {
+              limit = { FROM.FROM = { state = 69 } }
+                  country_event = { id = rename.6900 }
+                  country_event = { id = rename.6901 }
+            }
+            # Cechy
+            if = {
+              limit = { FROM.FROM = { state = 9 } }
+                  country_event = { id = rename.9000 }
+                  country_event = { id = rename.9001 }
+            }
+            # Morava
+            if = {
+              limit = { FROM.FROM = { state = 75 } }
+                  country_event = { id = rename.7500 }
+                  country_event = { id = rename.7501 }
+            }
+            # EastSudetenland
+            if = {
+              limit = { FROM.FROM = { state = 74 } }
+                  country_event = { id = rename.7400 }
+                  country_event = { id = rename.7401 }
+            }
+            # Zaolsi
+            if = {
+              limit = { FROM.FROM = { state = 72 } }
+                  country_event = { id = rename.7200 }
+                  country_event = { id = rename.7201 }
+            }
+            # ZaolsiPol
+            if = {
+              limit = { FROM.FROM = { state = 72 } }
+                  country_event = { id = rename.7200 }
+                  country_event = { id = rename.7202 }
+            }
       }
 }

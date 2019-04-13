@@ -45,7 +45,7 @@ set_stability = 0.50
 create_country_leader = {
 	name = "Arthur Karl Greiser"
 	desc = "POLITICS_ARTHUR_GREISER_DESC"
-	picture = "Portrait_Germany_Arthur_Greiser.dds"
+	picture = "Portrait_Danzig_Arthur_Greiser.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 }

@@ -2167,6 +2167,17 @@ country_event = {
 		}
 		if = {
 			limit = {
+				827 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+			}
+			SLO = { transfer_state = 827 }
+		}
+		if = {
+			limit = {
 				154 = { is_owned_by = HUN }
 				HUN = {
 					is_friend_or_potential_friend_of_GER = yes
