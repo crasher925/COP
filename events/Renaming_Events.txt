@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Renaming Events
 ###########################
 
@@ -1401,6 +1401,563 @@ country_event = {
 			72 = {
 				set_state_name = "Zaolzie"
 				set_state_flag = renamed_state_polish
+			}
+		}
+	}
+}
+
+# Slovak - rename Southern Slovakia
+country_event = {
+	id = rename.66400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.66400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CZE
+			tag = SLO
+		}
+		664 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			72 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 6573
+		}
+	}
+}
+
+# Hungarian - rename Southern Slovakia
+country_event = {
+	id = rename.66401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.66401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		664 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			664 = {
+				set_state_name = "Déli Szlovákia"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 6573 name = "Kassa"}
+		}
+	}
+}
+
+# Slovak - rename Carpathian Ruthenia
+country_event = {
+	id = rename.7300
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7300"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CZE
+			tag = SLO
+		}
+		73 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+			has_state_flag = renamed_state_soviet
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			73 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+				clr_state_flag = renamed_state_soviet
+			}
+			reset_province_name = 3548
+		}
+	}
+}
+
+# Hungarian - rename Carpathian Ruthenia
+country_event = {
+	id = rename.7301
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7301"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		73 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			73 = {
+				set_state_name = "Kárpátalja"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 3548 name = "Munkács"}
+		}
+	}
+}
+
+# Soviet - rename Carpathian Ruthenia
+country_event = {
+	id = rename.7302
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7302"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SOV
+			tag = UKR
+		}
+		73 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_soviet }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			73 = {
+				set_state_name = "Karpatskaya Rus"
+				set_state_flag = renamed_state_soviet
+			}
+			set_province_name = { id = 3548 name = "Mukachevo"}
+		}
+	}
+}
+
+# Slovak - rename Western Slovakia
+country_event = {
+	id = rename.7000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7000"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CZE
+			tag = SLO
+		}
+		70 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			70 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 9692
+		}
+	}
+}
+
+# Hungarian - rename Western Slovakia
+country_event = {
+	id = rename.7001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7001"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		70 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			70 = {
+				set_state_name = "Nyugati Szlovákia"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 9692 name = "Pozsony"}
+		}
+	}
+}
+
+# Slovak - rename Central Slovakia
+country_event = {
+	id = rename.82700
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.82700"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CZE
+			tag = SLO
+		}
+		827 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			827 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 11539
+		}
+	}
+}
+
+# Hungarian - rename Central Slovakia
+country_event = {
+	id = rename.82701
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.82701"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		827 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			827 = {
+				set_state_name = "Központi Szlovákia"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 11539 name = "Zsolna"}
+		}
+	}
+}
+
+# Slovak - rename Eastern Slovakia
+country_event = {
+	id = rename.7100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7100"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CZE
+			tag = SLO
+		}
+		71 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			71 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+			reset_province_name = 3581
+		}
+	}
+}
+
+# Hungarian - rename Eastern Slovakia
+country_event = {
+	id = rename.7101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7101"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		71 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			71 = {
+				set_state_name = "Keleti Szlovákia"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 3581 name = "Eperjes"}
+		}
+	}
+}
+
+# Yugoslav - rename West Banat
+country_event = {
+	id = rename.76400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.76400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+		764 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			764 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Hungarian - rename West Banat
+country_event = {
+	id = rename.76401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.76401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		764 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			764 = {
+				set_state_name = "Nyugat-Bánság"
+				set_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Yugoslav - rename Vojvodina
+country_event = {
+	id = rename.4500
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.4500"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+		45 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			45 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+		    reset_province_name = 619
+		}
+	}
+}
+
+# Hungarian - rename Vojvodina
+country_event = {
+	id = rename.4501
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.4501"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		45 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			45 = {
+				set_state_name = "Vajdaság"
+				set_state_flag = renamed_state_hungarian
+			}
+			set_province_name = { id = 619 name = "Újvidék"}
+		}
+	}
+}
+
+# Yugoslav - rename Murska Sobota
+country_event = {
+	id = rename.78900
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.78900"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = YUG
+			tag = SLV
+		}
+		789 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			789 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Hungarian - rename Murska Sobota
+country_event = {
+	id = rename.78901
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.78901"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		789 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			789 = {
+				set_state_name = "Muraszombat"
+				set_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# German - rename Burgenland
+country_event = {
+	id = rename.82100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.82100"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+		}
+		821 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_hungarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			821 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_hungarian
+			}
+		}
+	}
+}
+
+# Hungarian - rename Burgenland
+country_event = {
+	id = rename.82101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.82101"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+		}
+		821 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_hungarian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			821 = {
+				set_state_name = "Orvidék"
+				set_state_flag = renamed_state_hungarian
 			}
 		}
 	}

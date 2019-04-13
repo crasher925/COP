@@ -146,5 +146,65 @@ on_actions = {
                   country_event = { id = rename.7200 }
                   country_event = { id = rename.7202 }
             }
+            # Southern Slovakia
+            if = {
+              limit = { FROM.FROM = { state = 664 } }
+                  country_event = { id = rename.66400 }
+                  country_event = { id = rename.66401 }
+            }
+            # Carpathian Ruthenia
+            if = {
+              limit = { FROM.FROM = { state = 73 } }
+                  country_event = { id = rename.7300 }
+                  country_event = { id = rename.7301 }
+            }
+            # Carpathian Ruthenia2
+            if = {
+              limit = { FROM.FROM = { state = 73 } }
+                  country_event = { id = rename.7300 }
+                  country_event = { id = rename.7302 }
+            }
+            # Western Slovakia
+            if = {
+              limit = { FROM.FROM = { state = 70 } }
+                  country_event = { id = rename.7000 }
+                  country_event = { id = rename.7001 }
+            }
+            # Central Slovakia
+            if = {
+              limit = { FROM.FROM = { state = 827 } }
+                  country_event = { id = rename.82700 }
+                  country_event = { id = rename.82701 }
+            }
+            # Eastern Slovakia
+            if = {
+              limit = { FROM.FROM = { state = 71 } }
+                  country_event = { id = rename.7100 }
+                  country_event = { id = rename.7101 }
+            }
+            # West Banat
+            if = {
+              limit = { FROM.FROM = { state = 764 } }
+                  country_event = { id = rename.76400 }
+                  country_event = { id = rename.76401 }
+            }
+            # Vojvodina
+            if = {
+              limit = { FROM.FROM = { state = 45 } }
+                  country_event = { id = rename.4500 }
+                  country_event = { id = rename.4501 }
+            }
+            # Murska Sobota
+            if = {
+              limit = { FROM.FROM = { state = 789 } }
+                  country_event = { id = rename.78900 }
+                  country_event = { id = rename.78901 }
+            }
+            # Burgenland
+            if = {
+              limit = { FROM.FROM = { state = 821 } }
+                  country_event = { id = rename.82100 }
+                  country_event = { id = rename.82101 }
+            }
       }
 }
