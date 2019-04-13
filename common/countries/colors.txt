@@ -547,3 +547,12 @@ GGP = {
 	color = rgb { 138 155 116 }
 	color_ui = rgb { 138 155 116 }
 }
+IEA = {
+	color = rgb { 67  127  63 }
+	color_ui = rgb { 67  127  63 }
+}
+INA = {
+	color = rgb { 67  127  63 }
+	color_ui = rgb { 67  127  63 }
+}
+

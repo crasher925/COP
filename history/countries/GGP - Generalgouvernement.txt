@@ -45,7 +45,7 @@ set_stability = 0.50
 create_country_leader = {
 	name = "Hans Frank"
 	desc = "POLITICS_HANS_FRANK_DESC"
-	picture = ""
+	picture = "gfx/leaders/GER/Portrait_Hans_Frank.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 }

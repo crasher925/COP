@@ -2230,6 +2230,7 @@ country_event = {
 			add_war_support = 0.1
 		}
 		puppet = SLO
+                set_autonomy = { target = SLO autonomy_state = autonomy_satellite }
 		if = {
 			limit = {
 				72 = {

@@ -42,6 +42,9 @@ set_politics = {
 
 set_stability = 0.50
 
+give_military_access = POL
+
+
 create_country_leader = {
 	name = "Arthur Karl Greiser"
 	desc = "POLITICS_ARTHUR_GREISER_DESC"
