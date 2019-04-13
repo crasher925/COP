@@ -206,5 +206,137 @@ on_actions = {
                   country_event = { id = rename.82100 }
                   country_event = { id = rename.82101 }
             }
+            # Klaipeda
+            if = {
+              limit = { FROM.FROM = { state = 188 } }
+                  country_event = { id = rename.18800 }
+                  country_event = { id = rename.18801 }
+            }
+            # Pomorskie
+            if = {
+              limit = { FROM.FROM = { state = 85 } }
+                  country_event = { id = rename.8500 }
+                  country_event = { id = rename.8501 }
+            }
+            # Poznan
+            if = {
+              limit = { FROM.FROM = { state = 86 } }
+                  country_event = { id = rename.8600 }
+                  country_event = { id = rename.8601 }
+            }
+            # Katowice
+            if = {
+              limit = { FROM.FROM = { state = 762 } }
+                  country_event = { id = rename.76200 }
+                  country_event = { id = rename.76201 }
+            }
+            # Lodz
+            if = {
+              limit = { FROM.FROM = { state = 87 } }
+                  country_event = { id = rename.8700 }
+                  country_event = { id = rename.8701 }
+            }
+            # Plock
+            if = {
+              limit = { FROM.FROM = { state = 98 } }
+                  country_event = { id = rename.9800 }
+                  country_event = { id = rename.9801 }
+            }
+            # Bialystok
+            if = {
+              limit = { FROM.FROM = { state = 97 } }
+                  country_event = { id = rename.9700 }
+                  country_event = { id = rename.9701 }
+            }
+            # Bialystok
+            if = {
+              limit = { FROM.FROM = { state = 826 } }
+                  country_event = { id = rename.82600 }
+                  country_event = { id = rename.82601 }
+            }
+            # Grodno
+            if = {
+              limit = { FROM.FROM = { state = 825 } }
+                  country_event = { id = rename.82500 }
+                  country_event = { id = rename.82501 }
+            }
+            # Ostrow
+            if = {
+              limit = { FROM.FROM = { state = 798 } }
+                  country_event = { id = rename.79800 }
+                  country_event = { id = rename.79801 }
+            }
+            # Slask
+            if = {
+              limit = { FROM.FROM = { state = 799 } }
+                  country_event = { id = rename.79900 }
+                  country_event = { id = rename.79901 }
+            }
+            # Warsaw
+            if = {
+              limit = { FROM.FROM = { state = 10 } }
+                  country_event = { id = rename.1000 }
+                  country_event = { id = rename.1001 }
+            }
+            # Kielce
+            if = {
+              limit = { FROM.FROM = { state = 90 } }
+                  country_event = { id = rename.90000 }
+                  country_event = { id = rename.90001 }
+            }
+            # Krakow
+            if = {
+              limit = { FROM.FROM = { state = 88 } }
+                  country_event = { id = rename.8800 }
+                  country_event = { id = rename.8801 }
+            }
+            # Lublin
+            if = {
+              limit = { FROM.FROM = { state = 92 } }
+                  country_event = { id = rename.9200 }
+                  country_event = { id = rename.9201 }
+            }
+            # Lwow
+            if = {
+              limit = { FROM.FROM = { state = 91 } }
+                  country_event = { id = rename.9100 }
+                  country_event = { id = rename.9101 }
+            }
+            # Stanislawow
+            if = {
+              limit = { FROM.FROM = { state = 89 } }
+                  country_event = { id = rename.8900 }
+                  country_event = { id = rename.8901 }
+            }
+            # Wilno
+            if = {
+              limit = { FROM.FROM = { state = 784 } }
+                  country_event = { id = rename.78400 }
+                  country_event = { id = rename.78401 }
+            }
+            # Wolyn
+            if = {
+              limit = { FROM.FROM = { state = 93 } }
+                  country_event = { id = rename.9300 }
+                  country_event = { id = rename.9301 }
+            }
+            # Polesie
+            if = {
+              limit = { FROM.FROM = { state = 94 } }
+                  country_event = { id = rename.9400 }
+                  country_event = { id = rename.9401 }
+            }
+            # Nowogrodek
+            if = {
+              limit = { FROM.FROM = { state = 95 } }
+                  country_event = { id = rename.9500 }
+                  country_event = { id = rename.9501 }
+            }
+            # Wilejka
+            if = {
+              limit = { FROM.FROM = { state = 96 } }
+                  country_event = { id = rename.9600 }
+                  country_event = { id = rename.9601 }
+            }
       }
 }

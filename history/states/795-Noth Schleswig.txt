@@ -1,7 +1,7 @@
 state=
 {
 	id=795
-	name="North Schleswig"
+	name="STATE_795"
 	manpower = 1
 	
 	state_category = large_town
@@ -13,7 +13,6 @@ state=
 			infrastructure = 5
 		}
 		add_core_of = DEN
-		add_core_of = GER
 	}
 	provinces={
 		11251 332
