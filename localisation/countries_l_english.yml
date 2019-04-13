@@ -2208,4 +2208,6 @@
  NIR_communism_ADJ:1 "North Irish"
  FCD_fascism:0 "Free City of Danzig"
  FCD_fascism_ADJ:0 "Danzigian"
+ PBM_fascism:0 "Protektorat Böhmen und Mähren"
+ PBM_fascism_ADJ:0 "Bohemian"
  

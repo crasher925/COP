@@ -539,3 +539,7 @@ FCD = {
 	color = rgb { 183 9 13 }
 	color_ui = rgb { 183 9 13 }
 }
+PBM = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
