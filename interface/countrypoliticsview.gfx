@@ -434,7 +434,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_neutrality_group"
 		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
-	}	
+	}
+
+        spriteType = {
+                name = "GFX_ideology_GER_fascism_group"
+                texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_PBM_fascism_group"
+                texturefile = "gfx/interface/ideologies/PBM/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_GGP_fascism_group"
+                texturefile = "gfx/interface/ideologies/GGP/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_ROM_fascism_group"
+                texturefile = "gfx/interface/ideologies/ROM/fascism_group.dds"
+        }	
 	
 	spriteType = {
 		name = "GFX_ideology_communism_group"
