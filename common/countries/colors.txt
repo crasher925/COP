@@ -543,3 +543,7 @@ PBM = {
 	color = rgb { 138 155 116 }
 	color_ui = rgb { 138 155 116 }
 }
+GGP = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}

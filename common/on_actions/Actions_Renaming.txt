@@ -140,12 +140,6 @@ on_actions = {
                   country_event = { id = rename.7200 }
                   country_event = { id = rename.7201 }
             }
-            # ZaolsiPol
-            if = {
-              limit = { FROM.FROM = { state = 72 } }
-                  country_event = { id = rename.7200 }
-                  country_event = { id = rename.7202 }
-            }
             # Southern Slovakia
             if = {
               limit = { FROM.FROM = { state = 664 } }

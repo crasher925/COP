@@ -1333,7 +1333,6 @@ country_event = {
 		72 = {
 			is_controlled_by = ROOT
 			has_state_flag = renamed_state_german
-			has_state_flag = renamed_state_polish
 		}
 	}
 
@@ -1342,7 +1341,6 @@ country_event = {
 			72 = {
 				reset_state_name = yes
 				clr_state_flag = renamed_state_german
-				clr_state_flag = renamed_state_polish
 			}
 		}
 	}
@@ -1373,34 +1371,6 @@ country_event = {
 			72 = {
 				set_state_name = "Olsa-Gebiet"
 				set_state_flag = renamed_state_german
-			}
-		}
-	}
-}
-
-# Polish - rename Zaolsi
-country_event = {
-	id = rename.7202
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7202"}
-
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-		OR = {
-			tag = POL
-		}
-		72 = {
-			is_controlled_by = ROOT
-			NOT = { has_state_flag = renamed_state_polish }
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			72 = {
-				set_state_name = "Zaolzie"
-				set_state_flag = renamed_state_polish
 			}
 		}
 	}

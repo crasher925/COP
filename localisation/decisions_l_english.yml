@@ -11,5 +11,10 @@
  DECISION_COST_DESC:0 "It costs £pol_power $VAL|H0$ to take the decision"
  DECISION_COST_NOT_ENOUGH:0 "It costs £pol_power $VAL|HR0$ to take the decision"
  ON_MAP_DECISION_NAME_DEFAULT:0 "Find decisions on the map."
- GER_protektorat_bohmenmahren:0 "Establish Protektorat Bohmen Mahren"
+ GER_protektorat_bohmenmahren:0 "Protektorat Bohmen und Mahren"
  GER_protektorat_bohmenmahren_desc:0 "The Czechs have placed their country under our protection. To better administer this territory we shall create a Protectorate in the area." 
+
+ GER_generalgouvernement:0 "Generalgouvernement"
+ GER_generalgouvernement_desc:0 "The Polish nation has falled to our grand army! We have returned our rightful German lands back to the Reich, but Polish lands still remain. We will create a commissariat to administrate this region."
+
+
