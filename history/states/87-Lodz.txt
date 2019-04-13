@@ -1,28 +1,33 @@
+
 state={
 	id=87
 	name="STATE_87"
-	manpower = 2632000
-	
-	state_category = town
+
 	history={
 		owner = POL
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
+
 		}
 		victory_points = {
-			9508 10
+			9508 10 
 		}
 		add_core_of = POL
-
 		1939.1.1 = {
 			buildings = {
 				air_base = 3
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		493 584 9439 9508 9546 11515 13221
+		493 548 584 6401 9439 9508 9546 11515 13221 
 	}
+	manpower=2632000
+	buildings_max_level_factor=1.000
+	state_category=town
 }
