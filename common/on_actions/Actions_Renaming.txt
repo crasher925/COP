@@ -356,5 +356,41 @@ on_actions = {
                   country_event = { id = rename.2900 }
                   country_event = { id = rename.2901 }
             }
+            # Paris
+            if = {
+              limit = { FROM.FROM = { state = 16 } }
+                  country_event = { id = rename.1600 }
+                  country_event = { id = rename.1601 }
+            }
+            # Picardie
+            if = {
+              limit = { FROM.FROM = { state = 785 } }
+                  country_event = { id = rename.78500 }
+                  country_event = { id = rename.78501 }
+            }
+            # Champagne
+            if = {
+              limit = { FROM.FROM = { state = 18 } }
+                  country_event = { id = rename.1800 }
+                  country_event = { id = rename.1801 }
+            }
+            # Franche Comte
+            if = {
+              limit = { FROM.FROM = { state = 17 } }
+                  country_event = { id = rename.1700 }
+                  country_event = { id = rename.1701 }
+            }
+            # Bourgogne
+            if = {
+              limit = { FROM.FROM = { state = 27 } }
+                  country_event = { id = rename.2700 }
+                  country_event = { id = rename.2701 }
+            }
+            # Centre
+            if = {
+              limit = { FROM.FROM = { state = 24 } }
+                  country_event = { id = rename.2400 }
+                  country_event = { id = rename.2401 }
+            }
       }
 }

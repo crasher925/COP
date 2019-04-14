@@ -3464,6 +3464,7 @@ country_event = {
 			}
 			reset_province_name = 575
 			reset_province_name = 11548
+			reset_province_name = 11483
 		}
 	}
 }
@@ -3497,6 +3498,366 @@ country_event = {
 			set_province_name = { id = 575 name = "Dünkirchen"}
 			set_province_name = { id = 11548 name = "Kalen"}
 			set_province_name = { id = 11483 name = "Ryssel"}
+		}
+	}
+}
+
+# French - rename Ile de France
+country_event = {
+	id = rename.1600
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.1600"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		16 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			16 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Ile de France
+country_event = {
+	id = rename.1601
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.1601"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		16 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			16 = {
+				set_state_name = "Insel von Frankreich"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# French - rename Picardie
+country_event = {
+	id = rename.78500
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.78500"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		785 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			785 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Picardie
+country_event = {
+	id = rename.78501
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.78501"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		785 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			785 = {
+				set_state_name = "Pikardie"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# French - rename Champagne
+country_event = {
+	id = rename.1800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.1800"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		18 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			18 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Champagne
+country_event = {
+	id = rename.1801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.1801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		18 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			18 = {
+				set_state_name = "Champagnerregion"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# French - rename Franche Comte
+country_event = {
+	id = rename.1700
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.1700"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		17 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			17 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Champagne
+country_event = {
+	id = rename.1701
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.1701"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		17 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			17 = {
+				set_state_name = "Freigrafschaft"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# French - rename Bourgogne
+country_event = {
+	id = rename.2700
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2700"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		27 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			27 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Bourgogne
+country_event = {
+	id = rename.2701
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2701"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		27 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			27 = {
+				set_state_name = "Burgund"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# French - rename Centre
+country_event = {
+	id = rename.2400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		24 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			24 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Centre
+country_event = {
+	id = rename.2401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		24 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			24 = {
+				set_state_name = "Zentrum"
+				set_state_flag = renamed_state_german
+			}
 		}
 	}
 }
