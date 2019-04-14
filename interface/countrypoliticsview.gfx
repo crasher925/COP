@@ -452,6 +452,16 @@ spriteTypes = {
         }
 
         spriteType = {
+                name = "GFX_ideology_RKN_fascism_group"
+                texturefile = "gfx/interface/ideologies/RKN/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_RKB_fascism_group"
+                texturefile = "gfx/interface/ideologies/RKB/fascism_group.dds"
+        }
+
+        spriteType = {
                 name = "GFX_ideology_ROM_fascism_group"
                 texturefile = "gfx/interface/ideologies/ROM/fascism_group.dds"
         }	

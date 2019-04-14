@@ -17,4 +17,8 @@
  GER_generalgouvernement:0 "Generalgouvernement"
  GER_generalgouvernement_desc:0 "The Polish nation has falled to our grand army! We have returned our rightful German lands back to the Reich, but Polish lands still remain. We will create a commissariat to administrate this region."
 
+ GER_reichskommissariat_niederlande:0 "Reichskommissariat Niederlande"
+ GER_reichskommissariat_niederlande_desc:0 "The Dutch people are now under our control. We must set up a commissariat to govern them."
 
+ GER_reichskommissariat_belgien_nordfrankreich:0 "Reichskommissariat Belgien-Nordfrankreich"
+ GER_reichskommissariat_belgien_nordfrankreich_desc:0 "The Belgian people are now under our control. We must set up a commissariat to govern them."

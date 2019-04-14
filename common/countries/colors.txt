@@ -555,4 +555,12 @@ INA = {
 	color = rgb { 67  127  63 }
 	color_ui = rgb { 67  127  63 }
 }
+RKN = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
+RKB = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
 

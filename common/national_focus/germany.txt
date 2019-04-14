@@ -4397,6 +4397,7 @@ focus_tree = {
 			is_puppet = no
 			has_full_control_of_state = 8
 			has_full_control_of_state = 28
+			has_full_control_of_state = 797
 			OR = {
 				FRA = { has_capitulated = yes }
 				FRA = { is_subject_of = GER }
@@ -4417,6 +4418,16 @@ focus_tree = {
 					}
 				}
 			}
+			OR = {
+				BEL = { has_capitulated = yes }
+				NOT = {
+					any_country = {
+						original_tag = BEL
+						exists = yes
+					}
+				}
+				owns_state = 797
+			}
 		}
 		bypass = {
 		}
@@ -4432,15 +4443,29 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 8
 			add_state_core = 28
+			add_state_core = 797
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
 				}
 				transfer_state = 28
 			}
-			28 = { set_state_name = "Elsass-Lothringen" }
-			set_province_name = { id = 9503 name = "Strassburg" }
+			if = {
+				limit = {
+					NOT = { owns_state = 8 }
+				}
+				transfer_state = 8
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 797 }
+				}
+				transfer_state = 797
+			}
+			28 = { set_state_name = "Elsaß-Lothringen" }
+			set_province_name = { id = 9503 name = "Straßburg" }
 			set_province_name = { id = 678 name = "Mulhausen" }
+			set_province_name = { id = 6583 name = "Stadt Luxemburg" }
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}

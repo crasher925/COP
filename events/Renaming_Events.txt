@@ -3257,3 +3257,246 @@ country_event = {
 		}
 	}
 }
+
+# Belgian - rename Wallonie Est
+country_event = {
+	id = rename.83300
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.83300"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = BEL
+		}
+		833 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			833 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Wallonie Est
+country_event = {
+	id = rename.83301
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.83301"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		833 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			833 = {
+				set_state_name = "Ost-Wallonien"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# Belgian - rename Wallonie
+country_event = {
+	id = rename.3400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.3400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = BEL
+		}
+		34 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			34 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 11519
+		}
+	}
+}
+
+# German - rename Wallonie
+country_event = {
+	id = rename.3401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.3401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		34 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			34 = {
+				set_state_name = "Wallonien"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 11519 name = "Lüttich"}
+		}
+	}
+}
+
+# Belgian - rename Brussel
+country_event = {
+	id = rename.83400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.83400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = BEL
+		}
+		834 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			834 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 516
+		}
+	}
+}
+
+# German - rename Brussel
+country_event = {
+	id = rename.83401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.83401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		834 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			834 = {
+				set_state_name = "Brüssel"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 516 name = "Brüssel"}
+		}
+	}
+}
+
+# French - rename Calais
+country_event = {
+	id = rename.2900
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2900"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+		}
+		29 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			29 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 575
+			reset_province_name = 11548
+		}
+	}
+}
+
+# German - rename Calais
+country_event = {
+	id = rename.2901
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2901"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		29 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			29 = {
+				set_state_name = "Kalen"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 575 name = "Dünkirchen"}
+			set_province_name = { id = 11548 name = "Kalen"}
+			set_province_name = { id = 11483 name = "Ryssel"}
+		}
+	}
+}

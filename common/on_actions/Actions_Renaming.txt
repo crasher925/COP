@@ -332,5 +332,29 @@ on_actions = {
                   country_event = { id = rename.9600 }
                   country_event = { id = rename.9601 }
             }
+            # Wallonie Est
+            if = {
+              limit = { FROM.FROM = { state = 833 } }
+                  country_event = { id = rename.83300 }
+                  country_event = { id = rename.83301 }
+            }
+            # Wallonie
+            if = {
+              limit = { FROM.FROM = { state = 34 } }
+                  country_event = { id = rename.3400 }
+                  country_event = { id = rename.3401 }
+            }
+            # Brussel
+            if = {
+              limit = { FROM.FROM = { state = 834 } }
+                  country_event = { id = rename.83400 }
+                  country_event = { id = rename.83401 }
+            }
+            # Calais
+            if = {
+              limit = { FROM.FROM = { state = 29 } }
+                  country_event = { id = rename.2900 }
+                  country_event = { id = rename.2901 }
+            }
       }
 }
