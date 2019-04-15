@@ -28,6 +28,16 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+        spriteType = { 
+                name = "GFX_partitionyugoslavia" 
+                texturefile = "gfx/interface/goals/GFX_partitionyugoslavia.tga" 
+        }
+
+        spriteType = { 
+                name = "GFX_agrandrebirth" 
+                 texturefile = "gfx/interface/goals/GFX_agrandrebirth.tga" 
+        } 
+
 	spriteType = {
 		name = "GFX_government_in_exile_reward_icons"
 		texturefile = "gfx/interface/government_in_exile/government_in_exile_reward_icons.dds"
@@ -336,6 +346,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/add_national_goal_button.dds"
 		noOfFrames = 3
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"		
+	}
+
+	spriteType = {
+		name = "GFX_ideas_LUX_luxembourger_monarchy"
+		textureFile = "gfx/interface/ideas_LUX_luxembourger_monarchy.dds"
 	}
 
 	spriteType = {

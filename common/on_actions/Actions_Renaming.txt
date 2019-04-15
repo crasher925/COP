@@ -392,5 +392,11 @@ on_actions = {
                   country_event = { id = rename.2400 }
                   country_event = { id = rename.2401 }
             }
+            # Alsace Lorraine
+            if = {
+              limit = { FROM.FROM = { state = 28 } }
+                  country_event = { id = rename.2800 }
+                  country_event = { id = rename.2801 }
+            }
       }
 }
