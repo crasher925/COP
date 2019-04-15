@@ -1,0 +1,93 @@
+﻿###########################
+# Ethiopia Events
+###########################
+
+add_namespace = ethiopia
+
+#Demand Allied Intervention
+country_event = {
+        id = ethiopia.50
+        title = ethiopia.50.t
+        desc = ethiopia.50.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = ethiopia.50.a
+                ai_chance = {
+			    factor = 80
+                }
+                if = {
+		          limit = { ITA = { is_puppet = no } }
+			      ITA = {
+			         country_event = { id = ethiopia.51 }
+		          }
+		        }
+        }
+
+        option = {
+                name = ethiopia.50.b
+                ai_chance = {
+                factor = 20
+                }
+        }
+}
+
+#Italian Response
+country_event = {
+        id = ethiopia.51
+        title = ethiopia.51.t
+        desc = ethiopia.51.d
+
+    is_triggered_only = yes
+
+        option = {
+                name = ethiopia.51.a
+                ai_chance = {
+                factor = 50
+                }
+                white_peace = ETH
+                complete_national_focus = ITA_victoryinETH
+        }
+
+        option = {
+                name = ethiopia.51.b
+                ai_chance = {
+                factor = 50
+                }
+                ENG = {
+                    add_to_faction = ETH
+                    declare_war_on = {
+                    target = ITA
+                    type = annex_everything
+                    }
+                }
+        }
+}
+
+#Return the Favour
+country_event = {
+        id = ethiopia.60
+        title = ethiopia.60.t
+        desc = ethiopia.60.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = ethiopia.60.a
+                ai_chance = {
+	        factor = 60
+                }
+                ENG = {
+                    add_to_faction = ETH
+                }
+
+        option = {
+                name = ethiopia.60.b
+                ai_chance = {
+                factor = 40
+                }
+        }
+}
+
+
