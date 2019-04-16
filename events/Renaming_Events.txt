@@ -1081,7 +1081,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = CZE
-
 		}
 		69 = {
 			is_controlled_by = ROOT
@@ -1113,7 +1112,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		69 = {
@@ -1177,7 +1175,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		9 = {
@@ -1241,7 +1238,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		75 = {
@@ -1303,7 +1299,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		74 = {
@@ -1363,7 +1358,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		72 = {
@@ -1894,7 +1888,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 		}
 		821 = {
 			is_controlled_by = ROOT
@@ -1982,7 +1975,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		188 = {
@@ -2044,7 +2036,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		85 = {
@@ -2106,7 +2097,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		86 = {
@@ -2167,7 +2157,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		762 = {
@@ -2228,7 +2217,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		87 = {
@@ -2289,7 +2277,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		98 = {
@@ -2350,7 +2337,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		97 = {
@@ -2411,7 +2397,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		826 = {
@@ -2472,7 +2457,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		825 = {
@@ -2532,7 +2516,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		798 = {
@@ -2591,7 +2574,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		799 = {
@@ -2652,7 +2634,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		10 = {
@@ -2715,7 +2696,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		90 = {
@@ -2777,7 +2757,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		88 = {
@@ -2839,7 +2818,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		92 = {
@@ -2899,7 +2877,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		91 = {
@@ -2960,7 +2937,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		89 = {
@@ -3021,7 +2997,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		784 = {
@@ -3082,7 +3057,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		93 = {
@@ -3144,7 +3118,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		94 = {
@@ -3206,7 +3179,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		95 = {
@@ -3267,7 +3239,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		96 = {
@@ -3327,7 +3298,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		833 = {
@@ -3387,7 +3357,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		34 = {
@@ -3448,7 +3417,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		834 = {
@@ -3513,7 +3481,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		29 = {
@@ -3577,7 +3544,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		16 = {
@@ -3638,7 +3604,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		785 = {
@@ -3699,7 +3664,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		18 = {
@@ -3760,7 +3724,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		17 = {
@@ -3821,7 +3784,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		27 = {
@@ -3882,7 +3844,6 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
-			tag = LUX
 			is_subject_of = GER
 		}
 		24 = {
@@ -3900,71 +3861,3 @@ country_event = {
 		}
 	}
 }
-
-# French - rename Alsace Lorraine
-country_event = {
-	id = rename.2800
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2800"}
-
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-		OR = {
-			tag = FRA
-			tag = ENG
-			tag = USA
-		}
-		28 = {
-			is_controlled_by = ROOT
-			has_state_flag = renamed_state_german
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			28 = {
-				reset_state_name = yes
-				clr_state_flag = renamed_state_german
-			}
-			reset_province_name = 9559
-			reset_province_name = 9503
-			reset_province_name = 678
-		}
-	}
-}
-
-# German - rename Alsace Lorraine
-country_event = {
-	id = rename.2801
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2801"}
-
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-		OR = {
-			tag = GER
-			tag = AUS
-			tag = LUX
-			is_subject_of = GER
-		}
-		28 = {
-			is_controlled_by = ROOT
-			NOT = { has_state_flag = renamed_state_german }
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			28 = {
-				set_state_name = "Elsaß-Lothringen"
-				set_state_flag = renamed_state_german
-			}
-			set_province_name = { id = 678 name = "Mülhausen"}
-			set_province_name = { id = 9503 name = "Straßburg"}
-		}
-	}
-}
-
-

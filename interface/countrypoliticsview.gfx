@@ -28,16 +28,6 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-        spriteType = { 
-                name = "GFX_partitionyugoslavia" 
-                texturefile = "gfx/interface/goals/GFX_partitionyugoslavia.tga" 
-        }
-
-        spriteType = { 
-                name = "GFX_agrandrebirth" 
-                 texturefile = "gfx/interface/goals/GFX_agrandrebirth.tga" 
-        } 
-
 	spriteType = {
 		name = "GFX_government_in_exile_reward_icons"
 		texturefile = "gfx/interface/government_in_exile/government_in_exile_reward_icons.dds"
@@ -272,11 +262,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/idea_slot_theorist.dds"
 	}
 
-        spriteType = {
-		name = "GFX_idea_generic_infantry_bonus"
-		textureFile = "gfx/interface/generic_infantry_bonus.dds"
-	}
-
 	spriteType = {
 		name = "GFX_idea_slot_industrial_concern"
 		textureFile = "gfx/interface/idea_slot_industrial_concern.dds"
@@ -354,11 +339,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideas_LUX_luxembourger_monarchy"
-		textureFile = "gfx/interface/ideas_LUX_luxembourger_monarchy.dds"
-	}
-
-	spriteType = {
 		name = "GFX_ideas_icon"
 		textureFile = "gfx/interface/ideas_icon.dds"
 	}
@@ -376,12 +356,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_group_header"
 		textureFile = "gfx/interface/idea_group_header.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_generic_license_production"
-		texturefile = "gfx/interface/ideas/idea_generic_license_production.dds"
-		noOfFrames = 2
 	}
 
 	spriteType = {
