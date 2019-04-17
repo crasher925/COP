@@ -334,6 +334,25 @@ ideas = {
 			}
 		}
 
+                GER_influence_china_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.2
+				fascism_acceptance = 85
+			}
+		}
+
 		GER_align_romania_unaligned = {
 			allowed = {
 				always = no

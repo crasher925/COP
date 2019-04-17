@@ -38,6 +38,11 @@ spriteTypes = {
                  texturefile = "gfx/interface/goals/GFX_agrandrebirth.tga" 
         } 
 
+        spriteType = { 
+                name = "GFX_chigermany" 
+                 texturefile = "gfx/interface/goals/GFX_chigermany.dds" 
+        }
+
 	spriteType = {
 		name = "GFX_government_in_exile_reward_icons"
 		texturefile = "gfx/interface/government_in_exile/government_in_exile_reward_icons.dds"

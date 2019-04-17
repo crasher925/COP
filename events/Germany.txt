@@ -6148,3 +6148,78 @@ country_event = {
 		clr_global_flag = ROM_king_is_silly
 	}
 }
+
+#Ally in the east
+country_event = {
+        id = germany.1500
+        title = germany.1500.t
+        desc = germany.1500.d
+        picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.1500.a
+                ai_chance = {
+			factor = 50
+                }
+                GER = {
+                    add_to_faction = CHI
+                }
+                
+        }
+        option = {
+                name = germany.1500.b
+                ai_chance = {
+			factor = 30
+                }
+                GER = {
+                     diplomatic_relation = {
+                     country = CHI
+                     relation = non_aggression_pact
+                     }
+                }
+                
+        }
+        option = {
+                name = germany.1500.c
+                ai_chance = {
+			factor = 20
+                }
+                
+        }
+}
+
+#Free City of Danzig
+country_event = {
+        id = germany.3000
+        title = germany.3000.t
+        desc = germany.3000.d
+        picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3000.a
+                ai_chance = {
+			factor = 60
+                }
+                GER = {
+                    transfer_state = 824
+                    add_state_core = 824
+                }
+                
+        }
+        option = {
+                name = germany.3000.b
+                ai_chance = {
+			factor = 40
+                }
+                POL = {
+                     transfer_state = 824
+                     add_state_core = 824
+                }
+                
+        }
+}
+
