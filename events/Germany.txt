@@ -4258,6 +4258,8 @@ country_event = {
 	option = {
 		name = germany.94.a
 		GER = { transfer_state = 102 }
+		ITA = { transfer_state = 788 }
+		HUN = { transfer_state = 789 }
 		set_country_flag = slovenia_acquired
 		hidden_effect = {
 			news_event = { id = news.163 hours = 6 }
@@ -6223,3 +6225,216 @@ country_event = {
         }
 }
 
+#Invite Bulgaria to Axis
+country_event = {
+        id = germany.3100
+        title = germany.3100.t
+        desc = germany.3100.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3100.a
+                ai_chance = {
+			factor = 70
+                }
+                GER = {
+                      add_to_faction = BUL
+                }
+        }
+
+        option = {
+                name = germany.3100.b
+                ai_chance = {
+			factor = 30
+                }
+                GER =  {
+                     create_wargoal = {
+			type = take_state_focus
+			target = BUL
+			generator = { 48 211 212 }
+                     }
+                }
+        }
+}
+
+#Invite Hungary to Axis
+country_event = {
+        id = germany.3200
+        title = germany.3200.t
+        desc = germany.3200.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3200.a
+                ai_chance = {
+			factor = 70
+                }
+                GER = {
+                      add_to_faction = HUN
+                }
+        }
+
+        option = {
+                name = germany.3200.b
+                ai_chance = {
+			factor = 30
+                }
+                GER =  {
+                     create_wargoal = {
+			type = take_state_focus
+			target = HUN
+			generator = { 43 154 155 }
+                     }
+                }
+        }
+}
+
+
+#Invite Romania to Axis
+country_event = {
+        id = germany.3300
+        title = germany.3300.t
+        desc = germany.3300.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3300.a
+                ai_chance = {
+			factor = 70
+                }
+                GER = {
+                      add_to_faction = ROM
+                }
+        }
+
+        option = {
+                name = germany.3300.b
+                ai_chance = {
+			factor = 30
+                }
+                GER =  {
+                     create_wargoal = {
+			type = take_state_focus
+			target = ROM
+			generator = { 46 }
+                     }
+                }
+        }
+}
+
+#Moscow Victory
+country_event = {
+	id = germany.4000
+	title = germany.4000.t
+	desc = germany.4000.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	trigger = {
+                date > 1942.1.1
+		GER = {
+			controls_state = 219
+		}
+	}
+
+
+	option = {
+		name = germany.4000.a
+		ai_chance = {
+			base = 100
+		}
+                complete_national_focus = GER_moscow_victory           
+	}
+}
+
+#Moscow Failure
+country_event = {
+	id = germany.4100
+	title = germany.4100.t
+	desc = germany.4100.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	trigger = {
+                date > 1942.1.1
+		SOV = {
+			controls_state = 219
+		}
+	}
+
+
+	option = {
+		name = germany.4100.a
+		ai_chance = {
+			base = 100
+		}
+                complete_national_focus = GER_moscow_failure         
+	}
+}
+
+#Invite Yugoslavia to Axis
+country_event = {
+        id = germany.3400
+        title = germany.3400.t
+        desc = germany.3400.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3400.a
+                ai_chance = {
+			factor = 70
+                }
+                GER = {
+                      add_to_faction = YUG
+                }
+        }
+
+        option = {
+                name = germany.3400.b
+                ai_chance = {
+			factor = 30
+                }
+                GER =  {
+                     create_wargoal = {
+			type = take_state_focus
+			target = YUG
+			generator = { 107 }
+                     }
+                }
+        }
+}
+
+#Invite Greece to Axis
+country_event = {
+        id = germany.3500
+        title = germany.3500.t
+        desc = germany.3500.d
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3500.a
+                ai_chance = {
+			factor = 70
+                }
+                GER = {
+                      add_to_faction = GRE
+                }
+        }
+
+        option = {
+                name = germany.3500.b
+                ai_chance = {
+			factor = 30
+                }
+                GER =  {
+                     create_wargoal = {
+			type = take_state_focus
+			target = GRE
+			generator = { 47 }
+                     }
+                }
+        }
+}
