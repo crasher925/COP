@@ -1,10 +1,10 @@
 state=
 {
 	id=835
-	name="Southern Urals"
+	name="Magnitogorsk"
 	manpower = 1
 	
-	state_category = large_town
+	state_category = metropolis
 	
 	history =
 	{
@@ -13,11 +13,11 @@ state=
 			infrastructure = 5
 		}
 		victory_points = {
-			10256 1
+			10256 3
 		}
 		add_core_of = SOV
 	}
 	provinces={
-		1406 4261 4265 4311 4383 7300 7373 10185 12200 
+		1334 4215 4411 7281 7328 7401 10196 10224 10256 
 	}
 }
