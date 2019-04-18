@@ -1,0 +1,23 @@
+state=
+{
+	id=835
+	name="Southern Urals"
+	manpower = 1
+	
+	state_category = large_town
+	
+	history =
+	{
+		owner = SOV
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			10256 1
+		}
+		add_core_of = SOV
+	}
+	provinces={
+		1406 4261 4265 4311 4383 7300 7373 10185 12200 
+	}
+}
