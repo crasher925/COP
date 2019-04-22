@@ -4430,12 +4430,40 @@ country_event = {
 						transfer_state = 103
 					}
 					if = {
-						limit = { YUG = { owns_state = 104 } }
-						transfer_state = 104
+						limit = { YUG = { owns_state = 862 } }
+						transfer_state = 862
+					}
+					if = {
+						limit = { YUG = { owns_state = 857 } }
+						transfer_state = 857
+					}
+					if = {
+						limit = { YUG = { owns_state = 859 } }
+						transfer_state = 859
+					}
+					if = {
+						limit = { YUG = { owns_state = 858 } }
+						transfer_state = 858
+					}
+					if = {
+						limit = { YUG = { owns_state = 860 } }
+						transfer_state = 860
+					}
+					if = {
+						limit = { YUG = { owns_state = 863 } }
+						transfer_state = 863
+					}
+					if = {
+						limit = { YUG = { owns_state = 854 } }
+						transfer_state = 854
 					}
 					if = {
 						limit = { YUG = { owns_state = 109 } }
 						transfer_state = 109
+					}
+					if = {
+						limit = { YUG = { owns_state = 104 } }
+						transfer_state = 104
 					}						
 				}
 				puppet = CRO
@@ -4465,6 +4493,34 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 104 } }
 					transfer_state = 104
+				}
+			        if = {
+					limit = { YUG = { owns_state = 862 } }
+					transfer_state = 862
+				}
+				if = {
+					limit = { YUG = { owns_state = 857 } }
+					transfer_state = 857
+				}
+				if = {
+					limit = { YUG = { owns_state = 859 } }
+					transfer_state = 859
+				}
+				if = {
+					limit = { YUG = { owns_state = 858 } }
+					transfer_state = 858
+				}
+				if = {
+					limit = { YUG = { owns_state = 860 } }
+					transfer_state = 860
+				}
+				if = {
+					limit = { YUG = { owns_state = 863 } }
+					transfer_state = 863
+				}
+				if = {
+					limit = { YUG = { owns_state = 854 } }
+					transfer_state = 854
 				}
 				if = {
 					limit = { YUG = { owns_state = 109 } }
@@ -4515,6 +4571,34 @@ country_event = {
 						transfer_state = 104
 					}
 					if = {
+						limit = { YUG = { owns_state = 862 } }
+						transfer_state = 862
+					}
+					if = {
+						limit = { YUG = { owns_state = 857 } }
+						transfer_state = 857
+					}
+					if = {
+						limit = { YUG = { owns_state = 859 } }
+						transfer_state = 859
+					}
+					if = {
+						limit = { YUG = { owns_state = 858 } }
+						transfer_state = 858
+					}
+					if = {
+						limit = { YUG = { owns_state = 860 } }
+						transfer_state = 860
+					}
+					if = {
+						limit = { YUG = { owns_state = 863 } }
+						transfer_state = 863
+					}
+					if = {
+						limit = { YUG = { owns_state = 854 } }
+						transfer_state = 854
+					}
+					if = {
 						limit = { YUG = { owns_state = 109 } }
 						transfer_state = 109
 					}						
@@ -4552,6 +4636,34 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 104 } }
 					transfer_state = 104
+				}
+				if = {
+					limit = { YUG = { owns_state = 862 } }
+					transfer_state = 862
+				}
+				if = {
+					limit = { YUG = { owns_state = 857 } }
+					transfer_state = 857
+				}
+				if = {
+					limit = { YUG = { owns_state = 859 } }
+					transfer_state = 859
+				}
+				if = {
+					limit = { YUG = { owns_state = 858 } }
+					transfer_state = 858
+				}
+				if = {
+					limit = { YUG = { owns_state = 860 } }
+					transfer_state = 860
+				}
+				if = {
+					limit = { YUG = { owns_state = 863 } }
+					transfer_state = 863
+				}
+				if = {
+					limit = { YUG = { owns_state = 854 } }
+					transfer_state = 854
 				}
 				if = {
 					limit = { YUG = { owns_state = 109 } }

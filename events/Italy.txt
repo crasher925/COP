@@ -470,7 +470,9 @@ country_event = {
 		name = italy.13.a
 		if = {
 			limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+			ITA = { transfer_state = 861 }
 			ITA = { transfer_state = 103 }
+			ITA = { transfer_state = 857 }
 		}
 		if = {
 			limit = { owns_state = 44 }
