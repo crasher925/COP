@@ -104,7 +104,6 @@ focus_tree = {
             prerequisite = { focus = ETH_victoryagainsttheitalians } 
             mutually_exclusive = { focus = ETH_returnthefavour } 
             mutually_exclusive = { focus = ETH_standagainsteuropeancolonialism } 
-            mutually_exclusive = { focus = ETH_ } 
             ai_will_do = { 
                 factor = 50
             } 

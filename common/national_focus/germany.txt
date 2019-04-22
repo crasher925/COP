@@ -6314,8 +6314,8 @@ focus_tree = {
 			  ENG = {
 			  	 controls_state = 115
 			  	 controls_state = 156
-			  	 controls_state = 117
 			  }
+			  date > 2000.1.1
 		}
 		x = 38
 		y = 6
@@ -6327,8 +6327,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	    
-		}
+         if = {
+				   limit = { GER = { is_puppet = no } }
+				   GER = {
+					    country_event = { id = germany.5500 }
+					 }
+				 }
+	  }
 	}
 	focus = {
 		id = GER_around_maginot

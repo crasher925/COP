@@ -76,7 +76,7 @@ country_event = {
         option = {
                 name = ethiopia.60.a
                 ai_chance = {
-	        factor = 60
+	               factor = 60
                 }
                 ENG = {
                     add_to_faction = ETH
@@ -84,9 +84,6 @@ country_event = {
 
         option = {
                 name = ethiopia.60.b
-                ai_chance = {
-                factor = 40
-                }
         }
 }
 
