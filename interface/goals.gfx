@@ -16,6 +16,11 @@ spriteTypes = {
         name = "GFX_chigermany" 
         texturefile = "gfx/interface/goals/GFX_chigermany.dds" 
         } 
+
+        SpriteType = { 
+        name = "GFX_enggermany" 
+        texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
+        } 
 	
 	SpriteType = {
 	name = "GFX_goal_continuous_reduce_training_time"

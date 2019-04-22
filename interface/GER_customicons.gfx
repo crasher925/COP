@@ -3,4 +3,8 @@ spriteTypes = {
  name = "GFX_chigermany" 
  texturefile = "gfx/interface/goals/GFX_chigermany.dds" 
  } 
+ SpriteType = { 
+ name = "GFX_enggermany" 
+ texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
+ } 
 }
