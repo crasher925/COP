@@ -6517,11 +6517,11 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = GRE }
+			NOT = { has_war_with = FRA }
 		}
 
 		bypass = {
-			GRE = {
+			FRA = {
 				OR = {
 					exists = no
 					is_subject = yes
@@ -6540,22 +6540,6 @@ focus_tree = {
 				}
 				FRA = {
 					add_timed_idea = { idea = GER_align_france days = 730 }
-				}
-			}	
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				YUG = {
-					add_timed_idea = { idea = GER_align_romania_unaligned days = 730 }
-				}
-			}	
-			if = {
-				limit = {
-					has_government = democratic
-				}
-				YUG = {
-					add_timed_idea = { idea = GER_align_romania_democratic days = 730 }
 				}
 			}	
 		}
@@ -7581,6 +7565,14 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
+      if = {
+				limit = {
+					has_government = fascism
+				}
+				ENG = {
+					add_timed_idea = { idea = GER_align_england days = 730 }
+				}
+			}
 		}
 	}
 
@@ -7588,6 +7580,15 @@ focus_tree = {
 		id = GER_keep_mosley
 		prerequisite = { focus = GER_british_fascists }
 		mutually_exclusive = { focus = GER_betray_mosley }
+		available = {
+			NOT = { has_war_with = BUF }
+			BUF = {
+				owns_state = 126
+				owns_state = 127
+				owns_state = 123
+				owns_state = 338
+			}
+		}
 		icon = GFX_goal_generic_military_deal
 		x = 40
 		y = 10
@@ -7599,6 +7600,7 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
+			    add_political_power = 50
 		}
 	}
 
@@ -7606,6 +7608,9 @@ focus_tree = {
 		id = GER_betray_mosley
 		prerequisite = { focus = GER_british_fascists }
 		mutually_exclusive = { focus = GER_keep_mosley }
+		available = {
+			NOT = { has_war_with = BUF }
+		}
 		icon = GFX_enggermany
 		x = 42
 		y = 10
@@ -7617,12 +7622,40 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
+			hidden_effect = {
+          RKG = {
+        	add_state_core = 126
+          transfer_state = 127
+          transfer_state = 338
+          transfer_state = 123
+          transfer_state = 128
+          transfer_state = 132
+          transfer_state = 131
+          transfer_state = 133
+          set_cosmetic_tag = PBM_reichsprotektorat
+			  }
+			  GER = {
+			  	puppet = RKG
+          set_autonomy = { target = RKG autonomy_state = autonomy_reichskommissariat }
+          remove_from_faction = BUF
+          declare_war_on = {
+              target = BUF
+              type = annex_everything
+          }
+			  }
+			}
 		}
 	}
 
 	focus = {
 		id = GER_british_landfall
 		prerequisite = { focus = GER_amphibious_forces }
+		available = {
+			 GER = {
+			 	  controls_state = 127
+			 	  controls_state = 123
+			 }
+		}
 		icon = GFX_focus_hol_prepare_the_inundation_lines
 		x = 44
 		y = 10
@@ -7634,6 +7667,48 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
+          127 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+					123 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
 		}
 	}
 
@@ -7652,6 +7727,459 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
+			  add_political_power = 250
+		}
+	}
+
+	focus = {
+		id = GER_align_ireland
+		prerequisite = { focus = GER_british_sun_set }
+		mutually_exclusive = { focus = GER_conquer_ireland }
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 43
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes	
+
+		completion_reward = {
+			  if = {
+				limit = {
+					has_government = fascism
+				}
+				IRE = {
+					add_timed_idea = { idea = GER_align_ireland days = 730 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_conquer_ireland
+		prerequisite = { focus = GER_british_sun_set }
+		mutually_exclusive = { focus = GER_align_ireland }
+		icon = GFX_goal_generic_major_war
+		x = 41
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes	
+
+		completion_reward = {
+			  create_wargoal = {
+				type = annex_everything
+				target = IRE
+			}
+		}
+	}
+
+	focus = {
+		id = GER_scandinavian_diplomacy
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_anschluss }
+		x = 49
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			   add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = GER_weserubung
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_scandinavian_diplomacy }
+		mutually_exclusive = { focus = GER_denmark_friend }
+		will_lead_to_war_with = DEN 
+		will_lead_to_war_with = NOR
+
+		bypass = {
+			AND = {
+				OR = {
+					DEN = { 
+						is_in_faction_with = GER 
+						NOT = { country_exists = DEN }
+					}
+				}
+			}
+		}
+		
+		available = {
+			POL = {
+				NOT = { controls_state = 85 }
+				NOT = { controls_state = 10 }	
+			}
+			OR = { 
+				has_war_with = ENG
+				NOT = {country_exists = ENG}
+			}
+		}
+		
+		x = 46
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}	
+		completion_reward = {
+
+			if = {
+				limit = {
+					NOT = { DEN = { is_in_faction_with = GER } }
+					country_exists = DEN					
+				} 
+				create_wargoal = {
+					type = take_state_focus
+					target = DEN
+					generator = { 37 }
+				}
+			}
+
+
+			if = {
+				limit = {
+					NOT = { NOR = { is_in_faction_with = GER } }
+					country_exists = NOR					
+				} 
+				create_wargoal = {
+					type = take_state_focus
+					target = NOR
+					generator = { 110 }
+				}
+			}
+			
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = tp_tech
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.233 }
+			}	
+		}
+	}
+
+	focus = {
+		id = GER_denmark_friend
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_scandinavian_diplomacy }
+		mutually_exclusive = { focus = GER_weserubung }
+
+		available = {
+			has_government = fascism
+			country_exists = DEN
+			NOT = {
+				has_war_with = DEN
+			}
+			DEN = {
+				custom_trigger_tooltip = {
+					tooltip = GER_alone_or_peace_faction_tt
+					is_alone_or_in_faction_at_peace_with_GER = yes
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				is_in_faction_with = DEN
+			}
+		}
+		x = 48
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			DEN = {
+				add_opinion_modifier = { target = GER modifier = ger_naval_intimidation_focus }
+				if = {
+					limit = {
+						GER = {
+							has_government = fascism
+						}
+					}
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = communism
+						}
+					}
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = democratic
+						}
+					}
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				country_event = { id = generic.1 }
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.232 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_norway_friend
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = GER_denmark_friend }
+		available = {
+			has_government = fascism
+			NOT = { has_war_with = NOR }
+			NOR = {
+				custom_trigger_tooltip = {
+					tooltip = GER_alone_or_peace_faction_tt
+					is_alone_or_in_faction_at_peace_with_GER = yes
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				is_in_faction_with = NOR
+				NOT = { country_exists = NOR }
+			}
+		}
+		x = 48
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			NOR = {
+				add_opinion_modifier = { target = GER modifier = ger_naval_intimidation_focus }
+				if = {
+					limit = {
+						GER = {
+							has_government = fascism
+						}
+					}
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = communism
+						}
+					}
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = democratic
+						}
+					}
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				country_event = { id = generic.1 }
+			}
+			
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 2
+				technology = transport
+				technology = landing_craft
+				technology = tank_landing_craft
+			}			
+		}
+	}
+
+	focus = {
+		id = GER_conquer_sweden
+		prerequisite = { focus = GER_scandinavian_diplomacy }
+		mutually_exclusive = { focus = GER_sweden_friend }
+		icon = GFX_goal_generic_major_war
+		x = 50
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes	
+
+		completion_reward = {
+			  create_wargoal = {
+				type = annex_everything
+				target = SWE
+			}
+		}
+	}
+
+	focus = {
+		id = GER_sweden_friend
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_scandinavian_diplomacy }
+		mutually_exclusive = { focus = GER_conquer_sweden }
+		available = {
+			has_government = fascism
+			NOT = { has_war_with = SWE }
+			SWE = {
+				custom_trigger_tooltip = {
+					tooltip = GER_alone_or_peace_faction_tt
+					is_alone_or_in_faction_at_peace_with_GER = yes
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				SWE = { is_in_faction_with = GER }
+				NOT = { country_exists = SWE }
+			}
+		}
+		x = 52
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			SWE = {
+				add_opinion_modifier = { target = GER modifier = ger_naval_intimidation_focus }
+				if = {
+					limit = {
+						GER = {
+							has_government = fascism
+						}
+					}
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = communism
+						}
+					}
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = democratic
+						}
+					}
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				country_event = { id = generic.1 }
+				if = {
+					limit = { has_idea = neutrality_idea }
+					remove_ideas = neutrality_idea
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_assisting_finland
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_conquer_sweden focus = GER_sweden_friend }
+		prerequisite = { focus = GER_weserubung focus = GER_norway_friend }
+		available = {
+			FIN = { has_war_with = SOV}
+		}
+		x = 49
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			   send_equipment = {
+					 equipment = infantry_equipment
+					 amount = 1500
+					 target = FIN
+				 }
+				 send_equipment = {
+					 equipment = artillery_equipment
+					 amount = 750
+					 target = FIN
+				 }
+		}
+	}
+
+	focus = {
+		id = GER_align_finland
+		prerequisite = { focus = GER_assisting_finland }
+		mutually_exclusive = { focus = GER_conquer_finland }
+		available = {
+			NOT = {
+         FIN = { has_war_with = SOV}
+			}
+		}
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 48
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes	
+
+		completion_reward = {
+			  if = {
+				limit = {
+					has_government = fascism
+				}
+				FIN = {
+					add_timed_idea = { idea = GER_align_finland days = 730 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_conquer_finland
+		prerequisite = { focus = GER_assisting_finland }
+		mutually_exclusive = { focus = GER_align_finland }
+		available = {
+			NOT = {
+         FIN = { has_war_with = SOV}
+			}
+		}
+		icon = GFX_goal_generic_major_war
+		x = 50
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes	
+
+		completion_reward = {
+			  create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}
 		}
 	}
 }

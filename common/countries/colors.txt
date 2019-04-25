@@ -571,4 +571,12 @@ ISS = {
 	color = rgb { 33 63 31 }
 	color_ui = rgb { 33 63 31 }
 }
+BUF = {
+	color = rgb { 183 9 13 }
+	color_ui = rgb { 183 9 13 }
+}
+RKG = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
 

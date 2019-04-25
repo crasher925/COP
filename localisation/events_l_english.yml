@@ -3274,3 +3274,7 @@
  germany.3500.d:0 "After months of talks and cooperation between our two nations, the Germans have invited us to the Axis. What should we do?"
  germany.3500.a:0 "Accept their offer."
  germany.3500.b:0 "Decline their offer."
+ germany.3600.t:0 "The Blackshirt Agreement"
+ germany.3600.d:0 "Before our forces invaded the British Isles we made a deal with Oswald Mosley, the leader of the British Union of Fascists. He would help us by disrupting British supply lines once our soldiers landed, and in exchange we would let him and his Blackshirts take over the UK as long as he stayed in the Axis. Now that the fighting is over here, Mosley has come to us demanding that the agreement be honored."
+ germany.3600.a:0 "We must honor our promise."
+ germany.3600.b:0 "We don't need the Blackshirts anymore."
