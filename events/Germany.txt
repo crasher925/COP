@@ -6688,3 +6688,38 @@ country_event = {
                 }
         }
 }
+
+#Hungary Asks For Burgenland
+country_event = {
+        id = germany.3610
+        title = germany.3610.t
+        desc = germany.3610.d
+
+	fire_only_once = yes
+
+        trigger = {
+           GER = {
+              controls_state = 821
+           }
+        }
+
+
+        option = {
+                name = germany.3610.a
+                ai_chance = {
+			factor = 90
+                }
+        }
+
+        option = {
+                name = germany.3610.b
+                ai_chance = {
+			factor = 10
+                }
+                HUN = {
+                      transfer_state = 821
+                      add_state_core = 821
+                      add_opinion_modifier = { target = GER modifier = HUN_burgenland }
+                }
+        }
+}

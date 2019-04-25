@@ -3278,3 +3278,7 @@
  germany.3600.d:0 "Before our forces invaded the British Isles we made a deal with Oswald Mosley, the leader of the British Union of Fascists. He would help us by disrupting British supply lines once our soldiers landed, and in exchange we would let him and his Blackshirts take over the UK as long as he stayed in the Axis. Now that the fighting is over here, Mosley has come to us demanding that the agreement be honored."
  germany.3600.a:0 "We must honor our promise."
  germany.3600.b:0 "We don't need the Blackshirts anymore."
+ germany.3610.t:0 "Hungary Asks for Burgenland"
+ germany.3610.d:0 "Burgenland used to be a part of Hungary before the Treaty of Trianon gave it to Austria. The territory is now under our control, and we must decide what we should do with it. Burgenland is populated by ethnic Germans who would most likely want to be part of Germany, but giving it to the Hungarians would make them like us even more. What should we do?"
+ germany.3610.a:0 "Burgenland will always be German!"
+ germany.3610.b:0 "We must right the wrongs of Trianon."
