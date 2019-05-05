@@ -3282,3 +3282,8 @@
  germany.3610.d:0 "Burgenland used to be a part of Hungary before the Treaty of Trianon gave it to Austria. The territory is now under our control, and we must decide what we should do with it. Burgenland is populated by ethnic Germans who would most likely want to be part of Germany, but giving it to the Hungarians would make them like us even more. What should we do?"
  germany.3610.a:0 "Burgenland will always be German!"
  germany.3610.b:0 "We must right the wrongs of Trianon."
+ germany.3620.t:0 "General Governorate for the occupied Polish Region"
+ germany.3620.d:0 "The Polish nation has fallen to our mighty army! Historical German lands have been re-annexed into the Reich, and Eastern Poland has been taken by the Soviet Union, but what should we do with the rest of Poland?\n\nWe could create a Reichskommissariat in the area led by Hans Frank."
+ germany.3620.a:0 "Create it!"
+ germany.3620.b:0 "We don't need it."
+ GER_RK:0 "We will create a Reichskommissariat in the area."

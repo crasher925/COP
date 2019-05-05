@@ -15,7 +15,6 @@ state=
 		}
 		owner = ENG
 		add_core_of = SOM
-                add_claim_by = IEA
 		buildings = {
 			infrastructure = 3
 			10833 = {

@@ -2562,6 +2562,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -2682,6 +2683,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -2745,6 +2747,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -2807,6 +2810,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -2869,6 +2873,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -2929,6 +2934,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -2990,6 +2996,7 @@ country_event = {
 		OR = {
 			tag = GER
 			tag = AUS
+			tag = GGP
 			tag = LUX
 			is_subject_of = GER
 		}
@@ -4053,6 +4060,243 @@ country_event = {
 				set_state_flag = renamed_state_german
 			}
 			set_province_name = { id = 9567 name = "Mährisch Ostrau"}
+		}
+	}
+}
+
+# Polish - rename Przemysl
+country_event = {
+	id = rename.86400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.86400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		864 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			864 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Przemysl
+country_event = {
+	id = rename.86401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.86401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			tag = GGP
+			is_subject_of = GER
+		}
+		864 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			864 = {
+				set_state_name = "Premissel"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# Ethiopian - rename Ethiopia
+country_event = {
+	id = rename.27100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.27100"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ETH
+		}
+		271 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_italian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			271 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_italian
+			}
+			reset_province_name = 5010
+		}
+	}
+}
+
+# Italian - rename Ethiopia
+country_event = {
+	id = rename.27101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.27101"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ITA
+			tag = IEA
+			tag = INA
+		}
+		271 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_italian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			271 = {
+				set_state_name = "Etiopia"
+				set_state_flag = renamed_state_italian
+			}
+			set_province_name = { id = 5010 name = "Addis Abeba"}
+		}
+	}
+}
+
+# Ethiopian - rename French Somaliland
+country_event = {
+	id = rename.26800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.26800"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ETH
+			tag = FRA
+		}
+		268 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_italian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			268 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_italian
+			}
+		}
+	}
+}
+
+# Italian - rename French Somaliland
+country_event = {
+	id = rename.26801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.26801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ITA
+			tag = IEA
+			tag = INA
+		}
+		268 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_italian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			268 = {
+				set_state_name = "Gibuti"
+				set_state_flag = renamed_state_italian
+			}
+		}
+	}
+}
+
+# Ethiopian - rename British Somaliland
+country_event = {
+	id = rename.26900
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.26900"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ETH
+			tag = ENG
+		}
+		269 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_italian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			269 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_italian
+			}
+		}
+	}
+}
+
+# Italian - rename French Somaliland
+country_event = {
+	id = rename.26901
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.26901"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ITA
+			tag = IEA
+			tag = INA
+		}
+		269 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_italian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			269 = {
+				set_state_name = "Somaliland del Nord"
+				set_state_flag = renamed_state_italian
+			}
 		}
 	}
 }

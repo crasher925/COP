@@ -28,7 +28,7 @@ state=
 			7980 1.0 
 		}
 		add_core_of = ETH
-		add_core_of = IEA
+		add_claim_by = IEA
 
 		1936.6.1 = {
 			owner = IEA

@@ -405,5 +405,30 @@ on_actions = {
                   country_event = { id = rename.83900 }
                   country_event = { id = rename.83901 }
             }
+            # Przemysl
+            if = {
+              limit = { FROM.FROM = { state = 864 } }
+                  country_event = { id = rename.86400 }
+                  country_event = { id = rename.86401 }
+            }
+            # Ethiopia
+            if = {
+              limit = { FROM.FROM = { state = 271 } }
+                  country_event = { id = rename.27100 }
+                  country_event = { id = rename.27101 }
+            }
+
+            # French Somaliland
+            if = {
+              limit = { FROM.FROM = { state = 268 } }
+                  country_event = { id = rename.26800 }
+                  country_event = { id = rename.26801 }
+            }
+            # British Somaliland
+            if = {
+              limit = { FROM.FROM = { state = 269 } }
+                  country_event = { id = rename.26900 }
+                  country_event = { id = rename.26901 }
+            }
       }
 }
