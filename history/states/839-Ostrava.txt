@@ -13,7 +13,7 @@ state=
 			infrastructure = 5
 		}
 		victory_points = {
-			9567 1
+			9567 5
 		}
 		add_core_of = CZE
 	}

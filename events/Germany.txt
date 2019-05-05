@@ -2226,9 +2226,19 @@ country_event = {
 			SLO = {
 				inherit_technology = CZE
 			}
-			annex_country = { target = CZE }
+			PBM = {
+		                9 = { add_core_of = PBM }
+                                set_cosmetic_tag = PBM_reichsprotektorat
+				transfer_state = 9
+				transfer_state = 75
+				GER = {
+					puppet = PBM
+				}
+                        }
 			add_war_support = 0.1
 		}
+                transfer_state = 839
+                839 = { add_core_of = GER }
 		puppet = SLO
                 set_autonomy = { target = SLO autonomy_state = autonomy_satellite }
 		if = {
@@ -2285,6 +2295,11 @@ country_event = {
 			NOT = { has_global_flag = GER_HUN_CZE_split }
 		}
 		HUN = { country_event = germany.56 }
+                hidden_effect = {
+                   HUN = {
+                     transfer_state = 827
+                   }
+                }
 		add_war_support = 0.1
 		if = {
 			limit = {
@@ -2298,6 +2313,17 @@ country_event = {
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
+		PBM = {
+		        9 = { add_core_of = PBM }
+                        set_cosmetic_tag = PBM_reichsprotektorat
+	                transfer_state = 9
+			transfer_state = 75
+			GER = {
+			    puppet = PBM
+			}
+                }
+                transfer_state = 839
+                839 = { add_core_of = GER }
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes

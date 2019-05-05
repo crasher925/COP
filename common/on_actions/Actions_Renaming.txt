@@ -139,6 +139,7 @@ on_actions = {
               limit = { FROM.FROM = { state = 72 } }
                   country_event = { id = rename.7200 }
                   country_event = { id = rename.7201 }
+                  country_event = { id = rename.7202 }
             }
             # Southern Slovakia
             if = {
@@ -397,6 +398,12 @@ on_actions = {
               limit = { FROM.FROM = { state = 28 } }
                   country_event = { id = rename.2800 }
                   country_event = { id = rename.2801 }
+            }
+            # Ostrava
+            if = {
+              limit = { FROM.FROM = { state = 839 } }
+                  country_event = { id = rename.83900 }
+                  country_event = { id = rename.83901 }
             }
       }
 }

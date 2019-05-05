@@ -81,6 +81,7 @@ country_event = {
                 ENG = {
                     add_to_faction = ETH
                 }
+        }
 
         option = {
                 name = ethiopia.60.b

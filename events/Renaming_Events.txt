@@ -1178,6 +1178,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = PBM
 			is_subject_of = GER
 		}
 		9 = {
@@ -1242,6 +1243,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = PBM
 			is_subject_of = GER
 		}
 		75 = {
@@ -1377,6 +1379,34 @@ country_event = {
 			72 = {
 				set_state_name = "Olsa-Gebiet"
 				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# Polish - rename Zaolsi
+country_event = {
+	id = rename.7202
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7202"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		72 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_polish }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			72 = {
+				set_state_name = "Zaolzie"
+				set_state_flag = renamed_state_polish
 			}
 		}
 	}
@@ -3963,6 +3993,66 @@ country_event = {
 			}
 			set_province_name = { id = 678 name = "Mülhausen"}
 			set_province_name = { id = 9503 name = "Straßburg"}
+		}
+	}
+}
+
+# Czech - rename Ostrava
+country_event = {
+	id = rename.83900
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.83900"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CZE
+		}
+		839 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			839 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 9567
+		}
+	}
+}
+
+# German - rename Ostrava
+country_event = {
+	id = rename.83901
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.83901"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			is_subject_of = GER
+		}
+		839 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			839 = {
+				set_state_name = "Mährisch Ostrau"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 9567 name = "Mährisch Ostrau"}
 		}
 	}
 }
