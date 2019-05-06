@@ -3,23 +3,28 @@ state={
 	name="STATE_853"
 
 	history={
-		owner = ITA
+		owner = GRE
 		victory_points = {
-			13233 40 
+			11818 5 
 		}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 1
+			11818 = {
+				naval_base = 3
+
+			}
 
 		}
-		add_core_of = ITA
+		add_core_of = GRE
+                add_claim_by = BUL
 
 	}
 	provinces={
-		13233
+		11818 3936 895
 	}
-	manpower=1
+	manpower=496310
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=city
 }

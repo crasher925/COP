@@ -4,24 +4,24 @@ state={
 	name="STATE_850"
 
 	history={
-		owner = YUG
+		owner = GRE
 		victory_points = {
-			11899 5 
+			11905 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			industrial_complex = 2
 
 		}
-		add_core_of = YUG
-		add_core_of = BOS
+		add_core_of = GRE
+		add_claim_by = BUL
 
 	}
 
 	provinces={
-		11899 
+		11905 11774
 	}
-	manpower=1
+	manpower=182000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

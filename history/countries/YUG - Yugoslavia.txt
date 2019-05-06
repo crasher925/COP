@@ -1,4 +1,4 @@
-﻿capital = 852
+﻿capital = 107
 
 oob = "YUG_1936"
 if = {

@@ -1,4 +1,4 @@
-﻿capital = 853
+﻿capital = 2
 
 oob = "ITA_1936"
 
