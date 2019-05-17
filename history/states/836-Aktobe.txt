@@ -2,7 +2,7 @@ state=
 {
 	id=836
 	name="Aktobe"
-	manpower = 1
+	manpower = 114286
 	
 	state_category = city
 	
