@@ -2,7 +2,7 @@ state=
 {
 	id=798
 	name="Ostrow"
-	manpower = 1
+	manpower = 87190
 	
 	state_category = large_town
 	
