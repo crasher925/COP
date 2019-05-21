@@ -1,0 +1,20 @@
+state=
+{
+	id=829
+	name="STATE_829"
+	manpower = 1
+	
+	state_category = town
+	
+	history =
+	{
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = EGY
+	}
+	provinces={
+		13236
+	}
+}

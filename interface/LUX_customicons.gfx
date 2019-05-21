@@ -1,0 +1,11 @@
+spriteTypes = { 
+##Icon For: 627793
+ SpriteType = { 
+ name = "GFX_partitionyugoslavia" 
+ texturefile = "gfx/interface/goals/GFX_partitionyugoslavia.tga" 
+ }##Icon For: 627517
+ SpriteType = { 
+ name = "GFX_agrandrebirth" 
+ texturefile = "gfx/interface/goals/GFX_agrandrebirth.tga" 
+ } 
+ }

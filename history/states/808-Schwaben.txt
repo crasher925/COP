@@ -1,0 +1,29 @@
+state={
+	id=808
+	name="STATE_808"
+	resources={
+		aluminium=18.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			708 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = GER
+
+	}
+	provinces={
+		708 6540 9655 9666 11638 
+	}
+	manpower=791530
+	buildings_max_level_factor=1.000
+	state_category=city
+}

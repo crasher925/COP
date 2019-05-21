@@ -1,0 +1,25 @@
+state={
+	id=856
+	name="STATE_856"
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+                victory_points = {
+                      3973 3
+                }
+		add_core_of = GRE
+
+	}
+	provinces={
+		976 3864 863 6930 3973
+	}
+	manpower=871030
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

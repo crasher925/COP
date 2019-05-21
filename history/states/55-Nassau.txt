@@ -1,0 +1,36 @@
+
+state={
+	id=55
+	name="STATE_55"
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			6488 20.0 
+		}
+		add_core_of = GER
+		set_demilitarized_zone = yes
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+				arms_factory = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		589 3574 6444 6488 9486
+	}
+	manpower=553464
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

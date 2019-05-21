@@ -1,0 +1,12 @@
+#################
+#### ITALY ####
+#################
+
+ITA_africa = {
+	icon = generic_political_actions
+
+
+	allowed = {
+		original_tag = ITA
+	}
+}

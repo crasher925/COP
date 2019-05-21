@@ -1,0 +1,21 @@
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+
+		}
+		add_core_of = GER
+
+	}
+	provinces={
+		6421 6594 9557 11417 13116 
+	}
+	manpower=954079
+	buildings_max_level_factor=1.000
+	state_category=city
+}
