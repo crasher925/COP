@@ -4135,7 +4135,6 @@ country_event = {
 	option = {
 		name = germany.87.a
 		transfer_state = 85
-		transfer_state = 86
 		remove_state_claim = 86
 		if = {
 			limit = {
@@ -6488,7 +6487,7 @@ country_event = {
         option = {
                 name = germany.3000.a
                 ai_chance = {
-			factor = 80
+			factor = 60
                 }
                 GER = {
                     transfer_state = 824
@@ -6499,7 +6498,7 @@ country_event = {
         option = {
                 name = germany.3000.b
                 ai_chance = {
-			factor = 20
+			factor = 40
                 }
                 POL = {
                      transfer_state = 824

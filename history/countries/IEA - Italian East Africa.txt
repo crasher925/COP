@@ -1,4 +1,4 @@
-﻿capital = 550
+﻿capital = 271
 
 oob = "IEA_1936"
 

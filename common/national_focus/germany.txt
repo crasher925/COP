@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = german_focus
 	
 	country = {
@@ -11,7 +11,7 @@
 	}
 	
 	default = no
-
+k
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
@@ -2988,7 +2988,6 @@
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		mutually_exclusive = { focus = GER_oppose_hitler }
 		x = 24
 		y = 0
 		cost = 10
