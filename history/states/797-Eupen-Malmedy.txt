@@ -2,7 +2,7 @@ state=
 {
 	id=797
 	name="Eupen-Malmedy"
-	manpower = 1
+	manpower =24536
 	
 	state_category = large_town
 	

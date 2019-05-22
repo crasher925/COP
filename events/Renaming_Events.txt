@@ -3376,7 +3376,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			833 = {
-				set_state_name = "Ost-Wallonien"
+				set_state_name = "Südwallonien"
 				set_state_flag = renamed_state_german
 			}
 		}
