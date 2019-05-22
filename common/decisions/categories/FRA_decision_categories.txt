@@ -1,0 +1,10 @@
+################
+##### FRA ######
+################
+
+FRA_vichy_france = {
+	
+	allowed = {
+		always = yes
+	}
+}

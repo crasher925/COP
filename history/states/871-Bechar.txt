@@ -1,0 +1,20 @@
+state={
+	id=871
+	name="STATE_871"
+
+	history={
+		owner = FRA
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	provinces={
+		13239 13240 13241 
+	}
+	manpower=97133
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
