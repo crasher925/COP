@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = german_focus
 	
 	country = {
@@ -4201,14 +4201,6 @@ focus_tree = {
 			has_army_manpower = { size > 949999 } #100 div			
 			#Make custom trigger tooltip here
 			85 = {
-				owner = {
-					original_tag = POL
-				}
-				controller = {
-					original_tag = POL
-				}
-			}
-			824 = {
 				owner = {
 					original_tag = POL
 				}

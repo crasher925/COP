@@ -4135,6 +4135,7 @@ country_event = {
 	option = {
 		name = germany.87.a
 		transfer_state = 85
+		transfer_state = 86
 		remove_state_claim = 86
 		if = {
 			limit = {
