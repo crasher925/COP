@@ -1,0 +1,28 @@
+state={
+	id=875
+	name="STATE_875"
+
+	history={
+		owner = BUL
+		victory_points = {
+			9783 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			9783 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = BUL
+
+	}
+	provinces={
+		649 9612 9769 9783 
+	}
+	manpower=516120
+	buildings_max_level_factor=1.000
+	state_category=town
+}

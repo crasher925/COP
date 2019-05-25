@@ -1,0 +1,23 @@
+state={
+	id=872
+	name="STATE_872"
+
+	history={
+		add_claim_by = GRE
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = TUR
+
+	}
+	provinces={
+		849 922 3879 3893 6895 11842 
+	}
+	manpower=609110
+	buildings_max_level_factor=1.000
+	state_category=city
+}

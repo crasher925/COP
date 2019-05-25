@@ -29,9 +29,9 @@ state={
 	}
 
 	provinces={
-		841 3914 3980 9805 10203 
+		841 3914 3980 9805 9916
 	}
-	manpower=318327
+	manpower=871030
 	buildings_max_level_factor=1.000
 	state_category=town
 }

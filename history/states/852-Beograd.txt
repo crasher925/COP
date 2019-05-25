@@ -10,16 +10,13 @@ state={
 			industrial_complex = 1
 
 		}
-		victory_points = {
-			1205 1
-		}
 		add_core_of = GRE
 
 	}
 	provinces={
-		9916 11786 11895 12001 1205 1106
+		1106 10203
 	}
-	manpower=430000
+	manpower=103610
 	buildings_max_level_factor=1.000
 	state_category=city
 }

@@ -5,9 +5,6 @@ state={
 
 	history={
 		owner = GRE
-		victory_points = {
-			11905 1 
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -21,7 +18,7 @@ state={
 	provinces={
 		11905 11774
 	}
-	manpower=182000
+	manpower=108500
 	buildings_max_level_factor=1.000
 	state_category=town
 }
