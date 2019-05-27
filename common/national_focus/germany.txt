@@ -4758,7 +4758,7 @@ focus_tree = {
 	focus = {
 		id = GER_soviet_ally
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GER_anti_comitern_pact }
+		prerequisite = { focus = GER_anschluss }
 		mutually_exclusive = { focus = GER_anti_comitern_pact }
 		available = {
 			is_puppet = no
@@ -6040,7 +6040,7 @@ focus_tree = {
 	focus = {
 		id = GER_align_greece
 		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = GER_align_yugoslavia }
+		prerequisite = { focus = GER_align_yugoslavia focus = GER_fate_of_yugoslavia }
 		mutually_exclusive = { focus = GER_war_with_greece }
 		x = 33
 		y = 17
@@ -6437,11 +6437,6 @@ focus_tree = {
 				has_full_control_of_state = 6
 				has_full_control_of_state = 7
 				has_full_control_of_state = 36
-				has_full_control_of_state = 99
-				has_full_control_of_state = 110
-				has_full_control_of_state = 142
-				has_full_control_of_state = 143
-				has_full_control_of_state = 144
 				has_full_control_of_state = 785
 			}
 		}
@@ -7704,8 +7699,8 @@ focus_tree = {
 			}
 		}
 		
-		x = 33
-		y = 10
+		x = 32
+		y = 9
 		cost = 4
 		ai_will_do = {
 			factor = 10	
@@ -7778,8 +7773,8 @@ focus_tree = {
 				is_in_faction_with = DEN
 			}
 		}
-		x = 35
-		y = 10
+		x = 34
+		y = 9
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -7839,8 +7834,8 @@ focus_tree = {
 				NOT = { country_exists = NOR }
 			}
 		}
-		x = 35
-		y = 11
+		x = 34
+		y = 10
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -7891,8 +7886,8 @@ focus_tree = {
 		prerequisite = { focus = GER_weserubung focus = GER_norway_friend }
 		mutually_exclusive = { focus = GER_sweden_friend }
 		icon = GFX_goal_generic_major_war
-		x = 33
-		y = 12
+		x = 32
+		y = 11
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -7929,8 +7924,8 @@ focus_tree = {
 				NOT = { country_exists = SWE }
 			}
 		}
-		x = 35
-		y = 12
+		x = 34
+		y = 11
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -7976,9 +7971,11 @@ focus_tree = {
 		id = GER_turkey_war
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		mutually_exclusive = { focus = GER_turkey_ally }
+		prerequisite = { focus = GER_atlantikwall }
 		available = {
 			is_puppet = no
 			NOT = { is_in_faction_with = TUR }
+			date > 1940.1.1
 		}
 		bypass = {
 			NOT = { country_exists = TUR }
@@ -7986,8 +7983,8 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		will_lead_to_war_with = TUR
-		x = 54
-		y = 4
+		x = 36
+		y = 14
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -8008,9 +8005,14 @@ focus_tree = {
 	focus = {
 		id = GER_turkey_ally
 		mutually_exclusive = { focus = GER_turkey_war }
+		prerequisite = { focus = GER_atlantikwall }
+		available = {
+			is_puppet = no
+			date > 1940.1.1
+		}
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 56
-		y = 4
+		x = 38
+		y = 14
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8024,7 +8026,7 @@ focus_tree = {
 					has_government = fascism
 				}
 				TUR = {
-					add_timed_idea = { idea = GER_align_ireland days = 730 }
+					add_timed_idea = { idea = GER_align_turkey days = 730 }
 				}
 			}
 		}
@@ -8034,8 +8036,8 @@ focus_tree = {
 		id = GER_amin_husseini
 		prerequisite = { focus = GER_turkey_ally focus = GER_turkey_war }
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 55
-		y = 5
+		x = 37
+		y = 15
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8052,8 +8054,8 @@ focus_tree = {
 		id = GER_arab_nationalism
 		prerequisite = { focus = GER_amin_husseini }
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 55
-		y = 6
+		x = 37
+		y = 16
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8071,8 +8073,8 @@ focus_tree = {
 		prerequisite = { focus = GER_arab_nationalism }
 		mutually_exclusive = { focus = GER_keep_arab }
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 54
-		y = 7
+		x = 38
+		y = 17
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8090,8 +8092,8 @@ focus_tree = {
 		prerequisite = { focus = GER_arab_nationalism }
 		mutually_exclusive = { focus = GER_betray_arab }
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 56
-		y = 7
+		x = 36
+		y = 17
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8116,6 +8118,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_government = fascism
+			date > 2000.1.1
 		}
 		x = 70
 		y = 0
