@@ -113,3 +113,36 @@ country_event = {
 		HUN = { transfer_state = 855 }
 	}
 }
+
+#Burgenland
+country_event = {
+        id = hungary.7
+        title = hungary.7.t
+        desc = hungary.7.d
+        
+        trigger = {
+           TAG = HUN
+           GER = {
+             controls_state = 821
+           }
+        }
+
+	fire_only_once = yes
+
+        option = {
+                name = hungary.7.a
+                ai_chance = {
+                     factor = 80
+                }
+                GER = {
+                  country_event = germany.3610
+                }
+        }
+
+        option = {
+                name = hungary.7.b
+                ai_chance = {
+                     factor = 20
+                }
+        }
+}

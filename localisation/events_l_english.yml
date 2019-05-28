@@ -3303,3 +3303,7 @@
  germany.3650.d:0 "Our victory in France is nearly complete. The French government has asked for an armistice, and our diplomats have prepared terms which they have agreed to. They will retain control of southern France, while we are free to occupy the rest."
  germany.3650.a:0 "That works for us."
  germany.3650.b:0 "Occupy southern France too."
+ hungary.7.t:0 "The Anschluss"
+ hungary.7.d:0 "Germany has annexed Austria, as well as Burgenland. The territory used to belong to us before the First World War, and some of our advisors have suggested asking Hitler for the land. What should we do?"
+ hungary.7.a:0 "Ask Germany to return our land."
+ hungary.7.b:0 "We do not wish to anger the Germans."
