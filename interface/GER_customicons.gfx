@@ -4,7 +4,16 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_chigermany.dds" 
  } 
  SpriteType = { 
- name = "GFX_enggermany" 
+ name = "GFX_enggermany"
  texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
  } 
+ SpriteType = { 
+ name = "GFX_schutzstaffel" 
+ texturefile = "gfx/interface/goals/GFX_chigermany.dds" 
+ } 
+ SpriteType = { 
+ name = "GFX_naziparty" 
+ texturefile = "gfx/interface/goals/GFX_naziparty.dds" 
+ } 
 }
+

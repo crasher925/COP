@@ -1,4 +1,4 @@
-﻿capital = 7
+﻿capital = 831
 
 oob = "RKN_1936"
 

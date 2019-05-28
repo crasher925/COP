@@ -430,5 +430,11 @@ on_actions = {
                   country_event = { id = rename.26900 }
                   country_event = { id = rename.26901 }
             }
+			# Crimea
+            if = {
+              limit = { FROM.FROM = { state = 137 } }
+                  country_event = { id = rename.13700 }
+                  country_event = { id = rename.13701 }
+            }
       }
 }

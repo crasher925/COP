@@ -1881,29 +1881,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_form_the_reichskommissariats
-		icon = GFX_focus_ger_reichskommisariats
-		available = {
-			has_government = fascism
-		}
-		x = -0.5
-		y = 0
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = GER_reichskommissariats_tt
-			unlock_decision_tooltip = GER_reichskommissariat_norwegen
-			unlock_decision_tooltip = GER_reichskommissariat_niederlande
-			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
-			unlock_decision_tooltip = GER_reichskommissariat_ostland
-			unlock_decision_tooltip = GER_reichskommissariat_ukraine
-		}
-	}
-
-	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GER_naval_effort }
@@ -4944,6 +4921,121 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_gotenland
+		icon = GFX_schutzstaffel
+		prerequisite = { focus = GER_ussr_war_goal }
+		mutually_exclusive = { focus = GER_gotenland2 }
+		available = {
+			  GER = {
+          controls_state = 137
+			  }
+		}
+		x = 22
+		y = 20
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    SSG = {
+			  transfer_state = 137
+			  add_state_core = 137
+			}
+			GER = {
+			  add_to_faction = SSG
+			}
+			  
+		}
+	}
+	
+	focus = {
+		id = GER_gotenland2
+		icon = GFX_naziparty
+		prerequisite = { focus = GER_ussr_war_goal }
+		mutually_exclusive = { focus = GER_gotenland }
+		available = {
+			  GER = {
+          controls_state = 137
+			  }
+		}
+		x = 20
+		y = 20
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    GER = {
+			  add_state_core = 137
+			}	  
+		}
+	}
+	
+	focus = {
+		id = GER_gotenland_sea
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = GER_gotenland }
+		available = {
+			  SSG = {
+          controls_state = 137
+			  }
+		}
+		x = 22
+		y = 21
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    137 = {
+			  add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+		    }
+		}
+	}
+	
+	focus = {
+		id = GER_gotenland_air
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = GER_gotenland_sea }
+		available = {
+			  SSG = {
+          controls_state = 137
+			  }
+		}
+		x = 22
+		y = 22
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    137 = {
+			  add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+		    }
+		}
+	}
 
 	focus = {
 		id = GER_ostwall
@@ -7970,7 +8062,7 @@ focus_tree = {
 	focus = {
 		id = GER_turkey_war
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		mutually_exclusive = { focus = GER_turkey_ally }
+		mutually_exclusive = { focus = GER_turkey_friend }
 		prerequisite = { focus = GER_atlantikwall }
 		available = {
 			is_puppet = no
@@ -8003,38 +8095,98 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_turkey_ally
-		mutually_exclusive = { focus = GER_turkey_war }
+		id = GER_turkey_friend
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_atlantikwall }
-		available = {
-			is_puppet = no
-			date > 1940.1.1
+		mutually_exclusive = { focus = GER_turkey_war }
+		available = { 
+			is_puppet = no 
+			NOT = { has_war_with = TUR }
+			TUR = {
+				exists = yes
+				is_puppet = no
+			}
+
+			TUR = {
+				custom_trigger_tooltip = {
+					tooltip = GER_alone_or_peace_faction_tt
+					is_alone_or_in_faction_at_peace_with_GER = yes
+				}
+			}
 		}
-		icon = GFX_goal_generic_positive_trade_relations
+
+		#bypass = {
+		#	OR = {
+		#		TUR = { is_in_faction_with = GER }
+		#		NOT = { country_exists = TUR }
+		#	}
+		#}
 		x = 38
 		y = 14
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}
+		}	
 
-		available_if_capitulated = yes	
-
+		available_if_capitulated = no
 		completion_reward = {
-			  if = {
-				limit = {
-					has_government = fascism
+			TUR = {
+				add_opinion_modifier = { target = GER modifier = ger_tur_diplomacy_focus }
+				if = {
+					limit = {
+						TUR = {
+							is_ai = yes
+							NOT = {
+								is_in_faction = yes
+							}
+							NOT = {
+								is_puppet = yes
+							}
+							has_government = ROOT
+						}
+						GER = { is_faction_leader = yes }
+					}
+					TUR = {
+						country_event = generic.5
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"
+						value = 200
+					}
 				}
-				TUR = {
-					add_timed_idea = { idea = GER_align_turkey days = 730 }
+				if = {
+					limit = {
+						GER = {
+							has_government = fascism
+						}
+					}
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
+				if = {
+					limit = {
+						GER = {
+							has_government = communism
+						}
+					}
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = democratic
+						}
+					}
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				country_event = { id = generic.1 }
 			}
 		}
 	}
 	
 	focus = {
 		id = GER_amin_husseini
-		prerequisite = { focus = GER_turkey_ally focus = GER_turkey_war }
+		prerequisite = { focus = GER_turkey_friend focus = GER_turkey_war }
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 37
 		y = 15

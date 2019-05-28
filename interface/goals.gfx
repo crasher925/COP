@@ -13,15 +13,25 @@ spriteTypes = {
 	}	
 
         SpriteType = { 
-        name = "GFX_chigermany" 
+        name = "GFX_chigermany"  
         texturefile = "gfx/interface/goals/GFX_chigermany.dds" 
-        } 
+        }
+
+        SpriteType = { 
+        name = "GFX_naziparty"  
+        texturefile = "gfx/interface/goals/GFX_naziparty.dds" 
+        }  
 
         SpriteType = { 
         name = "GFX_enggermany" 
         texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
-        } 
+        }
 	
+        SpriteType = { 
+        name = "GFX_schutzstaffel" 
+        texturefile = "gfx/interface/goals/GFX_schutzstaffel.dds" 
+        }
+
 	SpriteType = {
 	name = "GFX_goal_continuous_reduce_training_time"
 	texturefile = "gfx/interface/goals/goal_continuous_reduce_training_time.dds"			

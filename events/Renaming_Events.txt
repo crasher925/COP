@@ -4301,4 +4301,69 @@ country_event = {
 	}
 }
 
+# Soviet - rename Crimea
+country_event = {
+	id = rename.13700
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.13700"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SOV
+		}
+		137 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			137 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 3686
+			reset_province_name = 6704
+			reset_province_name = 9680
+			reset_province_name = 13245
+		}
+	}
+}
+
+# German - rename Crimea
+country_event = {
+	id = rename.13701
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.13701"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = SSG
+		}
+		137 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			137 = {
+				set_state_name = "Gotenland"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 3686 name = "Theodorichshafen"}
+			set_province_name = { id = 6704 name = "Jalta"}
+			set_province_name = { id = 9680 name = "Kertsch"}
+			set_province_name = { id = 13245 name = "Gotenland"}
+		}
+	}
+}
+
 
