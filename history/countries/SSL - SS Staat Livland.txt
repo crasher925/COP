@@ -1,4 +1,4 @@
-﻿capital = 137
+﻿capital = 12
 
 oob = "RKB_1936"
 
@@ -18,7 +18,7 @@ set_politics = {
 
 	parties = {
 		neutrality = { 
-			popularity = 1
+			popularity = 28
 		}
 
 		fascism = {
@@ -26,11 +26,11 @@ set_politics = {
 		}
 
 		democratic = {
-			popularity = 1
+			popularity = 10
 		}
 		
 		communism = {
-			popularity = 38
+			popularity = 1
 		}
 	}
 	
@@ -43,9 +43,9 @@ set_politics = {
 set_stability = 0.50
 
 create_country_leader = {
-	name = "Ernst Kaltenbrunner"
+	name = "Rudolf Lange"
 	desc = "POLITICS_ERNST_KALTENBRUNNER_DESC"
-	picture = "gfx/leaders/GER/Portrait_Ernst_Kaltenbrunner.dds"
+	picture = "gfx/leaders/GER/Portrait_RK_Rudolf_Lange.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 }

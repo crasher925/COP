@@ -2238,4 +2238,8 @@
  RKM_fascism_ADJ:0 "Muscovite"
  RKK_fascism:0 "Reichskommissariat Kaukasus"
  RKK_fascism_ADJ:0 "Caucasian"
+ SSL_fascism:0 "SS-Staat Livland"
+ SSL_fascism_ADJ:0 "Livonian"
+ VFR_fascism:0 "Vichy France"
+ VFR_fascism_ADJ:0 "French"
  

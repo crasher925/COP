@@ -43,9 +43,9 @@ set_politics = {
 set_stability = 0.50
 
 create_country_leader = {
-	name = "Prince Amedeo"
-	desc = "POLITICS_PRINCE_AMADEO_DESC"
-	picture = "gfx/leaders/ITA/Portrait_Prince_Amedeo.dds"
+	name = "Pietro Badoglio"
+	desc = "POLITICS_RODOLFO_GRAZIANI_DESC"
+	picture = "gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 }

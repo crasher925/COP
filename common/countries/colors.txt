@@ -599,4 +599,12 @@ RKK = {
 	color = rgb { 138 155 116 }
 	color_ui = rgb { 138 155 116 }
 }
+SSL = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+VFR = {
+	color = rgb { 0 0 94 }
+	color_ui = rgb { 0 0 94 }
+}
 

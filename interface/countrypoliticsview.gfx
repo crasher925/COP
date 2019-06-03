@@ -481,6 +481,11 @@ spriteTypes = {
                 name = "GFX_ideology_PBM_fascism_group"
                 texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
         }
+		
+		spriteType = {
+                name = "GFX_ideology_SSG_fascism_group"
+                texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
+        }
 
         spriteType = {
                 name = "GFX_ideology_GGP_fascism_group"

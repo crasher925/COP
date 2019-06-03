@@ -270,6 +270,37 @@ country_event = {
 			effect_tooltip = {
 				annex_country = { target = FRA transfer_troops = yes }
 			}
+                        hidden_effect = {
+                          16 = { add_core_of = MAF }
+                           MAF = {
+                             set_cosmetic_tag = PBM_reichsprotektorat
+                             transfer_state = 16
+                             transfer_state = 785
+                             transfer_state = 18
+                             transfer_state = 17
+                             transfer_state = 27
+                             transfer_state = 15
+                             transfer_state = 24
+                             transfer_state = 30
+                             transfer_state = 14
+                             transfer_state = 23
+                             transfer_state = 33
+                             transfer_state = 26
+                             transfer_state = 20
+                             transfer_state = 25
+                             transfer_state = 19
+                             transfer_state = 31
+                             transfer_state = 22
+                             transfer_state = 21
+                             transfer_state = 32
+                             transfer_state = 735
+                             transfer_state = 1
+                           }
+		           GER = {
+			    puppet = MAF
+			    set_autonomy = { target = MAF autonomy_state = autonomy_reichskommissariat }
+		           }
+                        }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}

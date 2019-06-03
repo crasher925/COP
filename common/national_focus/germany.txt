@@ -1305,7 +1305,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		x = 14
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -2964,7 +2964,6 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		mutually_exclusive = { focus = GER_oppose_hitler }
 		icon = GFX_goal_generic_military_sphere
 		x = 27
 		y = 0
@@ -3282,7 +3281,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		x = 27
 		y = 1
-		cost = 10
+		cost = 6.5
 		ai_will_do = {
 			factor = 8
 		}
@@ -4088,7 +4087,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		x = 28
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -4435,7 +4434,7 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		x = 20
 		y = 8
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4497,7 +4496,7 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		x = 24
 		y = 8
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4559,7 +4558,7 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		x = 22
 		y = 8
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4754,7 +4753,7 @@ focus_tree = {
 		}
 		x = 31
 		y = 3
-		cost = 10
+		cost = 14.4
 		ai_will_do = {
 			factor = 0.01
 			modifier = {
@@ -4923,6 +4922,400 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_develop_lithuania
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_ussr_war_goal }
+		available = {
+			  RKO = {
+          controls_state = 189
+		  controls_state = 11
+		  controls_state = 784
+			  }
+		}
+		x = 31
+		y = 20
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    189 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			11 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			784 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_latvia
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_develop_lithuania }
+		mutually_exclusive = { focus = GER_livonia }
+		available = {
+			  RKO = {
+          controls_state = 190
+		  controls_state = 12
+			  }
+		}
+		x = 31
+		y = 21
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    190 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			12 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_livonia
+		icon = GFX_schutzstaffel
+		prerequisite = { focus = GER_develop_lithuania }
+		mutually_exclusive = { focus = GER_develop_latvia }
+		available = {
+			  RKO = {
+          controls_state = 190
+		  controls_state = 12
+		  controls_state = 13
+		  controls_state = 191
+			  }
+		}
+		x = 33
+		y = 21
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    SSL = {
+			  transfer_state = 12
+			  transfer_state = 13
+			  transfer_state = 190
+			  transfer_state = 191
+			  add_state_core = 12
+			  add_state_core = 13
+			  add_state_core = 190
+			  add_state_core = 191
+			}
+			 GER = {
+			  add_to_faction = SSL
+			 }
+			}
+	}
+	
+	focus = {
+		id = GER_develop_estonia
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_develop_latvia }
+		available = {
+			  RKO = {
+          controls_state = 191
+		  controls_state = 13
+			  }
+		}
+		x = 31
+		y = 22
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    191 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			13 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_ostland
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_ussr_war_goal }
+		available = {
+			  RKO = {
+          controls_state = 207
+		  controls_state = 206
+		  controls_state = 204
+		  controls_state = 96
+			  }
+		}
+		x = 33
+		y = 20
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    207 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			206 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			204 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			96= {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_ukraine
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_ussr_war_goal }
+		available = {
+			  RKU = {
+          controls_state = 202
+		  controls_state = 203
+		  controls_state = 193
+		  controls_state = 197
+			  }
+		}
+		x = 36
+		y = 20
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    202 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			203 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			193 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			197 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_moscow
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_develop_ukraine }
+		available = {
+			  RKM = {
+          controls_state = 219
+		  controls_state = 246
+		  controls_state = 253
+		  controls_state = 205
+			  }
+		}
+		x = 35
+		y = 21
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    219 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			246 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			253 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			205 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_caucasus
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_develop_ukraine }
+		available = {
+			  RKK = {
+          controls_state = 234
+		  controls_state = 235
+		  controls_state = 232
+		  controls_state = 238
+			  }
+		}
+		x = 37
+		y = 21
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    234 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			235 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			232 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			238 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = GER_gotenland
 		icon = GFX_schutzstaffel
 		prerequisite = { focus = GER_ussr_war_goal }
@@ -4932,9 +5325,9 @@ focus_tree = {
           controls_state = 137
 			  }
 		}
-		x = 22
+		x = 23
 		y = 20
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4963,9 +5356,9 @@ focus_tree = {
           controls_state = 137
 			  }
 		}
-		x = 20
+		x = 21
 		y = 20
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4982,12 +5375,7 @@ focus_tree = {
 	focus = {
 		id = GER_gotenland_sea
 		icon = GFX_focus_generic_destroyer
-		prerequisite = { focus = GER_gotenland }
-		available = {
-			  SSG = {
-          controls_state = 137
-			  }
-		}
+		prerequisite = { focus = GER_gotenland focus = GER_gotenland2 }
 		x = 22
 		y = 21
 		cost = 10
@@ -5011,12 +5399,7 @@ focus_tree = {
 	focus = {
 		id = GER_gotenland_air
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_gotenland_sea }
-		available = {
-			  SSG = {
-          controls_state = 137
-			  }
-		}
+		prerequisite = { focus = GER_gotenland_sea focus = GER_gotenland2 }
 		x = 22
 		y = 22
 		cost = 10
@@ -5064,7 +5447,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 20
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6520,16 +6903,14 @@ focus_tree = {
 				NOT = { country_exists = FRA }
 			}
 			OR = {
+			  MAF = {
 				has_full_control_of_state = 19
 				has_full_control_of_state = 23
 				has_full_control_of_state = 30
 				has_full_control_of_state = 14
 				has_full_control_of_state = 15
-				has_full_control_of_state = 29
-				has_full_control_of_state = 6
-				has_full_control_of_state = 7
-				has_full_control_of_state = 36
 				has_full_control_of_state = 785
+			  }
 			}
 		}
 		cancel_if_invalid = yes
@@ -8261,7 +8642,6 @@ focus_tree = {
 	focus = {
 		id = GER_oppose_hitler
 		icon = GFX_focus_ger_oppose_hitler
-		mutually_exclusive = { focus = GER_rhineland }
 
 		allow_branch = {
 			has_dlc = "Waking the Tiger"

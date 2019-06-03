@@ -7111,6 +7111,29 @@ country_event = {
 			puppet = MAF
 			set_autonomy = { target = MAF autonomy_state = autonomy_reichskommissariat }
 		   }
+                     26 = { add_core_of = VFR }
+                     VFR = {
+                       transfer_state = 26
+                       transfer_state = 33
+                       transfer_state = 20
+                       transfer_state = 25
+                       transfer_state = 31
+                       transfer_state = 22
+                       transfer_state = 32
+                       transfer_state = 735
+                       transfer_state = 21
+                       transfer_state = 1
+                       transfer_state = 459
+                       transfer_state = 460
+                       transfer_state = 513
+                       transfer_state = 514
+                       transfer_state = 871
+                       transfer_state = 870
+                     }
+		     GER = {
+			puppet = VFR
+		        set_autonomy = { target = VFR autonomy_state = autonomy_satellite }
+		     }
                 }
         }
 
@@ -7145,10 +7168,6 @@ country_event = {
                       transfer_state = 735
                       transfer_state = 1
                    }
-		   GER = {
-			puppet = MAF
-			set_autonomy = { target = MAF autonomy_state = autonomy_reichskommissariat }
-		   }
                 }
         }
 }
