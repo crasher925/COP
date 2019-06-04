@@ -607,4 +607,8 @@ VFR = {
 	color = rgb { 0 0 94 }
 	color_ui = rgb { 0 0 94 }
 }
+SPS = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
+}
 

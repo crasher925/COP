@@ -217,22 +217,12 @@ set_autonomy = { target = INA autonomy_state = autonomy_italycolony2 }
 
 set_convoys = 200
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 22
-		}
-
-		fascism = {
-			popularity = 76
-		}
-		
-		communism = {
-			popularity = 2
-		}
-	}
-	
+set_popularities = {
+		democratic = 22
+		fascism = 76
+		communism = 2
+}
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1934.3.26"
 	election_frequency = 60

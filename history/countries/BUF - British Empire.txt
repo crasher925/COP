@@ -36,26 +36,13 @@ set_technology = {
 	fuel_refining = 1
 }
 
-set_politics = {
-
-	parties = {
-		neutrality = { 
-			popularity = 23
-		}
-
-		fascism = {
-			popularity = 46
-		}
-
-		democratic = {
-			popularity = 31
-		}
-		
-		communism = {
-			popularity = 0
-		}
-	}
-	
+set_popularities = {
+		neutrality = 23
+		fascism = 46
+		democratic = 31
+		communism = 0
+}
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1930.11.9"
 	election_frequency = 48
