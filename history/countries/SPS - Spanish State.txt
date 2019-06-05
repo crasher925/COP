@@ -153,22 +153,12 @@ set_stability = 0.5
 		}
 	}
 
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 22
-			}
-
-			fascism = {
-				popularity = 76
-			}
-			
-			communism = {
-				popularity = 2
-			}
-		}
-		
+	set_popularities = {
+			democratic = 22
+			fascism = 76
+			communism = 2
+	}
+	set_politics = {	
 		ruling_party = fascism
 		last_election = "1934.3.26"
 		election_frequency = 60
