@@ -2242,6 +2242,8 @@
  SSL_fascism_ADJ:0 "Livonian"
  VFR_fascism:0 "Vichy France"
  VFR_fascism_ADJ:0 "French"
- SPS_fascism:0 "Spanish State"
+ VFR_fascism_DEF:0 "Vichy France"
+ SPS_fascism:0 "Nationalist Spain"
  SPS_fascism_ADJ:0 "Spanish"
+ SPS_fascism_DEF:0 "Nationalist Spain"
  

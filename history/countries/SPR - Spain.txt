@@ -1,6 +1,5 @@
-﻿capital = 166
+﻿capital = 41
 
-oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SPR_1936_naval_mtg"
@@ -58,16 +57,16 @@ if = {
 	}
 }
 
-set_popularities = {
-		neutrality = 17
-		fascism = 76
-		democratic = 7
-}
-set_politics = {	
-	ruling_party = fascism
+set_politics = {
+	ruling_party = democratic
 	last_election = "1933.2.16"
-	election_frequency = 48
-	elections_allowed = no
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 47
+	fascism = 46
+	communism = 7
 }
 
 set_convoys = 150
@@ -153,16 +152,16 @@ set_stability = 0.5
 		}
 	}
 
-	set_popularities = {
-			democratic = 22
-			fascism = 76
-			communism = 2
-	}
-	set_politics = {	
+	set_politics = {
 		ruling_party = fascism
 		last_election = "1934.3.26"
 		election_frequency = 60
 		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 22
+		fascism = 76
+		communism = 2
 	}
 
 	set_global_flag = scw_over
@@ -170,11 +169,44 @@ set_stability = 0.5
 }
 
 create_country_leader = {
+	name = "Manuel Azana"
+	desc = "POLITICS_MANUEL_AZANA_DESC"
+	picture = "Portrait_Spain_Manuel_Azana.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Díaz"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "Portrait_Spain_Jose_Diaz.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Francisco Franco"
 	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "gfx/leaders/SPR/Portrait_Spain_Francisco_Franco.dds"
+	picture = "Portrait_Spain_Francisco_Franco.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alejandro Lerroux"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = centrism
 	traits = {
 		#
 	}
