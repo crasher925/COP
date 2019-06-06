@@ -3365,6 +3365,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		833 = {
@@ -3425,6 +3426,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		34 = {
@@ -3486,6 +3488,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		834 = {
@@ -3551,6 +3554,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		29 = {
@@ -3612,10 +3616,7 @@ country_event = {
 
 	trigger = {
 		OR = {
-			tag = GER
-			tag = AUS
-			tag = LUX
-			is_subject_of = GER
+			tag = SSB
 		}
 		16 = {
 			is_controlled_by = ROOT
@@ -3626,9 +3627,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			16 = {
-				set_state_name = "Insel von Frankreich"
+				set_state_name = "Neuburgund"
 				set_state_flag = renamed_state_german
 			}
+			set_province_name = { id = 11506 name = "Neuburgund"}
 		}
 	}
 }
@@ -3676,6 +3678,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		785 = {
@@ -3737,6 +3740,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		18 = {
@@ -3798,6 +3802,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		17 = {
@@ -3859,6 +3864,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		27 = {
@@ -3920,6 +3926,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		24 = {
@@ -3984,6 +3991,7 @@ country_event = {
 			tag = GER
 			tag = AUS
 			tag = LUX
+			tag = SSB
 			is_subject_of = GER
 		}
 		28 = {

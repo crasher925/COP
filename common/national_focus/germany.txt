@@ -15,8 +15,8 @@ focus_tree = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 4
-		y = 0
+		x = 37
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -99,516 +99,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_autobahn2
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autobahn }
-		x = -3
-		y = 3
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-						811 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				814 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				57 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				59 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				56 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				804 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-		}
-	}
-
-	focus = {
-		id = GER_autobahn3
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autobahn2 }
-		x = -3
-		y = 4
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-						51 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				810 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				813 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				42 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				55 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				809 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				817 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-		}
-	}
-
-	focus = {
-		id = GER_autobahn_3
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autobahn2 }
-		x = -3
-		y = 4
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-						53 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				807 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				54 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				808 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				52 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				50 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				60 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				812 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				65 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				806 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-		}
-	}
-
-	focus = {
-		id = GER_autobahn4
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autobahn_3 }
-		x = -3
-		y = 5
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-						58 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				61 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				63 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				68 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				66 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				67 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				5 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				763 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				188 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				62 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-		}
-	}
-
-	focus = {
-		id = GER_autobahn5
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_autobahn4 }
-		x = -3
-		y = 6
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-						69 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				74 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				823 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				4 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				821 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				152 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				822 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				820 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				819 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				153 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-		}
-	}
-
-	focus = {
 		id = GER_autarky
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_four_year_plan }
@@ -683,75 +173,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER2_kdf_wagen
-		icon = GFX_goal_generic_construct_civ_factory
-		dynamic = yes
-		prerequisite = { focus = GER_kdf_wagen }
-		x = -1
-		y = 3
-		relative_position_id = GER_autarky
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
 		id = GER_hermann_goring_werke
 		icon = GFX_goal_generic_construct_civ_factory
 		dynamic = yes
-		prerequisite = { focus = GER2_kdf_wagen }
-		x = -1
-		y = 5
+		prerequisite = { focus = GER_autarky }
+		x = 1
+		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
 		ai_will_do = {
@@ -828,10 +255,9 @@ focus_tree = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = GER2_kdf_wagen }
-		prerequisite = { focus = GER2_production }
+		prerequisite = { focus = GER_german_war_economy }
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = GER_four_year_plan
 		cost = 10
 		ai_will_do = {
@@ -844,199 +270,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER1_production
-		icon = GFX_goal_generic_construct_mil_factory
-		dynamic = yes
-		prerequisite = { focus = GER_autarky }
-		x = 1
-		y = 1
-		relative_position_id = GER_autarky
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
-		id = GER2_production
-		icon = GFX_goal_generic_construct_mil_factory
-		dynamic = yes
-		prerequisite = { focus = GER1_production }
-		x = 1
-		y = 3
-		relative_position_id = GER_autarky
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
-		id = GER3_production
-		icon = GFX_goal_generic_construct_mil_factory
-		dynamic = yes
-		prerequisite = { focus = GER2_production }
-		x = 1
-		y = 5
-		relative_position_id = GER_autarky
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
 		id = GER_german_war_economy
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_kdf_wagen }
-		prerequisite = { focus = GER1_production }
+		prerequisite = { focus = GER_hermann_goring_werke }
 		x = 3
 		y = 1
 		relative_position_id = GER_autobahn
@@ -1160,110 +397,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER2_coal_liquidization
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GER_coal_liquidization }
-		x = 3
-		y = 2
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-			has_full_control_of_state = 59
-		}
-		
-		completion_reward = {
-			if = {
-				limit = {
-					has_full_control_of_state = 59
-				}
-				59 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER3_coal_liquidization
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GER2_coal_liquidization }
-		x = 3
-		y = 3
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-			has_full_control_of_state = 50
-		}
-		
-		completion_reward = {
-			if = {
-				limit = {
-					has_full_control_of_state = 50
-				}
-				50 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER4_coal_liquidization
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GER3_coal_liquidization }
-		x = 3
-		y = 4
-		relative_position_id = GER_four_year_plan
-		cost = 10
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-			has_full_control_of_state = 152
-		}
-		
-		completion_reward = {
-			if = {
-				limit = {
-					has_full_control_of_state = 152
-				}
-				152 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = GER_synthetic_rubber
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = GER4_coal_liquidization }
+		prerequisite = { focus = GER_coal_liquidization }
 		x = 0
-		y = 4
+		y = 1
 		relative_position_id = GER_coal_liquidization
 		cost = 10
 		ai_will_do = {
@@ -1274,27 +412,6 @@ focus_tree = {
 					modify_building_resources = {
 						 building = synthetic_refinery
 						 resource = rubber
-						 amount = 2
-					}
-		}
-	}
-
-	focus = {
-		id = GER2_synthetic_rubber
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GER_synthetic_rubber }
-		x = 0
-		y = 5
-		relative_position_id = GER_coal_liquidization
-		cost = 10
-		ai_will_do = {
-			factor = 4
-		}
-		
-		completion_reward = {
-					modify_building_resources = {
-						 building = synthetic_refinery
-						 resource = oil
 						 amount = 2
 					}
 		}
@@ -1325,7 +442,7 @@ focus_tree = {
 		prerequisite = { focus = GER_wehrmacht }
 		x = 14
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1383,9 +500,9 @@ focus_tree = {
 		id = GER_air_innovation
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = GER_wehrmacht }
-		x = 17
+		x = 18
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1501,9 +618,9 @@ focus_tree = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = GER_wehrmacht }
-		x = 11
+		x = 10
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1528,99 +645,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_army_rearmament
-		icon = GFX_goal_generic_construct_mil_factory
-		dynamic = yes
-		prerequisite = { focus = GER_army_innovation }
-		x = 10
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
-		id = GER_superiorfirepower
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = GER_army_rearmament }
-		mutually_exclusive = { focus = GER_mobilewarfare }
-		x = 11
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				army_experience = 10
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_superior_firepower
-			}		
-		}
-	}
-
-	focus = {
 		id = GER_mobilewarfare
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_army_rearmament }
-		mutually_exclusive = { focus = GER_superiorfirepower }
+		prerequisite = { focus = GER_army_innovation }
+		mutually_exclusive = { focus = GER_army_innovation_2 }
 		x = 9
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1659,7 +689,7 @@ focus_tree = {
 		}
 
 		x = 9
-		y = 4
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1694,7 +724,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 9
-		y = 5
+		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1714,7 +744,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = GER_motorization_effort }
 		x = 9
-		y = 6
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1737,7 +767,7 @@ focus_tree = {
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = GER_closeairsupport }
 		x = 9
-		y = 7
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1755,9 +785,9 @@ focus_tree = {
 	focus = {
 		id = GER_infantryequipment
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = GER_superiorfirepower }
+		prerequisite = { focus = GER_army_innovation_2 }
 		x = 11
-		y = 4
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1781,7 +811,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = GER_infantryequipment }
 		x = 11
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1804,7 +834,7 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = GER_artilleryequipment }
 		x = 11
-		y = 6
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1824,7 +854,7 @@ focus_tree = {
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = GER_conscription }
 		x = 11
-		y = 7
+		y = 6
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1848,9 +878,10 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation_2
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = GER_blitzkrieg focus = GER_special_forces }
-		x = 10
-		y = 8
+		prerequisite = { focus = GER_army_innovation }
+		mutually_exclusive = { focus = GER_mobilewarfare }
+		x = 11
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1860,22 +891,13 @@ focus_tree = {
 
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 20
+			army_experience = 10
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
 				uses = 2
-				category = land_doctrine
+				category = cat_superior_firepower
 			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				name = mech_army_bonus
-				technology = basic_medium_tank
-				technology = improved_medium_tank
-				technology = advanced_medium_tank
-				technology = mechanised_infantry
-			}	
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty
 		}
 	}
@@ -1883,9 +905,9 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_naval_effort }
-		x = 14
-		y = 2
+		prerequisite = { focus = GER_destroyer_focus }
+		x = 13
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1970,10 +992,10 @@ focus_tree = {
 	focus = {
 		id = GER_plan_z
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = GER_naval_rearmament }
+		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_u_boat_effort }
 		x = 13
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
@@ -2057,10 +1079,10 @@ focus_tree = {
 	focus = {
 		id = GER_u_boat_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = GER_naval_rearmament }
+		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z }
 		x = 15
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2132,7 +1154,7 @@ focus_tree = {
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = GER_u_boat_effort }
 		x = 15
-		y = 4
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2156,7 +1178,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_trade_interdiction }
 		x = 15
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2174,7 +1196,7 @@ focus_tree = {
 		prerequisite = { focus = GER_modular_construction }
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 15
-		y = 6
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2207,7 +1229,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = GER_minelaying }
 		x = 15
-		y = 7
+		y = 6
 
 		cost = 10
 
@@ -2234,7 +1256,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = GER_plan_z }
 		x = 13
-		y = 4
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2257,7 +1279,7 @@ focus_tree = {
 		prerequisite = { focus = GER_fleet_in_being }
 		icon = GFX_focus_generic_destroyer
 		x = 13
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2275,70 +1297,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_amphibious_focus
-		prerequisite = { focus = GER_destroyer_focus }
-		icon = GFX_goal_generic_amphibious_assault
-		x = 13
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes	
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ger_amphibious_focus
-				bonus = 1.0
-				uses = 1
-				category = marine_tech
-			}
-			add_tech_bonus = {
-				name = ger_amphibious_focus
-				bonus = 1.0
-				uses = 2
-				category = tp_tech
-			}
-		}
-	}
-
-	focus = {
-		id = GER_capital_ships
-		icon = GFX_focus_generic_navy_battleship2
-		prerequisite = { focus = GER_amphibious_focus }
-		x = 13
-		y = 7
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_capital_ships
-				bonus = 1.0
-				uses = 2
-				category = ca_tech
-				category = bb_tech
-				category = bc_tech
-			}
-		}
-	}
-
-	focus = {
 		id = GER_naval_effort2
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_capital_ships focus = GER_torpedo_bombers }
-		x = 14
-		y = 8
+		prerequisite = { focus = GER_naval_rearmament }
+		x = 13
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2399,74 +1362,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_air_rearmament
-		icon = GFX_goal_continuous_air_production
-		dynamic = yes
-		prerequisite = { focus = GER_air_innovation }
-		x = 18
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_air_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = GER_air_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
 		id = GER_tactical_air_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = GER_air_rearmament }
+		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_strategic_air_effort }
 		x = 17
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
@@ -2494,10 +1395,10 @@ focus_tree = {
 	focus = {
 		id = GER_strategic_air_effort
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = GER_air_rearmament }
+		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_tactical_air_effort }
 		x = 19
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2527,7 +1428,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = GER_strategic_air_effort }
 		x = 19
-		y = 4
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 0.1
@@ -2550,7 +1451,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_tactical_air_effort }
 		x = 17
-		y = 4
+		y = 3
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -2570,7 +1471,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = GER_air_support }
 		x = 17
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2593,7 +1494,7 @@ focus_tree = {
 		icon = GFX_focus_generic_cryptologic_bomb
 		prerequisite = { focus = GER_naval_air_effort }
 		x = 17
-		y = 6
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2616,7 +1517,7 @@ focus_tree = {
 		icon = GFX_focus_chi_flying_tigers
 		prerequisite = { focus = GER_encryption }
 		x = 19
-		y = 7
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2639,7 +1540,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_long_range_escorts }
 		x = 19
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 0.1
@@ -2662,7 +1563,7 @@ focus_tree = {
 		icon = GFX_goal_generic_radar
 		prerequisite = { focus = GER_tactical_bomber }
 		x = 19
-		y = 6
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2685,7 +1586,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = GER_decryption }
 		x = 17
-		y = 7
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2717,76 +1618,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_air_rearmament_2
-		icon = GFX_goal_continuous_air_production
-		dynamic = yes
-		prerequisite = { focus = GER_air_innovation_2 focus = GER_fighter_production }
-		x = 18
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_air_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_effort_2_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_effort_2_2IC
-			}
-		}
-	}
-
-	focus = {
 		id = GER_extra_tech_slot_2
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = GER_army_innovation_2 }
-		prerequisite = { focus = GER_naval_effort2 }
-		prerequisite = { focus = GER_air_rearmament_2 }
+		prerequisite = { focus = GER_blitzkrieg focus = GER_special_forces }
+		prerequisite = { focus = GER_naval_effort2 focus = GER_torpedo_bombers }
+		prerequisite = { focus = GER_air_innovation_2 focus = GER_fighter_production }
 		x = 14
-		y = 9
+		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -2803,8 +1642,8 @@ focus_tree = {
 		available = {
 						date > 1941.1.1
 		}
-		x = 35
-		y = 1
+		x = 37
+		y = 7
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -2826,8 +1665,8 @@ focus_tree = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_wunderwaffe }
-		x = 35
-		y = 2
+		x = 37
+		y = 8
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -2850,8 +1689,8 @@ focus_tree = {
 		id = GER_jet_focus
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_rocketry_focus }
-		x = 34
-		y = 3
+		x = 36
+		y = 9
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -2873,8 +1712,8 @@ focus_tree = {
 		id = GER_amerikabomber
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_jet_focus }
-		x = 34
-		y = 4
+		x = 36
+		y = 10
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -2896,8 +1735,8 @@ focus_tree = {
 		id = GER_computing
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = GER_rocketry_focus }
-		x = 36
-		y = 3
+		x = 38
+		y = 9
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -2919,8 +1758,8 @@ focus_tree = {
 		id = GER_computing_2
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = GER_computing }
-		x = 36
-		y = 4
+		x = 38
+		y = 10
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -2943,8 +1782,8 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = GER_computing_2 }
 		prerequisite = { focus = GER_amerikabomber }
-		x = 35
-		y = 5
+		x = 37
+		y = 11
 		cost = 14.4
 		ai_will_do = {
 			factor = 1

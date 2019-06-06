@@ -611,4 +611,7 @@ SPS = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 255 255 122 }
 }
-
+SSB = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}

@@ -2246,4 +2246,7 @@
  SPS_fascism:0 "Nationalist Spain"
  SPS_fascism_ADJ:0 "Spanish"
  SPS_fascism_DEF:0 "Nationalist Spain"
+ SSB_fascism:0 "SS-Staat Burgund"
+ SSB_fascism_ADJ:0 "Burgundian"
+ SSB_fascism_DEF:0 "the SS State of Burgundy"
  
