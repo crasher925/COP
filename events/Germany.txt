@@ -239,6 +239,7 @@ country_event = {
 		add_state_claim = 12
 		add_state_claim = 13
 		add_state_claim = 190
+		add_state_claim = 886
 		add_state_claim = 191
 		add_state_claim = 146
 		add_state_claim = 147
@@ -457,6 +458,21 @@ country_event = {
 		}
 		if = {
 			limit = {
+				886 = {
+					OR = {
+						is_controlled_by = GER
+						any_other_country = {
+							controls_state = 886
+							is_in_faction_with = GER
+							GER = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 886 }
+		}
+		if = {
+			limit = {
 				95 = {
 					OR = {
 						is_controlled_by = GER
@@ -609,6 +625,7 @@ country_event = {
 			add_state_claim = 93
 			add_state_claim = 91
 			add_state_claim = 97
+			add_state_claim = 886
 			add_state_claim = 89
 			add_state_claim = 784
 			effect_tooltip = {
@@ -1866,6 +1883,8 @@ country_event = {
 		name = germany.50.a
 		69 = { add_core_of = GER }
 		GER = { transfer_state = 69 }
+		884 = { add_core_of = GER }
+		GER = { transfer_state = 884 }
 		74 = { add_core_of = GER }
 		GER = { transfer_state = 74 }
 		set_country_flag = sudetenland_acquired

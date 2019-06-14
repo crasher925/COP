@@ -1642,7 +1642,7 @@ focus_tree = {
 		available = {
 						date > 1941.1.1
 		}
-		x = 37
+		x = 38
 		y = 7
 		cost = 14.4
 		ai_will_do = {
@@ -1665,7 +1665,7 @@ focus_tree = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_wunderwaffe }
-		x = 37
+		x = 38
 		y = 8
 		cost = 14.4
 		ai_will_do = {
@@ -1689,7 +1689,7 @@ focus_tree = {
 		id = GER_jet_focus
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_rocketry_focus }
-		x = 36
+		x = 37
 		y = 9
 		cost = 14.4
 		ai_will_do = {
@@ -1712,7 +1712,7 @@ focus_tree = {
 		id = GER_amerikabomber
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_jet_focus }
-		x = 36
+		x = 37
 		y = 10
 		cost = 14.4
 		ai_will_do = {
@@ -1735,7 +1735,7 @@ focus_tree = {
 		id = GER_computing
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = GER_rocketry_focus }
-		x = 38
+		x = 39
 		y = 9
 		cost = 14.4
 		ai_will_do = {
@@ -1758,7 +1758,7 @@ focus_tree = {
 		id = GER_computing_2
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = GER_computing }
-		x = 38
+		x = 39
 		y = 10
 		cost = 14.4
 		ai_will_do = {
@@ -1782,7 +1782,7 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = GER_computing_2 }
 		prerequisite = { focus = GER_amerikabomber }
-		x = 37
+		x = 38
 		y = 11
 		cost = 14.4
 		ai_will_do = {
@@ -1824,6 +1824,7 @@ focus_tree = {
 			55 = { is_demilitarized_zone = no }
 			813 = { is_demilitarized_zone = no }
 			810 = { is_demilitarized_zone = no }
+			885 = { is_demilitarized_zone = no }
 		}
 		ai_will_do = {
 			factor = 10
@@ -1836,6 +1837,7 @@ focus_tree = {
 			55 = { set_demilitarized_zone = no }
 			813 = { set_demilitarized_zone = no }
 			810 = { set_demilitarized_zone = no }
+			885 = { set_demilitarized_zone = no }
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5
@@ -2721,6 +2723,9 @@ focus_tree = {
 			74 = {
 				add_claim_by = GER
 			}
+			884 = {
+				add_claim_by = GER
+			}
 			if = {
 				limit = {
 					NOT = { CZE = { controls_state = 69 } }
@@ -3271,7 +3276,7 @@ focus_tree = {
 		id = GER_align_hungary
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GER_second_vienna_award }
-		x = 20
+		x = 22
 		y = 8
 		cost = 5
 		ai_will_do = {
@@ -3395,8 +3400,8 @@ focus_tree = {
 		id = GER_align_bulgaria
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GER_second_vienna_award }
-		x = 22
-		y = 8
+		x = 23
+		y = 7
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -3471,7 +3476,7 @@ focus_tree = {
 				}
 			}
 		}
-    x = 21
+    x = 22
     y = 9
     cost = 10
     available_if_capitulated = yes 
@@ -3494,7 +3499,7 @@ focus_tree = {
 		prerequisite = { focus = GER_align_romania }
 		prerequisite = { focus = GER_align_bulgaria }
 		mutually_exclusive = { focus = GER_integrate_war_economies }
-    x = 23
+    x = 24
     y = 9
     cost = 10
     available_if_capitulated = yes 

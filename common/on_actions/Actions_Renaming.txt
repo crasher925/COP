@@ -436,5 +436,81 @@ on_actions = {
                   country_event = { id = rename.13700 }
                   country_event = { id = rename.13701 }
             }
+			# Oberosterreich
+            if = {
+              limit = { FROM.FROM = { state = 152 } }
+                  country_event = { id = rename.15200 }
+                  country_event = { id = rename.15201 }
+            }
+			# Niederosterreich
+            if = {
+              limit = { FROM.FROM = { state = 4 } }
+                  country_event = { id = rename.4000 }
+                  country_event = { id = rename.4001 }
+            }
+			# Stajerska
+            if = {
+              limit = { FROM.FROM = { state = 102 } }
+                  country_event = { id = rename.10200 }
+                  country_event = { id = rename.10201 }
+				  country_event = { id = rename.10202 }
+				  country_event = { id = rename.10210 }
+            }
+			# Ljubljana
+            if = {
+              limit = { FROM.FROM = { state = 788 } }
+                  country_event = { id = rename.78800 }
+				  country_event = { id = rename.78810 }
+                  country_event = { id = rename.78801 }
+				  country_event = { id = rename.78802 }
+            }
+			# Rijeka
+            if = {
+              limit = { FROM.FROM = { state = 857 } }
+                  country_event = { id = rename.85700 }
+                  country_event = { id = rename.85701 }
+				  country_event = { id = rename.85710 }
+				  country_event = { id = rename.85702 }
+            }
+			# South Tyrol
+            if = {
+              limit = { FROM.FROM = { state = 39 } }
+                  country_event = { id = rename.3900 }
+                  country_event = { id = rename.3901 }
+            }
+			# Friuli
+            if = {
+              limit = { FROM.FROM = { state = 845 } }
+                  country_event = { id = rename.84500 }
+                  country_event = { id = rename.84501 }
+            }
+			# Trieste
+            if = {
+              limit = { FROM.FROM = { state = 846 } }
+                  country_event = { id = rename.84600 }
+                  country_event = { id = rename.84601 }
+				  country_event = { id = rename.84610 }
+				  country_event = { id = rename.84602 }
+            }
+			# Trieste
+            if = {
+              limit = { FROM.FROM = { state = 736 } }
+                  country_event = { id = rename.73600 }
+                  country_event = { id = rename.73601 }
+				  country_event = { id = rename.73610 }
+				  country_event = { id = rename.73602 }
+            }
+			# South Sudetenland
+            if = {
+              limit = { FROM.FROM = { state = 884 } }
+                  country_event = { id = rename.88400 }
+                  country_event = { id = rename.88401 }
+            }
+			# Druskininkai
+            if = {
+              limit = { FROM.FROM = { state = 886 } }
+                  country_event = { id = rename.88600 }
+                  country_event = { id = rename.88601 }
+            }
       }
 }
