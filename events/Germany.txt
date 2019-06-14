@@ -4587,292 +4587,62 @@ country_event = {
 	option = {
 		name = germany.98.b
 		ai_chance = { factor = 75 }
-
-		trigger = {
-			YUG = { 
-				OR = { 
-					owns_state = 103
-					owns_state = 104
-					owns_state = 109
-				} 
-			} 
-		}
-
-		if = {
-			limit = {
-				YUG = {
-					OR = {
-						is_in_faction = yes
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			YUG = { country_event = yugoslavia.8 }
-			custom_effect_tooltip = germany.98_tt
-			effect_tooltip = {
-				add_political_power = -25
-				add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-				CRO = {
-					if = {
-						limit = { YUG = { owns_state = 103 } }
-						transfer_state = 103
-					}
-					if = {
-						limit = { YUG = { owns_state = 862 } }
-						transfer_state = 862
-					}
-					if = {
-						limit = { YUG = { owns_state = 857 } }
-						transfer_state = 857
-					}
-					if = {
-						limit = { YUG = { owns_state = 859 } }
-						transfer_state = 859
-					}
-					if = {
-						limit = { YUG = { owns_state = 858 } }
-						transfer_state = 858
-					}
-					if = {
-						limit = { YUG = { owns_state = 860 } }
-						transfer_state = 860
-					}
-					if = {
-						limit = { YUG = { owns_state = 863 } }
-						transfer_state = 863
-					}
-					if = {
-						limit = { YUG = { owns_state = 854 } }
-						transfer_state = 854
-					}
-					if = {
-						limit = { YUG = { owns_state = 109 } }
-						transfer_state = 109
-					}
-					if = {
-						limit = { YUG = { owns_state = 104 } }
-						transfer_state = 104
-					}						
-				}
-				puppet = CRO
-				annex_country = { target = YUG transfer_troops = no }
-			}
-		}
-
-		#If no guarantee or faction Yug has no choice
-		if = {
-			limit = {
-				YUG = { 
-					is_in_faction = no
-					NOT = {
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			add_political_power = -25
-			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-			        if = {
-					limit = { YUG = { owns_state = 862 } }
-					transfer_state = 862
-				}
-				if = {
-					limit = { YUG = { owns_state = 857 } }
-					transfer_state = 857
-				}
-				if = {
-					limit = { YUG = { owns_state = 859 } }
-					transfer_state = 859
-				}
-				if = {
-					limit = { YUG = { owns_state = 858 } }
-					transfer_state = 858
-				}
-				if = {
-					limit = { YUG = { owns_state = 860 } }
-					transfer_state = 860
-				}
-				if = {
-					limit = { YUG = { owns_state = 863 } }
-					transfer_state = 863
-				}
-				if = {
-					limit = { YUG = { owns_state = 854 } }
-					transfer_state = 854
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}						
-			}
+                hidden_effect = {
+                   MNT = {
+                      transfer_state = 105
+                      transfer_state = 794
+					  set_cosmetic_tag = ITA_MNT
+                   }
+		   ITA = {
+                      transfer_state = 857
+                      transfer_state = 103
+                      transfer_state = 861
+                      transfer_state = 792
+                      transfer_state = 793
+                      add_state_claim = 862
+                      add_state_claim = 859
+                      add_state_claim = 860
+                      add_state_claim = 858
+                   }
+		   ITA = {
+			puppet = MNT
+		   }
+                   CRO = {
+                      transfer_state = 862
+                      transfer_state = 863
+                      transfer_state = 859
+                      transfer_state = 858
+                      transfer_state = 860
+                      transfer_state = 104
+                      transfer_state = 109
+                      transfer_state = 854
+                   }
+		   GER = {
 			puppet = CRO
-			annex_country = { target = YUG transfer_troops = no }
+			set_autonomy = { target = CRO autonomy_state = autonomy_satellite }
+		   }
+                   GOS = {
+                      transfer_state = 764
+                      transfer_state = 107
+                      transfer_state = 851
+                      add_state_core = 107
+                      transfer_state = 108
+                      set_cosmetic_tag = PBM_reichsprotektorat
+                   }
+		   GER = {
+			puppet = GOS
+			set_autonomy = { target = GOS autonomy_state = autonomy_reichskommissariat }
+		   }
 
+ 
 			hidden_effect = {
 				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
 				news_event = { hours = 6 id = news.169 }
 			}
 		}
-		custom_effect_tooltip = yugoslavia_mefo_bills_tt
-		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
-		GER_mefo_bills_level_down = yes
 
 	}
 
-	option = {
-		name = germany.98.c
-		ai_chance = { factor = 5 }
-
-		if = {
-			limit = {
-				YUG = {
-					OR = {
-						is_in_faction = yes
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			YUG = { country_event = yugoslavia.9 }
-			custom_effect_tooltip = germany.98_tt
-			effect_tooltip = {
-				add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
-				
-				CRO = {
-					if = {
-						limit = { YUG = { owns_state = 103 } }
-						transfer_state = 103
-					}
-					if = {
-						limit = { YUG = { owns_state = 104 } }
-						transfer_state = 104
-					}
-					if = {
-						limit = { YUG = { owns_state = 862 } }
-						transfer_state = 862
-					}
-					if = {
-						limit = { YUG = { owns_state = 857 } }
-						transfer_state = 857
-					}
-					if = {
-						limit = { YUG = { owns_state = 859 } }
-						transfer_state = 859
-					}
-					if = {
-						limit = { YUG = { owns_state = 858 } }
-						transfer_state = 858
-					}
-					if = {
-						limit = { YUG = { owns_state = 860 } }
-						transfer_state = 860
-					}
-					if = {
-						limit = { YUG = { owns_state = 863 } }
-						transfer_state = 863
-					}
-					if = {
-						limit = { YUG = { owns_state = 854 } }
-						transfer_state = 854
-					}
-					if = {
-						limit = { YUG = { owns_state = 109 } }
-						transfer_state = 109
-					}						
-				}
-				puppet = CRO
-				puppet = YUG
-
-
-				hidden_effect = {
-					set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-					news_event = { hours = 6 id = news.169 }
-				}
-			}
-		}
-
-		#If no guarantee or faction Yug has no choice
-		if = {
-			limit = {
-				YUG = { 
-					is_in_faction = no
-					NOT = {
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
-			
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 862 } }
-					transfer_state = 862
-				}
-				if = {
-					limit = { YUG = { owns_state = 857 } }
-					transfer_state = 857
-				}
-				if = {
-					limit = { YUG = { owns_state = 859 } }
-					transfer_state = 859
-				}
-				if = {
-					limit = { YUG = { owns_state = 858 } }
-					transfer_state = 858
-				}
-				if = {
-					limit = { YUG = { owns_state = 860 } }
-					transfer_state = 860
-				}
-				if = {
-					limit = { YUG = { owns_state = 863 } }
-					transfer_state = 863
-				}
-				if = {
-					limit = { YUG = { owns_state = 854 } }
-					transfer_state = 854
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}						
-			}
-			puppet = CRO
-			puppet = YUG
-
-
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-				news_event = { hours = 6 id = news.169 }
-			}
-		}
-		custom_effect_tooltip = yugoslavia_mefo_bills_tt
-		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
-		GER_mefo_bills_level_down = yes
-	}
 }
 
 # Germany: Carve up Greece - Give land to Italy?

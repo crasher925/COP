@@ -2249,4 +2249,7 @@
  SSB_fascism:0 "SS-Staat Burgund"
  SSB_fascism_ADJ:0 "Burgundian"
  SSB_fascism_DEF:0 "the SS State of Burgundy"
+ GOS_fascism:0 "Territory of the Millitary Commander in Serbia"
+ GOS_fascism_DEF:0 "the Territory of the Millitary Commander in Serbia"
+ GOS_fascism_ADJ:0 "Serbian"
  

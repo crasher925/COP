@@ -615,3 +615,7 @@ SSB = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
 }
+GOS = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
