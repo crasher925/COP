@@ -3927,6 +3927,7 @@ country_event = {
 			tag = AUS
 			tag = LUX
 			tag = SSB
+			tag = MAF
 			is_subject_of = GER
 		}
 		17 = {
@@ -5315,6 +5316,66 @@ country_event = {
 				set_state_name = "Istra"
 				set_state_flag = renamed_state_yugoslav
 			}
+		}
+	}
+}
+
+# French - rename Nancy
+country_event = {
+	id = rename.88800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.88000"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+		}
+		888 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			888 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 11516
+		}
+	}
+}
+
+# Yugoslav - rename Trieste
+country_event = {
+	id = rename.88801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.88801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = AUS
+			tag = LUX
+		}
+		888 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			888 = {
+				set_state_name = "Nanzig"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 11516 name = "Nanzig"}
 		}
 	}
 }

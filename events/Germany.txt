@@ -6887,6 +6887,11 @@ country_event = {
                       transfer_state = 16
                       transfer_state = 785
                       transfer_state = 18
+                      transfer_state = 882
+                      transfer_state = 883
+                      transfer_state = 887
+                      transfer_state = 888
+                      transfer_state = 889
                       transfer_state = 15
                       transfer_state = 17
                       transfer_state = 27
@@ -6956,6 +6961,11 @@ country_event = {
                       transfer_state = 21
                       transfer_state = 735
                       transfer_state = 1
+                      transfer_state = 882
+                      transfer_state = 883
+                      transfer_state = 887
+                      transfer_state = 888
+                      transfer_state = 889
                    }
                 }
         }

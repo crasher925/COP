@@ -512,5 +512,11 @@ on_actions = {
                   country_event = { id = rename.88600 }
                   country_event = { id = rename.88601 }
             }
+			# Nancy
+            if = {
+              limit = { FROM.FROM = { state = 888 } }
+                  country_event = { id = rename.88800 }
+                  country_event = { id = rename.88801 }
+            }
       }
 }
