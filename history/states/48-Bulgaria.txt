@@ -22,9 +22,9 @@ state={
 	}
 
 	provinces={
-		793 935 949 965 3971 9771 11754 
+		793 935 949 965 3971 11754 
 	}
-	manpower=1638592
+	manpower=1620127
 	buildings_max_level_factor=1.000
 	state_category=city
 }

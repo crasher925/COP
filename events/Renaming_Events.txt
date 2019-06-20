@@ -5695,6 +5695,7 @@ country_event = {
 				reset_state_name = yes
 				clr_state_flag = renamed_state_romanian
 			}
+			reset_province_name = 11659
 		}
 	}
 }
@@ -5724,6 +5725,7 @@ country_event = {
 				set_state_name = "Campia de Vest"
 				set_state_flag = renamed_state_romanian
 			}
+			set_province_name = { id = 11659 name = "Debretin"}
 		}
 	}
 }
@@ -5783,6 +5785,126 @@ country_event = {
 				set_state_name = "Banatul de Vest"
 				set_state_flag = renamed_state_romanian
 			}
+		}
+	}
+}
+
+# Yugoslav - rename Pocutia
+country_event = {
+	id = rename.89800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.89800"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = YUG
+			tag = SER
+			tag = CRO
+		}
+		898 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_romanian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			898 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_romanian
+			}
+		}
+	}
+}
+
+# Romanian - rename Pocutia
+country_event = {
+	id = rename.89801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.89801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		898 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_romanian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			898 = {
+				set_state_name = "Pocutia"
+				set_state_flag = renamed_state_romanian
+			}
+		}
+	}
+}
+
+# Yugoslav - rename Nis
+country_event = {
+	id = rename.85100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.85100"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = YUG
+			tag = SER
+			tag = CRO
+		}
+		851 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_romanian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			851 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_romanian
+			}
+			reset_province_name = 9602
+		}
+	}
+}
+
+# Romanian - rename Nis
+country_event = {
+	id = rename.85101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.85101"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = MOL
+		}
+		851 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_romanian }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			851 = {
+				set_state_name = "Tribalia"
+				set_state_flag = renamed_state_romanian
+			}
+			set_province_name = { id = 9602 name = "Tribalia"}
 		}
 	}
 }

@@ -560,5 +560,17 @@ on_actions = {
                   country_event = { id = rename.76410 }
                   country_event = { id = rename.76411 }
             }
+			# Pocutia
+            if = {
+              limit = { FROM.FROM = { state = 898 } }
+                  country_event = { id = rename.89800 }
+                  country_event = { id = rename.89801 }
+            }
+			# Nis
+            if = {
+              limit = { FROM.FROM = { state = 851 } }
+                  country_event = { id = rename.85100 }
+                  country_event = { id = rename.85101 }
+            }
       }
 }
