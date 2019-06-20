@@ -1,0 +1,20 @@
+state={
+	id=890
+	name="STATE_890"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = MOL
+	}
+	provinces={
+		13249 13250 13251 13252 
+	}
+	manpower=198160
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

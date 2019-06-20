@@ -23,6 +23,13 @@ set_technology = {
 	early_bomber = 1
 	naval_bomber1 = 1
 }
+
+set_autonomy = {
+	target = SPE
+	autonomous_state = autonomy_colony
+	freedom_level = 0.35
+}
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

@@ -42,11 +42,9 @@ country_event = {
                       transfer_state = 170
                       transfer_state = 169
                       transfer_state = 828
-                      transfer_state = 290
                       transfer_state = 178
-                      transfer_state = 783
-                      transfer_state = 699
-                      transfer_state = 297
+                      puppet = SPE
+                      set_autonomy = { target = SPE autonomy_state = autonomy_spaincolony1 }
 		      set_global_flag = spanish_civil_war
 		      load_oob = "SPA_Civil_War"
 		      set_equipment_fraction = 0.5
@@ -117,11 +115,9 @@ country_event = {
                           transfer_state = 170
                           transfer_state = 169
                           transfer_state = 828
-                          transfer_state = 290
                           transfer_state = 178
-                          transfer_state = 783
-                          transfer_state = 699
-                          transfer_state = 297
+                          puppet = SPE
+                          set_autonomy = { target = SPE autonomy_state = autonomy_spaincolony1 }
 			  load_oob = "SPA_Civil_War"
 		          set_equipment_fraction = 0.5
 		          set_stability = 0.9

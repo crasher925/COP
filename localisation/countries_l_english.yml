@@ -2252,4 +2252,17 @@
  GOS_fascism:0 "Territory of the Millitary Commander in Serbia"
  GOS_fascism_DEF:0 "the Territory of the Millitary Commander in Serbia"
  GOS_fascism_ADJ:0 "Serbian"
+ FRM_democratic:0 "French Protectorate in Morocco"
+ FRM_democratic_DEF:0 "the French Protectorate in Morocco"
+ FRM_democratic_ADJ:0 "Moroccan"
+ FRM_fascism:0 "French Protectorate in Morocco"
+ FRM_fascism_DEF:0 "the French Protectorate in Morocco"
+ FRM_fascism_ADJ:0 "Moroccan"
+ SPE_fascism:0 "Spanish Africa"
+ SPE_fascism_DEF:0 "Spanish Africa"
+ SPE_fascism_ADJ:0 "Spanish"
+ SPE_democratic:0 "Spanish Africa"
+ SPE_democratic_DEF:0 "Spanish Africa"
+ SPE_democratic_ADJ:0 "Spanish"
+ 
  

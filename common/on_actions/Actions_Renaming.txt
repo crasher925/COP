@@ -518,5 +518,47 @@ on_actions = {
                   country_event = { id = rename.88800 }
                   country_event = { id = rename.88801 }
             }
+			# Vinnica
+            if = {
+              limit = { FROM.FROM = { state = 198 } }
+                  country_event = { id = rename.19800 }
+                  country_event = { id = rename.19801 }
+            }
+			# Odessa
+            if = {
+              limit = { FROM.FROM = { state = 192 } }
+                  country_event = { id = rename.19200 }
+                  country_event = { id = rename.19201 }
+            }
+			# Transnistria
+            if = {
+              limit = { FROM.FROM = { state = 890 } }
+                  country_event = { id = rename.89000 }
+                  country_event = { id = rename.89001 }
+            }
+			# Ananyiv
+            if = {
+              limit = { FROM.FROM = { state = 893 } }
+                  country_event = { id = rename.89300 }
+                  country_event = { id = rename.89301 }
+            }
+			# Podkarpatska
+            if = {
+              limit = { FROM.FROM = { state = 73 } }
+                  country_event = { id = rename.73000 }
+                  country_event = { id = rename.73001 }
+            }
+			# Alfold
+            if = {
+              limit = { FROM.FROM = { state = 154 } }
+                  country_event = { id = rename.15400 }
+                  country_event = { id = rename.15401 }
+            }
+			# West Banat
+            if = {
+              limit = { FROM.FROM = { state = 764 } }
+                  country_event = { id = rename.76410 }
+                  country_event = { id = rename.76411 }
+            }
       }
 }

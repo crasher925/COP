@@ -48,6 +48,11 @@ spriteTypes = {
                  texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
         }
 
+        spriteType = { 
+                name = "GFX_focus_ger_naziparty" 
+                 texturefile = "gfx/interface/goals/GFX_focus_ger_naziparty.dds" 
+        }
+
 	spriteType = {
 		name = "GFX_government_in_exile_reward_icons"
 		texturefile = "gfx/interface/government_in_exile/government_in_exile_reward_icons.dds"

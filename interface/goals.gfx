@@ -23,6 +23,11 @@ spriteTypes = {
         }  
 
         SpriteType = { 
+        name = "GFX_focus_ger_naziparty"  
+        texturefile = "gfx/interface/goals/GFX_focus_ger_naziparty.dds" 
+        }
+
+        SpriteType = { 
         name = "GFX_enggermany" 
         texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
         }

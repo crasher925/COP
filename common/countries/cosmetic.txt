@@ -235,3 +235,7 @@ ITA_MNT = {
 	color = rgb { 67  127  63 }
 	color_ui = rgb { 67  127  63 }
 }
+FRA_COL = {
+	color = rgb { 0 0 94 }
+	color_ui = rgb { 0 0 94 }
+}

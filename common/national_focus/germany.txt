@@ -15,8 +15,8 @@ focus_tree = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 37
-		y = 1
+		x = 3.5
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -102,7 +102,8 @@ focus_tree = {
 		id = GER_autarky
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_four_year_plan }
-		x = 0
+		mutually_exclusive = { focus = GER_technocracy }
+		x = 1
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -124,14 +125,32 @@ focus_tree = {
 			add_ideas = GER_autarky_idea
 		}
 	}
+	
+	focus = {
+		id = GER_technocracy
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = GER_four_year_plan }
+		mutually_exclusive = { focus = GER_autarky }
+		x = -1
+		y = 1
+		relative_position_id = GER_four_year_plan
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+			add_ideas = GER_technocracy_idea
+		}
+	}
 
 	focus = {
 		id = GER_kdf_wagen
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_army_motorized
 		dynamic = yes
-		prerequisite = { focus = GER_autarky }
-		x = -1
-		y = 1
+		prerequisite = { focus = GER_hermann_goring_werke }
+		x = 0
+		y = 2
 		relative_position_id = GER_autarky
 		cost = 10
 		ai_will_do = {
@@ -174,10 +193,10 @@ focus_tree = {
 
 	focus = {
 		id = GER_hermann_goring_werke
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_generic_steel
 		dynamic = yes
 		prerequisite = { focus = GER_autarky }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
@@ -200,6 +219,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		    54 = {
+			  add_resource = {
+					type = steel
+					amount = 24
+			  }
+			}
+			807 = {
+			  add_resource = {
+					type = steel
+					amount = 30
+			  }
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -255,8 +286,8 @@ focus_tree = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = GER_german_war_economy }
-		x = 0
+		prerequisite = { focus = GER_kdf_wagen }
+		x = 2
 		y = 4
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -268,14 +299,109 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	
+	focus = {
+		id = GER_extra_tech_slot_3
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_technocracy }
+		x = -1
+		y = 2
+		relative_position_id = GER_four_year_plan
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = GER_radar
+		prerequisite = { focus = GER_extra_tech_slot_3 }
+		icon = GFX_goal_generic_radar
+		x = -1
+		y = 3
+		relative_position_id = GER_four_year_plan
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 5
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 3
+				category = radar_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_signal_companies
+		prerequisite = { focus = GER_radar }
+		icon = GFX_goal_generic_army_doctrines
+		x = -2
+		y = 4
+		relative_position_id = GER_four_year_plan
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_enigma
+		icon = GFX_focus_generic_cryptologic_bomb
+		prerequisite = { focus = GER_german_war_economy }
+		x = 3
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = codebreaking_bonus
+				bonus = 1.0
+				uses = 2
+				category = decryption_tech
+			}
+			add_tech_bonus = {
+				name = codebreaking_bonus
+				bonus = 1.0
+				uses = 2
+				category = encryption_tech
+			}
+		}
+	}
 
 	focus = {
 		id = GER_german_war_economy
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_kdf_wagen }
-		prerequisite = { focus = GER_hermann_goring_werke }
+		prerequisite = { focus = GER_kdf_wagen focus = GER_radar }
 		x = 3
-		y = 1
+		y = 2
 		relative_position_id = GER_autobahn
 		cost = 10
 		ai_will_do = {
@@ -1639,12 +1765,10 @@ focus_tree = {
 	focus = {
 		id = GER_wunderwaffe
 		icon = GFX_focus_wonderweapons
-		available = {
-						date > 1941.1.1
-		}
-		x = 38
-		y = 7
-		cost = 14.4
+		prerequisite = { focus = GER_enigma }
+		x = 3
+		y = 6
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1665,9 +1789,9 @@ focus_tree = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_wunderwaffe }
-		x = 38
-		y = 8
-		cost = 14.4
+		x = 3
+		y = 7
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1689,9 +1813,9 @@ focus_tree = {
 		id = GER_jet_focus
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_rocketry_focus }
-		x = 37
-		y = 9
-		cost = 14.4
+		x = 2
+		y = 8
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1712,9 +1836,9 @@ focus_tree = {
 		id = GER_amerikabomber
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_jet_focus }
-		x = 37
-		y = 10
-		cost = 14.4
+		x = 2
+		y = 9
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1735,9 +1859,9 @@ focus_tree = {
 		id = GER_computing
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = GER_rocketry_focus }
-		x = 39
-		y = 9
-		cost = 14.4
+		x = 4
+		y = 8
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1758,9 +1882,9 @@ focus_tree = {
 		id = GER_computing_2
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = GER_computing }
-		x = 39
-		y = 10
-		cost = 14.4
+		x = 4
+		y = 9
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1782,8 +1906,8 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = GER_computing_2 }
 		prerequisite = { focus = GER_amerikabomber }
-		x = 38
-		y = 11
+		x = 3
+		y = 10
 		cost = 14.4
 		ai_will_do = {
 			factor = 1
@@ -1803,19 +1927,10 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_naziparty
 		x = 27
 		y = 0
 		cost = 10
-		available = {
-			is_puppet = no
-			NOT = {
-				has_game_rule = {
-					rule = GER_can_remilitarize_rhineland
-					option = no
-				}
-			}
-		}
 		bypass = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
@@ -1856,6 +1971,7 @@ focus_tree = {
 		id = GER_japan_friend
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		mutually_exclusive = { focus = GER_china_friend }
+		prerequisite = { focus = GER_rhineland }
 		available = {
 			AND = {
 				country_exists = JAP
@@ -1869,8 +1985,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 23
-		y = 0
+		x = 24
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1914,6 +2030,7 @@ focus_tree = {
 	focus = {
 		id = GER_china_friend
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_japan_friend }
 		available = {
 			AND = {
@@ -1928,8 +2045,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 21
-		y = 0
+		x = 22
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 0.5
@@ -1960,8 +2077,8 @@ focus_tree = {
 			 CHI = { has_war_with = JAP}
 		}
 		prerequisite = { focus = GER_china_friend }
-		x = 21
-		y = 1
+		x = 22
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2004,8 +2121,8 @@ focus_tree = {
 			 JAP = { has_war_with = CHI}
 		}
 		prerequisite = { focus = GER_japan_friend }
-		x = 23
-		y = 1
+		x = 24
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2042,8 +2159,8 @@ focus_tree = {
 		id = GER_align_china
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GER_sino_war }
-		x = 21
-		y = 2
+		x = 22
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2097,8 +2214,8 @@ focus_tree = {
 			 }
 		}
 		prerequisite = { focus = GER_align_china }
-		x = 21
-		y = 3
+		x = 22
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3632,6 +3749,7 @@ focus_tree = {
 		id = GER_turkey_puppet
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_soviet_ally }
+		mutually_exclusive = { focus = GER_turkey_friend }
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -3654,6 +3772,98 @@ focus_tree = {
 		}	
 		completion_reward = {
 			TUR = { country_event = { id = germany.79 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = GER_turkey_friend
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_soviet_ally }
+		mutually_exclusive = { focus = GER_turkey_puppet }
+
+
+		available = { 
+			is_puppet = no 
+			NOT = { has_war_with = TUR }
+			TUR = {
+				exists = yes
+				is_puppet = no
+			}
+
+			TUR = {
+				custom_trigger_tooltip = {
+					tooltip = GER_alone_or_peace_faction_tt
+					is_alone_or_in_faction_at_peace_with_GER = yes
+				}
+			}
+		}
+
+		#bypass = {
+		#	OR = {
+		#		TUR = { is_in_faction_with = GER }
+		#		NOT = { country_exists = TUR }
+		#	}
+		#}
+		x = 33
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		available_if_capitulated = no
+		completion_reward = {
+			TUR = {
+				add_opinion_modifier = { target = GER modifier = ger_tur_diplomacy_focus }
+				if = {
+					limit = {
+						TUR = {
+							is_ai = yes
+							NOT = {
+								is_in_faction = yes
+							}
+							NOT = {
+								is_puppet = yes
+							}
+							has_government = ROOT
+						}
+						GER = { is_faction_leader = yes }
+					}
+					TUR = {
+						country_event = generic.5
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"
+						value = 200
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = fascism
+						}
+					}
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = communism
+						}
+					}
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_government = democratic
+						}
+					}
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				country_event = { id = generic.1 }
+			}
 		}
 	}
 
@@ -3766,98 +3976,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_develop_lithuania
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_ussr_war_goal }
-		available = {
-			  RKO = {
-          controls_state = 189
-		  controls_state = 11
-		  controls_state = 784
-			  }
-		}
-		x = 31
-		y = 20
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    189 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			11 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			784 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_develop_latvia
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_develop_lithuania }
-		mutually_exclusive = { focus = GER_livonia }
-		available = {
-			  RKO = {
-          controls_state = 190
-		  controls_state = 12
-			  }
-		}
-		x = 31
-		y = 21
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    190 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			12 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
 		id = GER_livonia
 		icon = GFX_schutzstaffel
-		prerequisite = { focus = GER_develop_lithuania }
-		mutually_exclusive = { focus = GER_develop_latvia }
+		prerequisite = { focus = GER_ussr_war_goal }
+		mutually_exclusive = { focus = GER_develop_ostland }
 		available = {
 			  RKO = {
           controls_state = 190
@@ -3866,8 +3988,8 @@ focus_tree = {
 		  controls_state = 191
 			  }
 		}
-		x = 33
-		y = 21
+		x = 31
+		y = 20
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -3893,48 +4015,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_develop_estonia
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_develop_latvia }
-		available = {
-			  RKO = {
-          controls_state = 191
-		  controls_state = 13
-			  }
-		}
-		x = 31
-		y = 22
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    191 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			13 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
 		id = GER_develop_ostland
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_ussr_war_goal }
+		mutually_exclusive = { focus = GER_livonia }
 		available = {
 			  RKO = {
           controls_state = 207
@@ -3956,7 +4040,7 @@ focus_tree = {
 		    207 = {
 			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -3964,7 +4048,7 @@ focus_tree = {
 			206 = {
 			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -3972,7 +4056,7 @@ focus_tree = {
 			204 = {
 			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -3980,178 +4064,7 @@ focus_tree = {
 			96= {
 			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_develop_ukraine
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_ussr_war_goal }
-		available = {
-			  RKU = {
-          controls_state = 202
-		  controls_state = 203
-		  controls_state = 193
-		  controls_state = 197
-			  }
-		}
-		x = 36
-		y = 20
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    202 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			203 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			193 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			197 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_develop_moscow
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_develop_ukraine }
-		available = {
-			  RKM = {
-          controls_state = 219
-		  controls_state = 246
-		  controls_state = 253
-		  controls_state = 205
-			  }
-		}
-		x = 35
-		y = 21
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    219 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			246 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			253 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			205 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_develop_caucasus
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_develop_ukraine }
-		available = {
-			  RKK = {
-          controls_state = 234
-		  controls_state = 235
-		  controls_state = 232
-		  controls_state = 238
-			  }
-		}
-		x = 37
-		y = 21
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    234 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			235 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			232 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			238 = {
-			    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
+					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -7280,206 +7193,6 @@ focus_tree = {
 					remove_ideas = neutrality_idea
 				}
 			}
-		}
-	}
-	
-	
-	focus = {
-		id = GER_turkey_war
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		mutually_exclusive = { focus = GER_turkey_friend }
-		prerequisite = { focus = GER_atlantikwall }
-		available = {
-			is_puppet = no
-			NOT = { is_in_faction_with = TUR }
-			date > 1940.1.1
-		}
-		bypass = {
-			NOT = { country_exists = TUR }
-			has_war_with = TUR
-		}
-		cancel_if_invalid = yes
-		will_lead_to_war_with = TUR
-		x = 36
-		y = 14
-		cost = 10
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = TUR
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_turkey_friend
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = GER_atlantikwall }
-		mutually_exclusive = { focus = GER_turkey_war }
-		available = { 
-			is_puppet = no 
-			NOT = { has_war_with = TUR }
-			TUR = {
-				exists = yes
-				is_puppet = no
-			}
-
-			TUR = {
-				custom_trigger_tooltip = {
-					tooltip = GER_alone_or_peace_faction_tt
-					is_alone_or_in_faction_at_peace_with_GER = yes
-				}
-			}
-		}
-
-		#bypass = {
-		#	OR = {
-		#		TUR = { is_in_faction_with = GER }
-		#		NOT = { country_exists = TUR }
-		#	}
-		#}
-		x = 38
-		y = 14
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-
-		available_if_capitulated = no
-		completion_reward = {
-			TUR = {
-				add_opinion_modifier = { target = GER modifier = ger_tur_diplomacy_focus }
-				if = {
-					limit = {
-						TUR = {
-							is_ai = yes
-							NOT = {
-								is_in_faction = yes
-							}
-							NOT = {
-								is_puppet = yes
-							}
-							has_government = ROOT
-						}
-						GER = { is_faction_leader = yes }
-					}
-					TUR = {
-						country_event = generic.5
-					}
-					add_ai_strategy = {
-						type = alliance
-						id = "GER"
-						value = 200
-					}
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_timed_idea = { idea = communist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_amin_husseini
-		prerequisite = { focus = GER_turkey_friend focus = GER_turkey_war }
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 37
-		y = 15
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes	
-
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_arab_nationalism
-		prerequisite = { focus = GER_amin_husseini }
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 37
-		y = 16
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes	
-
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_betray_arab
-		prerequisite = { focus = GER_arab_nationalism }
-		mutually_exclusive = { focus = GER_keep_arab }
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 38
-		y = 17
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes	
-
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_keep_arab
-		prerequisite = { focus = GER_arab_nationalism }
-		mutually_exclusive = { focus = GER_betray_arab }
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 36
-		y = 17
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes	
-
-		completion_reward = {
-
 		}
 	}
 	
