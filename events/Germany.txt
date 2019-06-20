@@ -4597,8 +4597,6 @@ country_event = {
                       transfer_state = 857
                       transfer_state = 103
                       transfer_state = 861
-                      transfer_state = 792
-                      transfer_state = 793
                       add_state_claim = 862
                       add_state_claim = 859
                       add_state_claim = 860
@@ -4607,6 +4605,10 @@ country_event = {
 		   ITA = {
 			puppet = MNT
 		   }
+                   ALB = {
+                      transfer_state = 792
+                      transfer_state = 793
+                   }
                    CRO = {
                       transfer_state = 862
                       transfer_state = 863
@@ -4621,6 +4623,9 @@ country_event = {
 			puppet = CRO
 			set_autonomy = { target = CRO autonomy_state = autonomy_satellite }
 		   }
+                   hidden_effect = {
+                       country_event = { days = 1 id = germany.3660 }
+                   }
                    GOS = {
                       transfer_state = 764
                       transfer_state = 107
@@ -6967,6 +6972,42 @@ country_event = {
                       transfer_state = 888
                       transfer_state = 889
                    }
+                }
+        }
+}
+
+#Status of Croatia
+country_event = {
+        id = germany.3660
+        title = germany.3660.t
+        desc = germany.3660.d
+
+	picture = GFX_report_event_german_inspect_troops
+
+	hidden = no
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3660.a
+                ai_chance = {
+			factor = 80
+                }
+                   ITA = {
+                      country_event = { days = 1 id = italy.17 }
+                   }
+        }
+
+        option = {
+                name = germany.3660.b
+                ai_chance = {
+			factor = 20
                 }
         }
 }

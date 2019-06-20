@@ -718,3 +718,6 @@
  ITA_MNT_fascism:0 "Governorate of Montenegro"
  ITA_MNT_fascism_DEF:0 "the Governorate of Montenegro"
  ITA_MNT_fascism_ADJ:0 "Montenegrin"
+ ITA_ALB_fascism:0 "Italian Protectorate of Albania"
+ ITA_ALB_fascism_DEF:0 "the Italian Protectorate of Albania"
+ ITA_ALB_fascism_ADJ:0 "Albanian"
