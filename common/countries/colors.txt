@@ -627,3 +627,7 @@ SPE = {
 	color = rgb { 242 205 94 }
 	color_ui = rgb { 255 255 122 }
 }
+FRT = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}

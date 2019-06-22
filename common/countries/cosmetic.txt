@@ -243,3 +243,7 @@ ITA_ALB = {
 	color = rgb { 67  127  63 }
 	color_ui = rgb { 67  127  63 }
 }
+SPS_COL = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 255 255 122 }
+}

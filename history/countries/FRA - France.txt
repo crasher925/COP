@@ -86,6 +86,11 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 	freedom_level = 0.35
 }
+set_autonomy = {
+	target = FRT
+	autonomous_state = autonomy_colony
+	freedom_level = 0.35
+}
 
 1939.1.1 = {
 

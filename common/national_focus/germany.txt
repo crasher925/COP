@@ -1927,7 +1927,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_naziparty
+		icon = GFX_focus_ger_reichskommisariats
 		x = 27
 		y = 0
 		cost = 10
@@ -6280,13 +6280,8 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = GER_war_with_france }
 		available = {
-			SPR = { has_civil_war = no }
-			any_other_country = {
-				original_tag = SPR
-				has_government = fascism
-				NOT = { has_war_with = GER }
-				NOT = { is_in_faction_with = GER }
-			}
+			country_exists = SPS
+			
 			FRA = {
 				OR = {
 					exists = no
@@ -6298,7 +6293,7 @@ focus_tree = {
 		
 		#bypass = {
 		#	any_other_country = {
-		#		original_tag = SPR
+		#		original_tag = SPS
 		#		has_government = fascism
 		#		is_in_faction_with = GER
 		#	}
@@ -6325,15 +6320,15 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = { 
-						SPR = { NOT = { has_government = fascism } }
-						NOT = { country_exists = SPR }
+						SPS = { NOT = { has_government = fascism } }
+						NOT = { country_exists = SPS }
 					}
 				}
 				custom_effect_tooltip = GER_nationalist_spain_ally_tt
 			}
 			random_other_country = {
 				limit = {
-					original_tag = SPR
+					original_tag = SPS
 					has_government = fascism
 				}
 				remove_ideas = SPA_recovering_from_civil_war
@@ -6348,10 +6343,15 @@ focus_tree = {
 	prerequisite = { focus = GER_nationalist_spain_ally }
 	available = {
 		is_puppet = no
-		NOT = { has_war_with = SPR }
-		GER = {
-				controls_state = 118
-			}
+		country_exists = SPS
+		SPS = {
+		 NOT = { has_war_with = SPR }
+		}
+		FRM = {
+				controls_state = 461
+				controls_state = 462
+				has_government = fascism
+		}
 	}
 	bypass = {
 		NOT = { country_exists = SPR }
@@ -6370,7 +6370,9 @@ focus_tree = {
 	}
 		
 	completion_reward = {
-
+             SPS = {
+			   country_event = { id = spain.10 }
+			 }
 	   }
 	}
 
@@ -6440,7 +6442,6 @@ focus_tree = {
 		id = GER_operation_tannenbaum
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GER_war_with_france }
-		mutually_exclusive = { focus = GER_nazi_gold }
 		available = {
 			is_puppet = no
 			NOT = { is_in_faction_with = SWI }
@@ -6467,34 +6468,6 @@ focus_tree = {
 				type = annex_everything
 				target = SWI
 			}
-		}
-	}
-
-	focus = {
-		id = GER_nazi_gold
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		prerequisite = { focus = GER_war_with_france }
-		mutually_exclusive = { focus = GER_operation_tannenbaum }
-		available = {
-			is_puppet = no
-			NOT = { is_in_faction_with = SWI }
-		}
-		bypass = {
-			NOT = { country_exists = SWI }
-			has_war_with = SWI
-		}
-		x = 22
-		y = 11
-		cost = 10
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		
-		completion_reward = {
 		}
 	}
 

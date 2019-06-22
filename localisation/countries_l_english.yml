@@ -2264,5 +2264,11 @@
  SPE_democratic:0 "Spanish Africa"
  SPE_democratic_DEF:0 "Spanish Africa"
  SPE_democratic_ADJ:0 "Spanish"
+ FRT_democratic:0 "French Protectorate of Tunisia"
+ FRT_democratic_DEF:0 "the French Protectorate of Tunisia"
+ FRT_democratic_ADJ:0 "Tunisian"
+ FRT_fascism:0 "French Protectorate of Tunisia"
+ FRT_fascism_DEF:0 "the French Protectorate of Tunisia"
+ FRT_fascism_ADJ:0 "Tunisia"
  
  
