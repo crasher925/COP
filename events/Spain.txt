@@ -306,7 +306,7 @@ country_event = {
 	}
 }
 
-# Civil war over. Move Capital
+# Civil war over. Move Capital / Spanish State
 country_event = {
 	id = spain.8
 	title = spain.8.t

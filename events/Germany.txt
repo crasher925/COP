@@ -4626,7 +4626,6 @@ country_event = {
                    }
                    CRO = {
                       transfer_state = 862
-                      transfer_state = 863
                       transfer_state = 859
                       transfer_state = 858
                       transfer_state = 860
@@ -6429,10 +6428,12 @@ country_event = {
 
 
 	trigger = {
+            TAG = GER
                 date > 1942.1.1
 		GER = {
 			controls_state = 219
 		}
+            GER = { has_war_with = SOV}
 	}
 
 
@@ -6456,10 +6457,12 @@ country_event = {
 
 
 	trigger = {
+            TAG = GER
                 date > 1942.1.1
 		SOV = {
 			controls_state = 219
 		}
+            GER = { has_war_with = SOV}
 	}
 
 
@@ -6944,12 +6947,14 @@ country_event = {
                        transfer_state = 514
                        transfer_state = 871
                        transfer_state = 870
+                       transfer_state = 539
                      }
 		     GER = {
 			puppet = VFR
 		        set_autonomy = { target = VFR autonomy_state = autonomy_satellite }
+                        country_event = { days = 1 id = germany.3690 }
 		     }
-                }
+           }
         }
 
         option = {
@@ -7087,5 +7092,255 @@ country_event = {
                  }
                 }
         }
+}
+
+#France Post War
+country_event = {
+        id = germany.3680
+        title = germany.3680.t
+        desc = germany.3680.d
+
+	picture = GFX_report_event_german_inspect_troops
+
+	hidden = no
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+           TAG = GER
+             NOT = { has_war_with = ENG }
+             country_exists = VFR
+        }
+
+        option = {
+                name = germany.3680.a
+                ai_chance = {
+			factor = 50
+                }
+                hidden_effect = {
+                   VFR = {
+                     transfer_state = 19
+                     transfer_state = 23
+                     transfer_state = 30
+                     transfer_state = 14
+                     transfer_state = 24
+                     transfer_state = 882
+                     transfer_state = 15
+                     add_state_core = 19
+                     add_state_core = 23
+                     add_state_core = 30
+                     add_state_core = 14
+                     add_state_core = 24
+                     add_state_core = 882
+                     add_state_core = 15
+                     add_state_core = 33
+                     add_state_core = 25
+                     add_state_core = 31
+                     add_state_core = 22
+                   }
+                   SSB = {
+                     transfer_state = 16
+                     transfer_state = 883
+                     transfer_state = 785
+                     transfer_state = 18
+                     transfer_state = 27
+                     transfer_state = 17
+                     transfer_state = 889
+                     transfer_state = 887
+                     transfer_state = 888
+                     transfer_state = 20
+                     transfer_state = 32
+                     add_state_core = 16
+                     add_state_core = 883
+                     add_state_core = 785
+                     add_state_core = 18
+                     add_state_core = 27
+                     add_state_core = 17
+                     add_state_core = 889
+                     add_state_core = 887
+                     add_state_core = 888
+                     add_state_core = 20
+                     add_state_core = 32
+                   }
+                   ITA = {
+                     transfer_state = 735
+                     transfer_state = 1
+                     add_state_core = 735
+                     add_state_core = 1
+                   }
+                   GER = { add_to_faction = SSB }
+                }
+        }
+
+        option = {
+                name = germany.3680.b
+                ai_chance = {
+			factor = 40
+                }
+                hidden_effect = {
+                   VFR = {
+                     transfer_state = 19
+                     transfer_state = 23
+                     transfer_state = 30
+                     transfer_state = 14
+                     transfer_state = 24
+                     transfer_state = 27
+                     transfer_state = 882
+                     transfer_state = 15
+                     transfer_state = 883
+                     transfer_state = 18
+                     transfer_state = 785
+                     transfer_state = 16
+                     add_state_core = 19
+                     add_state_core = 23
+                     add_state_core = 30
+                     add_state_core = 14
+                     add_state_core = 24
+                     add_state_core = 882
+                     add_state_core = 15
+                     add_state_core = 883
+                     add_state_core = 18
+                     add_state_core = 785
+                     add_state_core = 16
+                     add_state_core = 33
+                     add_state_core = 25
+                     add_state_core = 31
+                     add_state_core = 22
+                     add_state_core = 20
+                     add_state_core = 32
+                     set_capital = 16
+                   }
+                   MAF = {
+                     set_cosmetic_tag = MAF_OST
+                     set_capital = 888
+                   }
+                   ITA = {
+                     transfer_state = 735
+                     transfer_state = 1
+                     add_state_core = 735
+                     add_state_core = 1
+                   }
+                }
+        }
+
+        option = {
+                name = germany.3680.c
+                ai_chance = {
+			factor = 10
+                }
+                hidden_effect = {
+                   VFR = {
+                     transfer_state = 19
+                     transfer_state = 23
+                     transfer_state = 30
+                     transfer_state = 14
+                     transfer_state = 24
+                     transfer_state = 27
+                     transfer_state = 882
+                     transfer_state = 15
+                     transfer_state = 883
+                     transfer_state = 18
+                     transfer_state = 785
+                     transfer_state = 16
+                     transfer_state = 889
+                     transfer_state = 888
+                     transfer_state = 887
+                     transfer_state = 17
+                     add_state_core = 19
+                     add_state_core = 23
+                     add_state_core = 30
+                     add_state_core = 14
+                     add_state_core = 24
+                     add_state_core = 882
+                     add_state_core = 15
+                     add_state_core = 883
+                     add_state_core = 18
+                     add_state_core = 785
+                     add_state_core = 16
+                     add_state_core = 889
+                     add_state_core = 888
+                     add_state_core = 887
+                     add_state_core = 17
+                     add_state_core = 33
+                     add_state_core = 25
+                     add_state_core = 31
+                     add_state_core = 22
+                     add_state_core = 20
+                     add_state_core = 32
+                     set_capital = 16
+                   }  
+                   ITA = {
+                     transfer_state = 735
+                     transfer_state = 1
+                     add_state_core = 735
+                     add_state_core = 1
+                   }               
+                }
+        }
+}
+
+#Taking the French colonies
+country_event = {
+        id = germany.3690
+        title = germany.3690.t
+        desc = germany.3690.d
+
+	picture = GFX_report_event_german_inspect_troops
+
+	hidden = no
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	is_triggered_only = yes
+
+        option = {
+                name = germany.3690.a
+                ai_chance = {
+			factor = 100
+                }
+                VFR = {
+                    puppet = FRM
+		    set_autonomy = { target = FRM autonomy_state = autonomy_vichycolony1 }
+                    puppet = FRT
+		    set_autonomy = { target = FRT autonomy_state = autonomy_vichycolony1 }
+                    puppet = FRW
+		    set_autonomy = { target = FRW autonomy_state = autonomy_vichycolony1 }
+                    puppet = FRS
+		    set_autonomy = { target = FRS autonomy_state = autonomy_vichycolony1 }
+                    puppet = FRY
+		    set_autonomy = { target = FRY autonomy_state = autonomy_vichycolony1 }
+                }
+                FRA = {
+                   transfer_state = 775
+                   transfer_state = 774
+                   transfer_state = 773
+                   transfer_state = 660
+                   transfer_state = 772
+                }
+                FRM = {
+                   set_cosmetic_tag = VFR_COL
+                }
+                FRT = {
+                   set_cosmetic_tag = VFR_COL
+                }
+                FRW = {
+                   set_cosmetic_tag = VFR_COL
+                }
+                FRS = {
+                   set_cosmetic_tag = VFR_COL
+                }
+                FRY = {
+                   set_cosmetic_tag = VFR_COL
+                }
+        }
+
 }
 

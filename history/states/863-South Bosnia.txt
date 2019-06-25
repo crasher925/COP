@@ -1,25 +1,22 @@
+
 state={
 	id=863
 	name="STATE_863"
 
 	history={
-		owner = YUG
-		victory_points = {
-			6983 3 
-		}
+		owner = SWE
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
 
 		}
-		add_core_of = YUG
-		add_core_of = BOS
+		add_core_of = SWE
 
 	}
+
 	provinces={
-		953 3985 6614 6942 6957 6983 9586 9894 9922 11845 11872 
+		211 
 	}
-	manpower=728700
+	manpower=25857
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

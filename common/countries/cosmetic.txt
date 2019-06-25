@@ -247,3 +247,11 @@ SPS_COL = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 255 255 122 }
 }
+VFR_COL = {
+	color = rgb { 0 0 94 }
+	color_ui = rgb { 0 0 94 }
+}
+MAF_OST = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}

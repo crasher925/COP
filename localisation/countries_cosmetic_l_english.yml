@@ -721,3 +721,6 @@
  ITA_ALB_fascism:0 "Italian Protectorate of Albania"
  ITA_ALB_fascism_DEF:0 "the Italian Protectorate of Albania"
  ITA_ALB_fascism_ADJ:0 "Albanian"
+ MAF_OST_fascism:0 "Reichskommissariat Ostfrankreich"
+ MAF_OST_fascism_DEF:0 "Reichskommissariat Ostfrankreich"
+ MAF_OST_fascism_ADJ:0 "German"

@@ -631,3 +631,19 @@ FRT = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
+FRW = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRQ = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRS = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRY = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
