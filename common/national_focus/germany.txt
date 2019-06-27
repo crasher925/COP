@@ -2328,7 +2328,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_anschluss
-		icon = GFX_goal_anschluss
+		icon = GFX_anschluss
 		prerequisite = { focus = GER_west_wall }
 		available = {
 			is_puppet = no

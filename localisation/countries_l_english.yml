@@ -2240,9 +2240,9 @@
  RKK_fascism_ADJ:0 "Caucasian"
  SSL_fascism:0 "SS-Staat Livland"
  SSL_fascism_ADJ:0 "Livonian"
- VFR_fascism:0 "Vichy France"
+ VFR_fascism:0 "French State"
  VFR_fascism_ADJ:0 "French"
- VFR_fascism_DEF:0 "Vichy France"
+ VFR_fascism_DEF:0 "the French State"
  SPS_fascism:0 "Nationalist Spain"
  SPS_fascism_ADJ:0 "Spanish"
  SPS_fascism_DEF:0 "Nationalist Spain"
@@ -2294,5 +2294,9 @@
  FRY_fascism:0 "Colony of Madagascar and Dependencies"
  FRY_fascism_DEF:0 "the Colony of Madagascar and Dependencies"
  FRY_fascism_ADJ:0 "Malagasy"
+ RCM_fascism:0 "Reichskolonie Mittelafrika"
+ RCM_fascism_ADJ:0 "Afrikan"
+ RCS_fascism:0 "Reichskolonie Sudafrika"
+ RCS_fascism_ADJ:0 "Afrikan"
  
  

@@ -44,6 +44,11 @@ spriteTypes = {
         }
 
         spriteType = { 
+                name = "GFX_anschluss" 
+                 texturefile = "gfx/interface/goals/GFX_anschluss.dds" 
+        }
+
+        spriteType = { 
                 name = "GFX_enggermany" 
                  texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
         }
@@ -493,6 +498,21 @@ spriteTypes = {
 		
         spriteType = {
                 name = "GFX_ideology_SSG_fascism_group"
+                texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_SSB_fascism_group"
+                texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_RCM_fascism_group"
+                texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
+        }
+
+        spriteType = {
+                name = "GFX_ideology_RCS_fascism_group"
                 texturefile = "gfx/interface/ideologies/GER/fascism_group.dds"
         }
 

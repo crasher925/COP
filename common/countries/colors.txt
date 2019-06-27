@@ -647,3 +647,11 @@ FRY = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
+RCM = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
+RCS = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}

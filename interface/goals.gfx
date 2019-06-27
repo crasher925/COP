@@ -31,6 +31,11 @@ spriteTypes = {
         name = "GFX_enggermany" 
         texturefile = "gfx/interface/goals/GFX_enggermany.dds" 
         }
+
+        SpriteType = { 
+        name = "GFX_anschluss" 
+        texturefile = "gfx/interface/goals/GFX_anschluss.dds" 
+        }
 	
         SpriteType = { 
         name = "GFX_schutzstaffel" 

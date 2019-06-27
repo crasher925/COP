@@ -16,6 +16,10 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_naziparty.dds" 
  } 
  SpriteType = { 
+ name = "GFX_anschluss" 
+ texturefile = "gfx/interface/goals/GFX_anschluss.dds" 
+ } 
+ SpriteType = { 
  name = "GFX_focus_ger_naziparty" 
  texturefile = "gfx/interface/goals/GFX_focus_ger_naziparty.dds" 
  } 

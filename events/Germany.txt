@@ -7344,3 +7344,57 @@ country_event = {
 
 }
 
+#British Peace
+country_event = {
+        id = germany.3700
+        title = germany.3700.t
+        desc = germany.3700.d
+
+	picture = GFX_report_event_german_inspect_troops
+
+	hidden = no
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+        trigger = {
+           TAG = GER
+             BUF = {
+              controls_state = 126
+              controls_state = 127
+              controls_state = 123
+              controls_state = 338
+              controls_state = 122
+              controls_state = 128
+              controls_state = 129
+              controls_state = 132
+              controls_state = 130
+              controls_state = 131
+              controls_state = 133
+              controls_state = 121
+              controls_state = 136
+              controls_state = 120
+             }
+        }
+
+        option = {
+                name = germany.3700.a
+                ai_chance = {
+			factor = 80
+                }
+                   ENG = {
+                      country_event = { days = 1 id = britain.30 }
+                   }
+        }
+
+        option = {
+                name = germany.3700.b
+                ai_chance = {
+			factor = 20
+                }
+        }
+}
+
