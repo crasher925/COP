@@ -1,0 +1,30 @@
+capital = 9
+
+#	Starting tech
+set_technology = {
+	infantry_weapons = 2
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1939.3.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	fascism = 30
+	communism = 5
+	neutrality = 25
+}
+
+create_country_leader = {
+	name = "Konstantin von Neurath"
+	desc = ""
+	picture = "gfx/leaders/RBM/Portrait_Germany_Konstantin Neurath.dds"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
