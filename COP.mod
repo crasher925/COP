@@ -17,5 +17,5 @@ tags={
 	"Utilities"
 }
 name="Collective Overhaul Project"
-supported_version="1.10.3"
-path="mod/COP"
+supported_version="1.10.4"
+path="C:/Users/[username]/Documents/Paradox Interactive/Hearts of Iron IV/mod/COP"
