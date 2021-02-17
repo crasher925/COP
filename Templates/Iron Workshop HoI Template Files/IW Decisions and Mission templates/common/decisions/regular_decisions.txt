@@ -1,0 +1,159 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	simple_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+			}
+			is_debug = yes
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "DECISION_EFFECT_YAY"
+			hidden_effect = {
+				add_political_power = 500
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	
+	###################################################################################################################
+				#### TARGETED DECISIONS WILL PUT THE FLAG OF THE TARGET WITH THE DECISION ICON ####
+	#### SCOPING FOR THE TARGET OF THE DECISION IS DONE WITH "FROM" and the country currently being played is ROOT ####
+	###################################################################################################################	
+	
+	simple_targeted_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+			}		
+		}
+		
+		target_trigger = {		#Trigget to make the decision appear, these override the visible paramater so if visible is true but target_trigger is not, the decision will not appear
+			FROM = { tag = USA }
+		}		
+
+		cost = 10		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			FROM = { add_political_power = 50 }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+}
+simple_category_with_picture = {
+	simple_decision_2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			always = no
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+			}		
+		}		
+
+		cost = 10		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+}
+
+############################################################################
+#### ON MAP DECISIONS ALLOW YOU TO SHOW DECISION ICONS ON THE WORLD MAP ####
+############################################################################
+category_with_map_icon = {
+	on_map_decision = {
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		on_map_mode = map_only		#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 318 }		#This is required if on_map_mode = map_only is used, will highlight the state and will make the decision icon appear above that state on the world map.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+			}
+		}		
+
+		cost = 10		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the decision icon is clicked.
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	
+	}
+}
