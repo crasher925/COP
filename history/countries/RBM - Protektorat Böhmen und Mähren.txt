@@ -22,7 +22,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Konstantin von Neurath"
 	desc = ""
-	picture = "gfx/leaders/RBM/Portrait_Germany_Konstantin Neurath.dds"
+	picture = "gfx/leaders/RBM/Portrait_Germany_Konstantin_Neurath.dds"
 	ideology = nazism
 	traits = {
 		#

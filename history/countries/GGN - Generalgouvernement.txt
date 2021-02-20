@@ -22,7 +22,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Hans Frank"
 	desc = ""
-	picture = "gfx/leaders/RBM/Portrait_Germany_Hans Frank.dds"
+	picture = "gfx/leaders/RBM/Portrait_Germany_Hans_Frank.dds"
 	ideology = nazism
 	traits = {
 		#
