@@ -1,0 +1,30 @@
+capital = 6
+
+#	Starting tech
+set_technology = {
+	infantry_weapons = 2
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1940.5.29"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	fascism = 40
+	communism = 20
+	neutrality = 0
+}
+
+create_country_leader = {
+	name = "Gerd von Rundstedt"
+	desc = ""
+	picture = "gfx/leaders/RBL/Portrait_Germany_Gerd_von_Rundstedt.dds"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
