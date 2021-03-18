@@ -1,0 +1,21 @@
+state=
+{
+	id=823
+	name="STATE_823"
+	manpower = 9053
+	
+	state_category = town
+	
+	history =
+	{
+		owner = POL
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = POL
+	}
+	provinces={
+		13251 13253 
+	}
+	buildings_max_level_factor=1.000
+}

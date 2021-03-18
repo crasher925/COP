@@ -16,7 +16,7 @@ state=
 		add_core_of = POL
 	}
 	provinces={
-		9412 13205
+		9412 13205 13254 
 	}
 	buildings_max_level_factor=1.000
 }

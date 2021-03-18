@@ -819,4 +819,7 @@
  STATE_818:0 "Western Montenegro"
  STATE_819:0 "Eupen-Malmedy"
  STATE_820:0 "Przemyśl"
- STATE_821:0 "Voislavychi"
+ STATE_821:1 "Ungvar"
+ STATE_822:0 "Michalovce"
+ STATE_823:0 "Jablonka-Bialka"
+ STATE_824:0 "Zakopane"
